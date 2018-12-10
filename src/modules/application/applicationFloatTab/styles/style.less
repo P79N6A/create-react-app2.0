@@ -1,0 +1,251 @@
+.application-progress {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatTab-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .topo-tab {
+        overflow-y: auto;
+        height: calc(100% - 72px);
+        .detail-cont {
+            height: calc(100% - 10px);
+            overflow-y: auto;
+            padding: 0 !important;
+        }
+        .avatar-uploader {
+            width: 100%;
+            .ant-upload {
+                width: 100%;
+                height: 230px;
+            }
+        }
+        .upload-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .upload-content-action {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .upload-content:hover .upload-content-action {
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .detail-expand-card {
+            height: 100%;
+            .detail-cont-list {
+                height: calc(100% - 57px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 0;
+            }
+            .expand-card-cont {
+                overflow-x: auto;
+                overflow-y: hidden;
+                height: calc(100% - 16px);
+                table {
+                    tr {
+                        th {
+                            white-space: nowrap;
+                        }
+                        td {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .topo-alarm {
+        position: relative;
+        height: 100%;
+        .tab-list-wrap {
+            height: 100%;
+            overflow: auto;
+            padding: 12px 16px;
+            .no-data {
+                height: calc(100% - 57px);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            tr {
+                td {
+                    white-space: nowrap;
+                }
+            }
+            .severity-div {
+                width: 14px;
+                height: 25px;
+                position: absolute;
+                top: 0;
+                left: 7px;
+            }
+            .severity-span {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                top: 25px;
+                position: absolute;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+    }
+    .topo-event {
+        position: relative;
+        height: 100%;
+        .tab-list-wrap {
+            height: 100%;
+            overflow: auto;
+            padding: 12px 16px;
+            .no-data {
+                height: calc(100% - 57px);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            tr {
+                td {
+                    white-space: nowrap;
+                }
+            }
+            .severity-div {
+                width: 14px;
+                height: 25px;
+                position: absolute;
+                top: 0;
+                left: 7px;
+            }
+            .severity-span {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                top: 25px;
+                position: absolute;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+    }
+    .topo-chart {
+        height: 100%;
+        overflow: hidden;
+        .topo-chart-cont {
+            height: 100%;
+            .chart-config {
+                padding: 16px 24px;
+                height: 40%;
+                overflow-y: auto;
+            }
+            .chart {
+                height: 60%;
+                padding: 16px 24px;
+            }
+        }
+        .openEditor {
+            height: calc(100% - 372px);
+        }
+        .closeEditor {
+            height: calc(100% - 72px);
+        }
+    }
+    .common-pagination {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+.panel_icons_wrap {
+    width: 100%;
+    .ant-popover-inner-content {
+        padding: 0;
+    }
+    .title_inner {
+        display: flex;
+        justify-content: space-between;
+        .anticon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .panel_color_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .remind {
+            flex: 1;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .mark_icon {
+            width: 30px;
+            box-shadow: none;
+            margin: 6px 0;
+            min-width: 50px;
+            background-color: transparent;
+            min-height: 26px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+.panel_icons_box_picker {
+    width: 345px;
+    .icons_box_content {
+        max-height: 250px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        .panel_icon_item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            margin: 2px;
+            padding: 2px;
+            color: #fff;
+            &:hover {
+                span {
+                    color: aqua;
+                }
+            }
+        }
+        .icon_item_active {
+            color: aqua;
+        }
+        .icon_not_found {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

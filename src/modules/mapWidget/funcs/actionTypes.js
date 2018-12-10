@@ -1,0 +1,57 @@
+/*
+ * =========================================================================
+ *  Copyright (C)2018 NCS Pte. Ltd. All Rights Reserved
+ *
+ *  This software is confidential and proprietary to NCS Pte. Ltd. You shall
+ *  use this software only in accordance with the terms of the license
+ *  agreement you entered into with NCS.  No aspect or part or all of this
+ *  software may be reproduced, modified or disclosed without full and
+ *  direct written authorisation from NCS.
+ *
+ *  NCS SUPPLIES THIS SOFTWARE ON AN "AS IS" BASIS. NCS MAKES NO
+ *  REPRESENTATIONS OR WARRANTIES, EITHER EXPRESSLY OR IMPLIEDLY, ABOUT THE
+ *  SUITABILITY OR NON-INFRINGEMENT OF THE SOFTWARE. NCS SHALL NOT BE LIABLE
+ *  FOR ANY LOSSES OR DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+ *  MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ *
+ *  =========================================================================
+ */
+/**
+ * Modified by DengXiaoLong on 25/06/2018.
+ */
+
+export const MAP_REQUEST_SUCCESS = "MAP_WIDGET/MAP_REQUEST_SUCCESS"; 
+export const MAP_DEVICE_DATA_REQUEST_SUCCESS = "MAP_WIDGET/MAP_DEVICE_DATA_REQUEST_SUCCESS"; 
+
+export const MAP_LAONDING_STATUS = "MAP_WIDGET/MAP_LAONDING_STATUS";
+export const MAP_EDITER_STATUS = "MAP_WIDGET/MAP_EDITER_STATUS";
+
+export const MAP_ALARM_SEARCH = "MAP_WIDGET/MAP_ALARM_SEARCH";
+export const MAP_ALARM_TYPE_DATA = "MAP_WIDGET/MAP_ALARM_TYPE_DATA";
+export const MAP_ALARM_TYPE_DATA_REQUEST_SUCCESS = "MAP_WIDGET/MAP_ALARM_TYPE_DATA_REQUEST_SUCCESS";
+export const MAP_ALARM_SEVERITY_DATA_REQUEST_SUCCESS = "MAP_WIDGET/MAP_ALARM_SEVERITY_DATA_REQUEST_SUCCESS";
+export const MAP_ALARM_STATE_DATA_REQUEST_SUCCESS = "MAP_WIDGET/MAP_ALARM_STATE_DATA_REQUEST_SUCCESS";
+export const MAP_CHANGE_TITLE = "MAP_WIDGET/MAP_CHANGE_TITLE";
+export const MAP_CHOOSE_ICON = "MAP_WIDGET/MAP_CHOOSE_ICON";
+export const MAP_CHANGE_ICON_COLOR = "MAP_WIDGET/MAP_CHANGE_ICON_COLOR";
+
+export const MAP_DEVICE_CHANGE_ICON_AND_COLOR = "MAP_WIDGET/MAP_DEVICE_CHANGE_ICON_AND_COLOR";
+
+export const MAP_ALARM_EXPORT_EXCEL = "MAP_WIDGET/MAP_ALARM_EXPORT_EXCEL";
+export const MAP_EXPORT_EXCEL_SUCCESS = "MAP_WIDGET/MAP_EXPORT_EXCEL_SUCCESS";
+
+export const MAP_GET_All_DATA = "MAP_WIDGET/MAP_GET_All_DATA";
+
+export const MAP_GET_ADDRESS = "MAP_WIDGET/MAP_GET_ADDRESS";
+export const MAP_GET_INFO_BY_ADDRESS = "MAP_WIDGET/MAP_GET_INFO_BY_ADDRESS";
+export const MAP_INFO_ADDRESS_CLEAR = "MAP_WIDGET/MAP_INFO_ADDRESS_CLEAR";
+export const MAP_GET_ADDRESS_SUCCESS = "MAP_WIDGET/MAP_GET_ADDRESS_SUCCESS";
+
+// for websocket
+export const RECEIVE_WEBSOCKET_MESSAGE = "ISC/RECIEVED_MESSAGE";
+
+// clear basic map message
+export const MAPP_CLEAR_DATA = "MAP_WIDGET/MAPP_CLEAR_DATA";
+
+// save data for topology tree
+export const MAP_DRAW_INFOMATION = "MAP_WIDGET/MAP_DRAW_INFOMATION";

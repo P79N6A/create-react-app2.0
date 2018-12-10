@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "author": "WR",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "material-key": "",
+    "title": "ISC-LOGIN",
+    "layout": {
+        "padding": false,
+        "container": true,
+        "header": false,
+        "navbar": false
+    },
+    "modules": [
+        {
+            "uri": "/login",
+            "identify": "login",
+            "material-key": "",
+            "props": {
+                "copyRight": "NCS Pte Ltd. All Rights Reserved.",
+                "title": "IoT Platform",
+                "message": "Please enter your login credentials"
+            }
+        }
+    ]
+}

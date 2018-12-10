@@ -1,0 +1,153 @@
+.auditContainer {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    min-width: 550px;
+    min-height: 300px;
+    .auditBox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .auditList {
+            height: calc(100% - 72px);
+            overflow: hidden;
+            .toolBar {
+                width: 100%;
+                top: 0;
+                position: absolute;
+            }
+            .progressBox {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                // background: rgba(255, 255, 255, 0.05);
+            }
+            .noData {
+                height: calc(100% - 57px);
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+            .tableBox {
+                height: calc(100% - 56px);
+                overflow: auto;
+                position: relative;
+                table {
+                    width: auto;
+                    min-width: 100%;
+                }
+                thead tr th {
+                    white-space: nowrap;
+                    &.severity {
+                        width: 50px;
+                        max-width: 50px;
+                        padding: 4px 10px;
+                    }
+                    &.sentdatetime {
+                        width: 270px;
+                        max-width: 270px;
+                    }
+                    &.messagetype {
+                        width: 200px;
+                        max-width: 360px;
+                    }
+                    &.source {
+                        width: 200px;
+                        max-width: 360px;
+                    }
+                    &.note {
+                        max-width: 700px;
+                    }
+                }
+                tbody tr td {
+                    max-width: 700px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &.selectCheckbox {
+                        width: 72px;
+                    }
+                    i {
+                        width: 5px;
+                        height: 20px;
+                        display: block;
+                        margin-right: 0;
+                        background: #81cfe0;
+                        &.critical {
+                            background: #e41f1f;
+                        }
+                        &.major {
+                            background: #f37901;
+                        }
+                        &.minor {
+                            background: #f3b101;
+                        }
+                        &.info {
+                            background: #00a7ad;
+                        }
+                        &.clear {
+                            background: #adadad;
+                        }
+                        &.reading {
+                            background: #a2ded0;
+                        }
+                        &.unknown {
+                            background: #81cfe0;
+                        }
+                    }
+                }
+            }
+            .cardBox {
+                height: 100%;
+                overflow: auto;
+                .cardItem {
+                    display: inline-block;
+                    margin: 10px;
+                    .cardCont {
+                        width: 390px;
+                        height: 132px;
+                        cursor: pointer;
+                        .severity {
+                            float: left;
+                            margin-right: 26px;
+                            width: 10px;
+                            height: 132px;
+                            &.critical {
+                                background: #e41f1f;
+                            }
+                            &.major {
+                                background: #f37901;
+                            }
+                            &.minor {
+                                background: #f3b101;
+                            }
+                            &.info {
+                                background: #00a7ad;
+                            }
+                            &.clear {
+                                background: #adadad;
+                            }
+                            &.reading {
+                                background: #a2ded0;
+                            }
+                            &.undefined {
+                                background: #81cfe0;
+                            }
+                        }
+                        .brief {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

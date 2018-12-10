@@ -1,0 +1,18 @@
+{
+    "menu": {
+        "display": true,
+        "icon": "menu"
+    },
+    "title": {
+        "display": true
+    },
+    "logo": {
+        "display": true
+    },
+    "weather": {
+        "display": true
+    },
+    "user": {
+        "display": true
+    }
+}

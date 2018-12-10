@@ -1,0 +1,47 @@
+{
+    "filename":"Alarm",
+    "format":"excel",
+    "columninfos": [
+        {
+            "jsonpath": "$.severity",
+            "fieldname": "severity",
+            "displayname": "Severity"
+        },
+        {
+            "jsonpath": "$.sentdatetime",
+            "fieldname": "sentdatetime",
+            "displayname": "Send Time",
+            "dateformat": "HH:mm:ss dd-MMM-yyyy"
+        },
+        {
+            "jsonpath": "$.alarmtype",
+            "fieldname": "alarmtype",
+            "displayname": "Alarm Type"
+        },
+        {
+            "jsonpath": "$.source",
+            "fieldname": "source",
+            "displayname": "Source"
+        },
+        {
+            "jsonpath": "$.note",
+            "fieldname": "note",
+            "displayname": "Note"
+        },
+        {
+            "jsonpath": "$.owner",
+            "fieldname": "owner",
+            "displayname": "Owner"
+        },
+        {
+            "jsonpath": "$.state",
+            "fieldname": "state",
+            "displayname": "State"
+        },
+        {
+            "jsonpath": "",
+            "fieldname": "parameters",
+            "displayname": "Parameters"
+        }
+    ]
+}

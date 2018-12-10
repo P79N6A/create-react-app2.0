@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "author": "Krishalee",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "layout": {
+        "container": true,
+        "header": [
+            true,
+            {
+                "title": "Import Devices"
+            }
+        ]
+    },
+    "material-key": "ISC_WEB_PAGE_R_TOPOLOGY_DEVICE_BULK_IMPORT",
+    "modules": [
+        {
+            "identify": "deviceImport",
+            "uri": "/deviceImport",
+            "props": {
+                "title": "Device Import",
+                "subTitle": "Import History",
+                "pageLimit": 20,
+                "pageSize": [
+                    10,
+                    20,
+                    50,
+                    100,
+                    200
+                ],
+                "pageNo": 1,
+                "postData": {
+                    "type": "importerStatusRequest",
+                    "format": "filter",
+                    "predicate": {},
+                    "paginator": {
+                        "pageno": "",
+                        "limit": ""
+                    },
+                    "sortorders": [
+                        {
+                            "sortField": "request.lastModifiedTime",
+                            "ascending": false
+                        }
+                    ]
+                },
+                "datePredicate":{
+                    "field": "request.lastModifiedTime",
+                    "operator": "BTW",
+                    "values": []
+                },
+                "searchPredicate":{
+                    "field": "request.fileName",
+                    "operator": "LIKE",
+                    "value": ""
+                }
+            }
+        }
+    ]
+}

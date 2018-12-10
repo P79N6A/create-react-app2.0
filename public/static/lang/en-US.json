@@ -1,0 +1,697 @@
+{
+    "en": {
+        "common": {
+            "NoColumnsSelected": "No Columns Selected.",
+            "SelectAll": "Select All",
+            "ClearAll": "Clear All",
+            "TableActions": "Actions",
+            "Save": "Save",
+            "Yes": "Yes",
+            "Cancel": "Cancel",
+            "Selected": "Selected",
+            "Next": "Next",
+            "Back": "Back",
+            "Critical": "Critical",
+            "Major": "Major",
+            "Minor": "Minor",
+            "Info": "Info",
+            "Unknown": "Unknown",
+            "None": "None",
+            "fullScreen": "fullScreen"
+        },
+        "login": {
+            "title": "IoT Platform",
+            "subtitle": "Please enter your login credentials",
+            "messageFailure": "Login failure, please check your account, user name and password.",
+            "RememberMe": "Remember me",
+            "addressPlaceholder": "Account\\User ID",
+            "passwordPlaceholder": "Password",
+            "buttonSignIn": "Sign In",
+            "textUserName": "User Name",
+            "textPassword": "Password",
+            "messageSuccessTitle": "Success",
+            "messageSuccess": "Welcome %{name}, page will redirect in 3 seconds.",
+            "messageFailureTitle": "Error",
+            "formatError": "Please check the format, e.g: Account\\User ID",
+            "nomatchDomain": "Login failure, please check your account, user name and password.",
+            "noPermission": "Permission denied, please contact Administrator.",
+            "nomatchURL": "No URL config, Please check.",
+            "forgotPassword": "Forgot password?",
+            "login": "Login",
+            "forgotPasswordContent": "Please enter your registered email address below and we will send you on structions on resertting your password",
+            "forgotPasswordTitle": "Forgot Password",
+            "forgotPasswordVerCode": "Type the code shown below.",
+            "enterCode": "Enter Code",
+            "email": "Email",
+            "sentEmail": "Password reset instructions have been sent to your registered email.",
+            "loginUnknowError": "System login error, please contact administrator.",
+            "logoutUnknowError": "System logout error, please contact administrator.",
+            "invalidTokenUnknowError": "System TokenValid error, please contact administrator.",
+            "keepAliveUnkonwError": "Keep Alive error, please contact administrator.",
+            "changePasswordUnknowError": "Change password error, please contact administrator.",
+            "resetPasswordUnknowError": "Reset password error, please contact administrator."
+        },
+        "modal": {
+            "buttonText": {
+                "left": "CANCEL",
+                "right": "OK"
+            },
+            "left": "CANCEL",
+            "edit": {
+                "dupTitle": "Duplicate",
+                "moveTitle": "Move",
+                "name": "New Dashboard Name",
+                "move": "Move to Dashboard Group",
+                "createGroup": "Create New Group",
+                "groupContent": "New Group Name",
+                "dashboardName": "Dashboard Name"
+            },
+            "add": {
+                "title": "Add New Dashboard",
+                "selText": "Templates",
+                "Basic": "Basic Templates",
+                "User": "User Submitted Templates",
+                "name": "Dashboard Name",
+                "subTitle": "Select from pre-configured dashboard template below",
+                "blankTitle": "Blank template",
+                "blankDesc": "Template description: Blank Dashboard",
+                "privacyLabel": "Set as High Priority",
+                "applicationLabel": "Application",
+                "backButtonLabel": "BACK",
+                "duplicateNameHint": "Dashboard name already exists. Please use another name"
+            },
+            "groupManage": {
+                "title": "Manage Dashboard Groups",
+                "subTitle": "Add,Edit and Delete your dashboard groupings",
+                "name": "Dashboard Name",
+                "dafaultGroupName": "newGroup({0})",
+                "editGroup": "Edit Group",
+                "editGroupLabel": "Group Name",
+                "groupLabel": "Enter new group name",
+                "descLabel": "Group description",
+                "switchLabel": "Privacy Lock",
+                "deleteFirst": "You are about to delete \"{0}\" group containing {1} dashboards. ",
+                "deleteSecond": "All dashboards will be retained. You can't undo this action. ",
+                "deleteThird": "Do you wish to proceed?",
+                "priority": "Priority"
+            },
+            "editDashboard": {
+                "newGroup": "Create New Group",
+                "group": ["Create New Group"]
+            },
+            "saveTemplate": {
+                "title": "Save as New Dashboard Template",
+                "subTitle": "Add this dashboard to \"User Submitted Templates\".",
+                "label": "New Template Name",
+                "desc": "Description"
+            },
+            "export": {
+                "title": "Export CSV Reports for",
+                "subtitle": "export CSV"
+            },
+            "dashboardDelete": {
+                "title": "Are you sure ?",
+                "subTitle": "Delete {0} Confirmation",
+                "contentFront": "You are about to delete {0}",
+                "go": "Do you wish to proceed ?"
+            },
+            "userDelete": {
+                "title": "Are you sure ?",
+                "subTitle": "Delete {0} Confirmation",
+                "contentFront": "You are about to delete {0} user(s)",
+                "go": "Do you wish to proceed ?"
+            },
+            "userGroupDelete": {
+                "title": "Are you sure ?",
+                "subTitle": "Delete {0} Confirmation",
+                "contentFront": "You are about to delete {0} user group(s)",
+                "go": "Do you wish to proceed ?"
+            },
+            "accountDelete": {
+                "title": "Are you sure ?",
+                "subTitle": "Delete {0} Confirmation",
+                "contentFront": "You are about to delete {0} account(s)",
+                "go": "Do you wish to proceed ?"
+            },
+            "rename": {
+                "label": "Rename Dashboard",
+                "newGroup": "Create New Group"
+            },
+            "exit": {
+                "title": "Are you sure ?",
+                "content": "Are you sure you want to discard the changes? All your work on your dashboard will be lost.",
+                "positiveBtn": "Cancel",
+                "negativeBtn": "Exit without saving"
+            }
+        },
+        "dashboardLibrary": {
+            "header": {
+                "searchLabel": "SEARCH",
+                "searchPlaceHolder": "Search Dashboard"
+            },
+            "title": "Dashboard Library"
+        },
+        "simpleCard": {
+            "btnText": "View Dashboard",
+            "flowMoveText": "Move Dashboard",
+            "flowDuplicateText": "Duplicate Dashboard"
+        },
+        "ccms": {
+            "title": "ISC-GUI CCMS",
+            "addWidgetModalTitle": "Add Widget",
+            "addWidgetModalSubTitle": "Please complete all forms in all tabs to set up your widget.",
+            "addWidgetModalNagetiveButtonText": "CANCEL",
+            "addWidgetModalPositiveButtonText": "DONE",
+            "editWidgetModalTitle": "Edit Widget",
+            "editWidgetModalSubTitle": "Edit your widget's visualization and configuration.",
+            "editWidgetModalPositiveButtonText": "SAVE",
+            "visualTabLabel": "VISUALIZATION",
+            "propertiesTabLabel": "PROPERTIES",
+            "boardHeader": {
+                "download": "Download Dashboard CSV File",
+                "saveBoard": "Save Dashboard",
+                "editBoard": "Edit Dashboard",
+                "exitBoard": "Exit",
+                "exitEdit": "Exit Edit Mode",
+                "savAesTemplate": "Save As Template"
+            },
+            "exitRemider": {
+                "name": "Alarms Dashboard",
+                "group": "",
+                "open": false,
+                "title": "Are you sure ?",
+                "subTitle": "Delete Dashboard Confirmation",
+                "pageKey": "",
+                "pageName": "pageName",
+                "cancelText": "Cancel",
+                "submitText": "Exit dashboard without saving",
+                "content": "Are you sure you want to discard the changes? All your work on your dashboard will be lost."
+            },
+            "exitTemplate": {
+                "name": "Alarms Dashboard",
+                "group": "",
+                "open": false,
+                "title": "Are you sure ?",
+                "subTitle": "Delete Dashboard Confirmation",
+                "pageKey": "",
+                "pageName": "pageName",
+                "cancelText": "Cancel",
+                "submitText": "Exit dashboard without saving",
+                "content": "Are you sure you want to discard the changes? All your work on your dashboard will be lost."
+            },
+            "visualCentre": {
+                "categorySelectPlaceholder": "Choose Widget"
+            }
+        },
+        "header": {
+            "account": "Account",
+            "tenantLabel": "Tenant",
+            "userpanel_changePassword": "Change Password",
+            "userpanel_logout": "Logout",
+            "userpanel_settings": "Settings",
+            "defaultHeaderTitle": "Dashboards"
+        },
+        "navbar": {
+            "Dashboards": "Dashboards",
+            "Events": "Events",
+            "Alarms": "Alarms",
+            "Rules": "Rules",
+            "Devices": "Devices",
+            "Applications": "Applications",
+            "Logger": "Logger",
+            "Users": "Users",
+            "Accounts": "Accounts",
+            "DataExport": "Data Export"
+        },
+        "security": {
+            "validation": {
+                "required": "Must be required and cannot start with a space",
+                "userid": "a-z A-Z 0-9 . @ _ The length is between 3 and 49",
+                "username": "a-z A-Z 0-9 The length is between 3 and 99",
+                "textfield": "Any character, the length is between 0 and 128",
+                "textarea": "Any character, the length is between 0 and 255",
+                "password": "Must be include A-Z a-z 0-9 !@#$%^&*?. 8-20",
+                "email": "Example: Dk@ncs.com",
+                "number": "Must be enter number",
+                "phone": "e.g: +8602823265",
+                "confirmPassword": "The passwords entered are inconsistent"
+            },
+            "moduleName": "Users",
+            "group": {
+                "notAllowEditMessage": "This is a system generated user group. It is not allowed to be modified"
+            },
+            "limitSize": "Image file must be less than {0} KB",
+            "UserManagement": "User Management",
+            "users": {
+                "sendEmailToUser": "Click send activation Email to user",
+                "notAllowEditMessage": "System User Is Not Allowed To Modified",
+                "Users": "Users",
+                "SearchByUserID": "Search by User Id",
+                "ViewUser": "View User",
+                "AddUser": "Add User",
+                "EditUser": "Edit User",
+                "UploadPhoto": "Upload Photo",
+                "UserID": "User ID",
+                "UserName": "User Name",
+                "FirstName": "First Name",
+                "LastName": "Last Name",
+                "Email": "Email",
+                "Mobile": "Mobile",
+                "MembershipDuration": "Membership Duration",
+                "Password": "Password",
+                "ConfirmPassword": "Confirm Password",
+                "Group": "Group",
+                "UserGroup": "User Group",
+                "Status": "Status",
+                "NewPassword": "New Password",
+                "ResetPassword": "Reset Password"
+            },
+            "userGroups": {
+                "UserGroups": "User Groups",
+                "SearchByGroupName": "Search by Group Name",
+                "AddUserGroup": "Add User Group",
+                "EditUserGroup": "Edit User Group",
+                "ViewUserGroup": "View User Group",
+                "GroupName": "Group Name",
+                "Description": "Description",
+                "ApplicationName": "Application Name",
+                "Permissions": "Permissions",
+                "Applicatinos": "APPLICATIONS",
+                "SelectedApplications": "Selected Applications",
+                "ReadOnly": "Read Only",
+                "User": "Users",
+                "UserName": "User Name"
+            }
+        },
+        "activition": {
+            "title": "Activate your account",
+            "subTitle": "Please Enter Your Password.",
+            "activeButtonText": "Activate Now",
+            "hasBeenActivated": "If your account has been activated, please ",
+            "SignIn": "Sign in"
+        },
+        "forgotPassword": {
+            "title": "Reset your password",
+            "subTitle": "Please Enter Your Password.",
+            "activeButtonText": "Reset password Now",
+            "hasBeenActivated": "If your account has been reset, please ",
+            "SignIn": "Sign in"
+        },
+        "changePassword": {
+            "title": "Change your password",
+            "changePasswordSuccess": "Your password has been changed, please sign in again",
+            "firstLogin": "It's your first time sign in, please reset your password!",
+            "userExpiry": "Your password has expired, please reset!",
+            "subTitle": "Please Enter Your Password.",
+            "activeButtonText": "Submit",
+            "hasBeenActivated": "If your password has been changed, please ",
+            "SignIn": "Sign in"
+        },
+        "logger": {
+            "Logger": "Logger"
+        },
+        "account": {
+            "Accounts": "Accounts",
+            "AddAccount": "Add Account",
+            "EditAccount": "Edit Account",
+            "ViewAccount": "View Account",
+            "AccountName": "Account Name",
+            "Description": "Description",
+            "IoTGateway": "IoT Gateway",
+            "AccountID": "Account ID",
+            "Status": "Status",
+            "searchByAccountName": "Search By Account name"
+        },
+        "application": {
+            "dialog": {
+                "title": "Delete",
+                "deleteMsg": "You are trying to delete Application(s)/Address(es), are you sure?",
+                "cancel": "Cancel",
+                "ok": "Yes"
+            },
+            "sagasError": {
+                "floatTab": {
+                    "getAppSchemaError": "Can not get application schema from system configuration, please try later.",
+                    "incorrectSchemaError": "Incorrect schema found from system configuration, please contact administrator.",
+                    "getAddDetailError": "Can not get address/application detail from topology, please try later.",
+                    "getdvcDetailError": "Can not get device detail from topology, please try later.",
+                    "addError": "Can not add address/application now, please try later.",
+                    "updateError": "Can not update address/application now, please try later.",
+                    "addLocError": "Can not add location now, please try later.",
+                    "uploadImgError": "Can not upload Image now, please try later."
+                },
+                "grid": {
+                    "deleteError": "Can not delete application/address right now, please try later.",
+                    "getResourcePathError": "Can not get data from resourcepath api, please try later."
+                }
+            }
+        },
+        "topologyMGMT": {
+            "dialog": {
+                "title": "Delete",
+                "deleteDevice": "You are trying to delete Device(s), are you sure?",
+                "deleteDeviceType": "You are trying to delete DeviceType(s), are you sure?",
+                "cancel": "Cancel",
+                "ok": "Yes"
+            }
+        },
+        "rule": {
+            "dialog": {
+                "title": "Delete Rule",
+                "deleteMsg": "You are trying to delete Rule(s), are you sure?",
+                "cancel": "Cancel",
+                "ok": "Yes"
+            },
+            "common": {
+                "deleteSuccess": "Delete {0} success!",
+                "addSuccess": "Add {0} success!",
+                "updateSuccess": "Update {0} success!",
+                "key": "Key",
+                "value": "Value",
+                "commonSelect": "commonselect",
+                "clear": "clear",
+                "defaultPageSize": "Default Page Size",
+                "defaultSort": "Default Sort",
+                "defaultAsc": "Default Asc",
+                "title": "Title",
+                "subTitle": "Sub-title",
+                "availableColumns": "Available Columns",
+                "defaultSelectedColumns": "Default Selected Columns",
+                "multiSelection": "Multi-Selection",
+                "viewInfo": "This is table view, development later.",
+                "emptyMsg": "No data to display",
+                "operator": "Operator",
+                "previousPage": "Previous Page",
+                "nextPage": "Next Page",
+                "searchDevice": "Search Device",
+                "searchDeviceType": "Search DeviceType",
+                "select": "Select",
+                "deviceType": "Device Type",
+                "device": "Device",
+                "ruleInfo": "RULE INFO",
+                "conditions": "CONDITIONS",
+                "actions": "ACTIONS",
+                "newRule": "New Rule",
+                "saveEmail": "Save Email",
+                "startFrom": "Start From",
+                "until": "Until",
+                "expand": "Expand",
+                "saveSMS": "Save SMS",
+                "searchByName": "Search By Rule Name",
+                "addRule": "Add Rule",
+                "columns": "Columns",
+                "refresh": "Refresh"
+            },
+            "sagasError": {
+                "deviceError": "Can not get data from topology. Please try later.",
+                "deviceModelError": "Can not get parameters list from topology. Please try later.",
+                "ruleSchemaError": "Can not get rule schema in system configration. Pelease try later.",
+                "actionSchemaError": "Can not get action schema in system configration. Pelease try later.",
+                "ruleDetailError": "Can not get rule details. Pelease try later.",
+                "rulesListError": "Can not get rule list. Pelease try later.",
+                "deleteRuleError": "Can not delete. Pelease try later.",
+                "updateRuleError": "Can not update this rule. Pelease try later.",
+                "addRuleError": "Can not add this rule. Pelease try later."
+            }
+        },
+        "alarm": {
+            "form": {
+                "warning": "Please complete the search criteria!"
+            },
+            "ws": "New Alarm generated! Please switch to Stream Mode to see."
+        },
+        "event": {
+            "form": {
+                "warning": "Please complete the search criteria!"
+            },
+            "ws": "New Event generated! Please switch to Stream Mode to see."
+        },
+        "sop": {
+            "moduleName": "Sop Management",
+            "title": "Sop(s)",
+            "dialog": {
+                "title": "Delete Sop",
+                "deleteMsg": "You are trying to delete Sop(s), are you sure?",
+                "cancel": "Cancel",
+                "ok": "Yes"
+            },
+            "common": {
+                "Search": "search",
+                "File": "File",
+                "AlarmType": "Alarm Type",
+                "ProcessDefinitionId": "Process Definition Id",
+                "StartTime": "Start Time",
+                "EndTime": "End Time",
+                "SopId": "Sop Id",
+                "SopDescription": "Sop Description",
+                "SelectTime": "Select Time",
+                "Action": "Action",
+                "AddSop": "Add a new sop",
+                "EditSop": "Edit sop",
+                "ViewSop": "View sop"
+            },
+            "ccms": {
+                "Title": "Title",
+                "SubTitle": "Sub-title",
+                "DefaultPageSize": "Default Page Size",
+                "AvailableColumns": "Available Columns",
+                "DefaultSelectedColumns": "Default Selected Columns",
+                "DefaultSort": "Default Sort",
+                "DefaultAsc": "Default Asc"
+            },
+            "fileXml": "Upload file type must be xml!",
+            "fileError": "File is not provided. Please provide file.",
+            "deleteSuccess": "Delete Sop(s) Success!",
+            "addSuccess": "Add Sop Success!",
+            "updateSuccess": "Update Sop Success!"
+        },
+        "workflow": {
+            "moduleName": "Workflow",
+            "attachments": {
+                "name": "Attachments",
+                "moduleName": "Workflow Attachments",
+                "attachmentsUploadSuccess": "Upload Success!",
+                "attachmentsRemoveSuccess": "Remove Success!",
+                "attachmentsDownSuccess": "Download Success!",
+                "Download": "Download",
+                "Remove": "Remove"
+            },
+            "currentTask": {
+                "moduleName": "Workflow CurrentTask",
+                "workflowName": "workflow",
+                "submitSuccess": "Submit Success!"
+            },
+            "task": {
+                "taskTabName": "Tasks",
+                "BackgroundJobName": "Background Job",
+                "escalateTabName": "escalate"
+            },
+            "recordList": {
+                "name": "records",
+                "listTitle": "Operation record",
+                "recordInfoName": "basic info"
+            },
+            "reassign": {
+                "name": "reassign",
+                "multipleSelect": "Multiple Select",
+                "userid": "User ID",
+                "username": "Name & Email",
+                "groups": "Group"
+            }
+        },
+        "dataExport": {
+            "sagasError": {
+                "requestCreateConfig": "Can not get data from DataExport. Please try later.",
+                "getExportParam": "Can not get data from Export Parameters. Please try later.",
+                "getDisplayVal": "Can not get data from Display Value. Please try later.",
+                "getDefaultTableData": "Can not get data from DataExport. Please try later.",
+                "getDataSearch": "Can not Create Success. Please try later.",
+                "downloadTask": "Can not Download Success. Please try later.",
+                "reflushTable": "Can not Refresh Success. Please try later."
+            },
+            "deviceTypes": "Device Types",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "exportButton": "Export",
+            "view": "View",
+            "noDataToDisplay": "No data to display.",
+            "noDate": "No Data",
+            "dataExportTask": "Data Export Task(s)",
+            "exportSuccess": "Add Export Data task successfully",
+            "noSelectConfig": "Please select device type.",
+            "noSelectRange": "Please select correct date range.",
+            "sameExportData": "Same Export Data task already exists.",
+            "exportTableHead": {
+                "taskID": "Task ID",
+                "submitTime": "Submit Time",
+                "submitBy": "Submit By",
+                "status": "Status",
+                "viewResult": "View Result"
+            },
+            "dialog": {
+                "viewOrDownloadFile": "View or Download File:",
+                "noFileExported": "No file exported.",
+                "containerSasUrl": "Container SAS URL:",
+                "copyButton": "[ Copy to clipboard ]",
+                "pathFolder": "Path Folder:",
+                "fileSasUrl": "File SAS URL:",
+                "download": "[ download ]",
+                "close": "Close"
+            }
+        },
+        "chart": {
+            "sagasError": {
+                "topologeError": "Can not get data from topology. Please try later.",
+                "deviceModelError": "Can not get reading list from topology. Please try later.",
+                "topologyStatisticError": "Can not get data from TopologyStatistic. Please try later.",
+                "alarmError": "Can not get data from Alarm. Pelease try later.",
+                "eventError": "Can not get data from Event. Pelease try later.",
+                "kpiPreviewError": "Can not get KPI preview data. Pelease try later.",
+                "kpiServiceError": "Can not get KPI service data. Pelease try later.",
+                "kpiServiceListError": "Can not get KPI service list. Pelease try later.",
+                "exportAlmEvtError": "Can not Export Chart. Pls try later."
+            },
+            "editView": {
+                "title": {
+                    "inputTitle": "Title"
+                },
+                "source": {
+                    "selectTitle": "Source"
+                },
+                "type": {
+                    "selectTitle": "Type",
+                    "lineOpt": "Line",
+                    "areaOpt": "Area",
+                    "barOpt": "Bar",
+                    "pieOpt": "Pie",
+                    "donutOpt": "Donut",
+                    "gaugeOpt": "Gauge",
+                    "switchTitle": "Set Chart Type Seprately"
+                },
+                "theme": {
+                    "selectTitle": "Color Theme",
+                    "defaultOpt": "default",
+                    "skittlesOpt": "Skittles",
+                    "shineOpt": "Shine"
+                },
+                "legendPosition": {
+                    "selectTitle": "Legend Position",
+                    "topOpt": "Top",
+                    "bottomOpt": "Bottom",
+                    "leftOpt": "Left",
+                    "rightOpt": "Right"
+                },
+                "device": {
+                    "selectTitle": "Select Device",
+                    "placeholder": "Search By Device Name/Displayname"
+                },
+                "reading": {
+                    "selectTitle": "Readings"
+                },
+                "readingLabel": {
+                    "switchTitle": "Customize axes Label",
+                    "readingSelect": "Reading",
+                    "labelInput": "Customize Label"
+                },
+                "timeMode": {
+                    "selectTitle": "Time Mode",
+                    "realTimeOpt": "realTime",
+                    "dateTimeOpt": "dateTime"
+                },
+                "timeRange": {
+                    "selectTitle": "Time Range",
+                    "lastOpt": "Last",
+                    "minutesOpt": "Minutes",
+                    "hourOpt": "Hours",
+                    "dayOpt": "Days",
+                    "monthOpt": "Months"
+                },
+                "timeFormat": {
+                    "selectTitle": "Time Format"
+                },
+                "customizeReading": {
+                    "switchTitle": "Set Customize Reading",
+                    "readingSelect": "Reading",
+                    "oprationSelect": "Operation"
+                },
+                "axisLabel": {
+                    "switchTitle": "Customize Y-axis Label",
+                    "readingSelect": "Reading",
+                    "labelInput": "Customize Label"
+                },
+                "combineAxes": {
+                    "switchTitle": "Combine Multiple Reading-axes"
+                },
+                "autoRefresh": {
+                    "switchTitle": "Set Auto Refresh",
+                    "selectTitle": "Auto Refresh Duration",
+                    "thirtySecOpt": "30 Seconds",
+                    "sixtySecOpt": "60 Seconds",
+                    "ninetySecOpt": "90 Seconds"
+                },
+                "markLine": {
+                    "switchTitle": "Mark Line",
+                    "readingTitle": "Reading",
+                    "nameTitle": "Name",
+                    "valueTitle": "Value"
+                },
+                "switchXY": {
+                    "switchTitle": "Switch X and Y axes"
+                },
+                "dataZoom": {
+                    "switchTitle": "Enable DataZoom"
+                },
+                "grouping": {
+                    "selectTitle": "Grouping",
+                    "noneOpt": "None",
+                    "eventTypeOpt": "Event Type",
+                    "severityOpt": "Severity",
+                    "topologyIdOpt": "Topology ID",
+                    "alarmTypeOpt": "Alarm Type",
+                    "alarmStateOpt": "Alarm State",
+                    "ownerOpt": "Owner"
+                },
+                "aggregation": {
+                    "selectTitle": "Aggregation",
+                    "noneOpt": "None",
+                    "countOpt": "Count",
+                    "avgOpt": "Average",
+                    "sumOpt": "Sum",
+                    "maxOpt": "Max",
+                    "minOpt": "Min"
+                },
+                "interval": {
+                    "selectTitle": "Interval",
+                    "minsOpt": "Minutes",
+                    "hoursOpt": "Hours",
+                    "daysOpt": "Days",
+                    "weeksOpt": "Weeks",
+                    "monthsOpt": "Months"
+                },
+                "resourceGrouping": {
+                    "selectTitle": "Resource Grouping",
+                    "deviceStatusOpt": "Device Status",
+                    "deviceTypeOpt": "Device Type",
+                    "addressOpt": "Application/Address"
+                },
+                "gauge": {
+                    "minValTitle": "Min Value",
+                    "maxValTitle": "Max Value",
+                    "minMaxError": "Min and Max value should not be empty, and Max value should be greater than Min value",
+                    "thresholdTitle": "Threshold"
+                },
+                "kpi": {
+                    "serviceTitle": "Select Service",
+                    "xAxisTitle": "Select X axis",
+                    "yAxisTitle": "Select Y axis"
+                }
+            }
+        },
+        "timeline": {
+            "sagasError": {
+                "alarmsError": "Can not get List from Alarm. Pelease try later.",
+                "acknowlageAlarmError": "Can not acknowlage this Alarm. Pls try later."
+            }
+        }
+    }
+}

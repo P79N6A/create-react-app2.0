@@ -1,0 +1,80 @@
+{
+    "Aplication Module": {
+        "typeid": 1,
+        "datatype": "string",
+        "size": 25,
+        "defaultvalue": "Aplication Module",
+        "valueregex": " a-zA-Z0-9_",
+        "mandatory": true,
+        "operations": "RW",
+        "units": null,
+        "multiselect": "single",
+        "enum": null,
+        "displayname": "Aplication Module",
+        "attributes": [
+            {
+                "temperature": {
+                    "datatype": "double",
+                    "size": 10,
+                    "defaultvalue": 26.0,
+                    "valueregex": "a-zA-Z0-9_.",
+                    "mandatory": true,
+                    "operations": "RW",
+                    "units": "C",
+                    "multiselect": "single",
+                    "displayname": "Temperature Value",
+                    "enum": null
+                }
+            }
+        ]
+    },
+    "createDeviceSchema": {
+        "devicename": {
+            "datatype": "string",
+            "size": 25,
+            "defaultvalue": null,
+            "valueregex": "a-zA-Z0-9_",
+            "mandatory": true,
+            "operations": "RW",
+            "units": null,
+            "multiselect": "single",
+            "displayname": "Device Name",
+            "enum": null
+        },
+        "devicedisplayname": {
+            "datatype": "string",
+            "size": 25,
+            "defaultvalue": null,
+            "valueregex": "a-zA-Z0-9_",
+            "mandatory": true,
+            "operations": "RW",
+            "units": null,
+            "multiselect": "single",
+            "displayname": "Device Display Name",
+            "enum": null
+        },
+        "deviceapplication": {
+            "datatype": "string",
+            "size": 25,
+            "defaultvalue": null,
+            "valueregex": "a-zA-Z0-9_",
+            "mandatory": true,
+            "operations": "RW",
+            "units": null,
+            "multiselect": "single",
+            "displayname": "Application",
+            "enum": null
+        },
+        "devicelocation": {
+            "datatype": "string",
+            "size": 25,
+            "defaultvalue": null,
+            "valueregex": "a-zA-Z0-9.",
+            "mandatory": true,
+            "operations": "RW",
+            "multiselect": "single",
+            "displayname": "Location",
+            "enum": null
+        }
+    }
+}

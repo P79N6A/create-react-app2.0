@@ -1,0 +1,62 @@
+{
+    "filterConfigs": {
+        "searchByPathandName": {
+            "filterDisplayName": "Search By Device Name",
+            "filterType": "input",
+            "searchField": ["physical.displayName", "physical.name"],
+            "operator": ["LIKE", "LIKE"],
+            "defaultValue": ""
+        },
+        "searchByDevicetype": {
+            "filterDisplayName": "Search By Device Type Name",
+            "filterType": "input",
+            "searchField": ["devicemodel.name"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "Search By Device Type": {
+            "filterDisplayName": "Search By Device Type",
+            "filterType": "input",
+            "searchField": ["devicemodel.displayName"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "Status": {
+            "filterDisplayName": "Status",
+            "filterType": "select",
+            "values": ["Online", "Offline", "Error", "Warning", "Unknown"],
+            "searchField": ["property.sensorstatus"],
+            "operator": ["IN"],
+            "defaultValue": ""
+        },
+        "Device Type": {
+            "filterDisplayName": "Device Type",
+            "filterType": "select",
+            "values": [],
+            "searchField": ["devicemodel.displayName"],
+            "operator": ["IN"],
+            "defaultValue": ""
+        },
+        "Application ID": {
+            "filterDisplayName": "Application ID",
+            "filterType": "input",
+            "searchField": ["address.resourcePath"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "IotTopologyId": {
+            "filterDisplayName": "Real World Resource Name",
+            "filterType": "input",
+            "searchField": ["physical.iotTopologyId"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "Location": {
+            "filterDisplayName": "Location",
+            "filterType": "input",
+            "searchField": ["location.displayName"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "metadata": {
+        "author": "HL",
+        "version": "1.0.0"
+    },
+    "layout": {
+        "padding": true,
+        "container": true,
+        "header": [
+            true,
+            {
+                "title": "Big Data Export"
+            }
+        ],
+        "navbar": true
+    },
+    "modules": [
+        {
+            "identify": "dataSearch",
+            "uri": "/dataSearch",
+            "material-key": "",
+            "props": {}
+        }
+    ]
+}

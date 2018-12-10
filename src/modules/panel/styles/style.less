@@ -1,0 +1,152 @@
+.panel_container {
+    height: 100%;
+    width: 100%;
+    .panel_set_mode {
+        .content {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .panel_color_select {
+        .ant-popover-inner-content {
+            padding: 0;
+        }
+    }
+    .panel_icons_wrap {
+        .ant-popover-inner-content {
+            padding: 0;
+        }
+        .title_inner {
+            display: flex;
+            justify-content: space-between;
+            .anticon {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.panel_arguments {
+    .title {
+        color: #fff;
+    }
+    .select_wrap {
+        width: 100%;
+    }
+    .panel_title_set {
+        width: 100%;
+        margin-top: 16px;
+        .title_input {
+            width: 100%;
+        }
+    }
+    #date_picker {
+        .reset() {
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.54);
+        }
+        .ant-cascader-picker {
+            .reset;
+        }
+        .ant-input {
+            .reset;
+        }
+        .ant-cascader-picker-clear {
+            .reset;
+        }
+        .ant-calendar-picker-clear {
+            .reset;
+        }
+    }
+}
+
+.title_inner {
+    display: flex;
+    justify-content: space-between;
+    .anticon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.panel_icons_box {
+    width: 352px;
+    input {
+        text-indent: 10px;
+    }
+    .icons_box_content {
+        max-height: 250px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        .panel_icon_item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3b3b3b;
+            margin: 2px;
+            padding: 2px;
+            color: #fff;
+            &:hover {
+                span {
+                    color: aqua;
+                }
+            }
+        }
+        .icon_item_active {
+            color: aqua;
+        }
+        .icon_not_found {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.panel_set_mode {
+    .panel_select_wrap {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.panel_box_wrap {
+    .common_card {
+        width: 100%;
+        height: 100%;
+    }
+}
+.panel_topology {
+    .panel_topology_search {
+        margin-top: 8px;
+    }
+}
+
+.panel_color_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .remind{
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .mark_icon{
+        width: 30px;
+        box-shadow: none;
+        margin: 6px 0;
+        min-width: 50px;
+        background-color: transparent;
+        min-height: 26px;
+        &:hover{
+            background-color: transparent;   
+        }
+    }
+}

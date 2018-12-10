@@ -1,0 +1,295 @@
+{
+    "metadata": {
+        "author": "WR",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Rules"
+            }
+        ]
+    },
+    "material-key": "ISC_WEB_COMP_RULE_R_RULE_LIST",
+    "modules": [
+        {
+            "identify": "rule",
+            "material-key": "ISC_WEB_COMP_RULE_R_RULE_LIST",
+            "uri": "/rule",
+            "props": {
+                "title": "List of Rule",
+                "subTitle": "",
+                "pageLimit": 10,
+                "pageSize": [10, 20, 50, 100, 200],
+                "availableColumnsConfig": [
+                    {
+                        "columnName": "Rule Name",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Description",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Modified By",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Last Modified",
+                        "defaultSelect": true
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "columnName": "Rule Name",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Description",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Modified By",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Last Modified",
+                        "defaultSelect": true
+                    }
+                ],
+                "tabTypes": ["Info", "Conditions", "Actions"],
+                "filterConfig": [
+                    {
+                        "filterName": "Rule Name",
+                        "defaultValue": []
+                    }
+                ],
+                "sortLists": [
+                    {
+                        "displayName": "Rule Name",
+                        "sortName": "configname"
+                    }
+                ],
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "ruleDisplayType": "List",
+                "multipleSelect": true,
+                "orderBy": "configname",
+                "orderDirection": "asc",
+                "orderDisplayName": "Rule Name",
+                "fullScreen": false
+            }
+        },
+        {
+            "identify": "ccmsEx",
+            "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARD",
+            "uri": "/ccmsEx",
+            "props": {
+                "draggableCancel": "#widget_container_content",
+                "actions": [
+                    {
+                        "material-key": "ISC_WEB_COMP_C_CCMS_ACTION_EDIT",
+                        "icon": "edit",
+                        "name": "edit",
+                        "tooltip": "EDIT",
+                        "state": 0,
+                        "active": true
+                    },
+                    {
+                        "material-key": "ISC_WEB_COMP_C_CCMS_ACTION_SAVE",
+                        "icon": "save",
+                        "name": "save",
+                        "tooltip": "SAVE",
+                        "state": 1,
+                        "active": true
+                    }
+                ],
+                "widgetAction": [
+                    {
+                        "icon": "edit",
+                        "id": "edit",
+                        "label": "EDIT",
+                        "mk": "ISC_WEB_COMP_U_CCMS_WIDGET_CONTAINER_BUTTON_EDIT"
+                    },
+                    {
+                        "icon": "delete",
+                        "id": "delete",
+                        "label": "DELETE",
+                        "mk": "ISC_WEB_COMP_U_CCMS_WIDGET_CONTAINER_BUTTON_DELETE"
+                    }
+                ],
+                "actionButtons": [
+                    {
+                        "label": "Delete Dashboard",
+                        "id": "delete",
+                        "icon": "delete",
+                        "material-key": "ISC_WEB_FUNC_U_CCMS_RENAME_DASHBOARD"
+                    },
+                    {
+                        "label": "Rename Dashboard",
+                        "id": "rename",
+                        "icon": "spellcheck",
+                        "material-key": "ISC_WEB_FUNC_C_CCMS_RENAME_WIDGET"
+                    },
+                    {
+                        "label": "Add Widget",
+                        "id": "addWidget",
+                        "icon": "important_devices",
+                        "material-key": "ISC_WEB_FUNC_C_CCMS_ADD_WIDGET"
+                    }
+                ]
+            }
+        },
+        {
+            "identify": "modals",
+            "material-key": "ISC_WEB_COMP_U_CCMS_MODALS",
+            "uri": "/ccmsModal",
+            "props": {
+                "add": {
+                    "mode": "add",
+                    "title": "Add New Dashboard For Rule",
+                    "headerActions": [
+                        {
+                            "id": "switch",
+                            "icon": "keyboard_backspace",
+                            "active": true,
+                            "target": 0,
+                            "state": 1
+                        },
+                        {
+                            "id": "nagetive",
+                            "icon": "close",
+                            "active": true
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "id": "nagetive",
+                            "text": "cancel",
+                            "active": true,
+                            "state": 0
+                        },
+                        {
+                            "id": "positive",
+                            "text": "next",
+                            "active": true,
+                            "state": 0
+                        },
+                        {
+                            "id": "switch",
+                            "text": "back",
+                            "active": true,
+                            "target": 0,
+                            "state": 1
+                        },
+                        {
+                            "id": "positive",
+                            "text": "finish",
+                            "active": true,
+                            "state": 1
+                        }
+                    ],
+                    "props": {
+                        "trigger": "pop",
+                        "steps": [
+                            {
+                                "label": "Select a dashboard template",
+                                "step": 0,
+                                "id": "step1"
+                            },
+                            {
+                                "label": "Enter youir dashboard detail",
+                                "step": 1,
+                                "id": "step2"
+                            }
+                        ],
+                        "templateCategories": [
+                            {
+                                "id": "default",
+                                "label": "Basic Templates"
+                            },
+                            {
+                                "id": "user",
+                                "label": "User Submitted Templates"
+                            }
+                        ]
+                    }
+                },
+                "reminder": {
+                    "mode": "reminder",
+                    "title": "Are you sure ?",
+                    "headerActions": [
+                        {
+                            "id": "nagetive",
+                            "icon": "close",
+                            "active": true
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "id": "nagetive",
+                            "text": "cancel",
+                            "active": true
+                        },
+                        {
+                            "id": "positive",
+                            "text": "exit dashboard without saving",
+                            "active": true
+                        }
+                    ]
+                },
+                "delete": {
+                    "mode": "delete",
+                    "title": "Are You Sure ?",
+                    "headerActions": [
+                        {
+                            "id": "nagetive",
+                            "icon": "close",
+                            "active": true
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "id": "positive",
+                            "text": "ok",
+                            "active": true
+                        }
+                    ]
+                },
+                "rename": {
+                    "mode": "rename",
+                    "title": "Rename Dashboard",
+                    "headerActions": [
+                        {
+                            "id": "nagetive",
+                            "icon": "close",
+                            "active": true
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "id": "nagetive",
+                            "text": "close",
+                            "active": true
+                        },
+                        {
+                            "id": "positive",
+                            "text": "submit",
+                            "active": true
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

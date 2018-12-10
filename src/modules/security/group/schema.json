@@ -1,0 +1,44 @@
+{
+    "grpname": {
+        "default": "Group Name",
+        "displayname": "Group Name",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": "^[^ ]",
+        "valueerror": "Must be required and cannot start with a space",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input"
+    },
+    "grpdescription": {
+        "default": "Description",
+        "displayname": "Description",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input"
+    },
+    "application": {
+        "default": "Application",
+        "displayname": "Application",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "application"
+    }
+}

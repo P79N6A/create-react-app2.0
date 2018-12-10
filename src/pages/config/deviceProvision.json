@@ -1,0 +1,23 @@
+{
+    "metadata": {
+        "author": "XL",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Device Provisioning"
+            }
+        ]
+    },
+    "material-key": "ISC_WEB_PAGE_C_TOPOLOGY_DEVICE_PROVISION",
+    "modules": [
+        {
+            "identify": "deviceProvision",
+            "uri": "/topologyManagement",
+            "props": {}
+        }
+    ]
+}

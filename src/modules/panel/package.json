@@ -1,0 +1,143 @@
+[
+    {
+        "metadata": {
+            "category": "TEXT TABLE",
+            "element": {
+                "uri": "/panel"
+            },
+            "desc": "No. of alarms",
+            "compId": "number-of-alarms",
+            "name": "No. of alarms"
+        },
+        "configValue": {
+            "title": "No. of alarms",
+            "type": "no-of-alarm",
+            "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_ALARM",
+            "settings":{
+                "exportable": true
+            },
+            "layout": {
+                "w": 7,
+                "h": 4,
+                "maxW": 22,
+                "maxH": 16,
+                "minW": 6,
+                "minH": 3
+            },
+            "properties": {
+                "title": "Alarms in last 7 Days",
+                "type": "Alarm Panel",
+                "backgroundColor": "#f57f17",
+                "icon": "warning",
+                "iconColor": "white",
+                "count": "0"
+            },
+            "snapshoot": ""
+        }
+    },
+    {
+        "metadata": {
+            "category": "TEXT TABLE",
+            "element": {
+                "uri": "/panel"
+            },
+            "desc": "No. of devices",
+            "compId": "no-of-devices",
+            "name": "No. of devices"
+        },
+        "configValue": {
+            "title": "No. of devices",
+            "type": "no-of-devices",
+            "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_DEVICE",
+            "settings":{
+                "exportable": false
+            },
+            "layout": {
+                "w": 7,
+                "h": 4,
+                "maxW": 22,
+                "maxH": 16,
+                "minW": 6,
+                "minH": 3
+            },
+            "properties": {
+                "title": "Devices",
+                "backgroundColor": "lightblue",
+                "icon": "donut_small",
+                "iconColor": "white",
+                "type": "Device Panel"
+            },
+            "snapshoot": ""
+        }
+    },
+    {
+        "metadata": {
+            "category": "TEXT TABLE",
+            "element": {
+                "uri": "/panel"
+            },
+            "desc": "Device Reading Panel",
+            "compId": "device-reading-panel",
+            "name": "Device Reading Panel"
+        },
+        "configValue": {
+            "title": "Device Reading Panel",
+            "type": "device-reading-panel",
+            "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_DEVICE_READING",
+            "settings":{
+                "exportable": false
+            },
+            "layout": {
+                "w": 7,
+                "h": 4,
+                "maxW": 22,
+                "maxH": 16,
+                "minW": 6,
+                "minH": 3
+            },
+            "properties": {
+                "title": "device readings",
+                "backgroundColor": "#00b8d4",
+                "icon": "developer_board",
+                "iconColor": "white",
+                "type": "Device Reading Panel"
+            },
+            "snapshoot": ""
+        }
+    },
+    {
+        "metadata": {
+            "category": "TEXT TABLE",
+            "element": {
+                "uri": "/panel"
+            },
+            "desc": "events in last 7 days",
+            "compId": "event-panel",
+            "name": "Event Panel"
+        },
+        "configValue": {
+            "title": "Event Panel",
+            "type": "event-panel",
+            "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_EVENT",
+            "settings":{
+                "exportable": true
+            },
+            "layout": {
+                "w": 7,
+                "h": 4,
+                "maxW": 22,
+                "maxH": 16,
+                "minW": 6,
+                "minH": 3
+            },
+            "properties": {
+                "title": "events in last 7 days",
+                "backgroundColor": "#01579b",
+                "icon": "event",
+                "iconColor": "white",
+                "type": "Event Panel"
+            },
+            "snapshoot": ""
+        }
+    }
+]

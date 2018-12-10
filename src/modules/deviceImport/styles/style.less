@@ -1,0 +1,103 @@
+.typotitle {
+    width: 85% !important;
+}
+
+.fa {
+    color: #dcdcdc;
+}
+
+.iconButton {
+    background: #4e4e4e;
+    box-shadow: none;
+}
+
+.iconButton:hover {
+    background: rgba(220, 220, 220, 0.08);
+}
+
+.tableBox {
+    height: calc(100% - 56px);
+    overflow: auto;
+    position: relative;
+}
+.importDrawer {
+    height: 100%;
+    width: 550px;
+}
+.importButton {
+    margin: 20px 20px 20px 0px;
+}
+
+.import-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    min-width: 550px;
+    min-height: 300px;
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .list-header {
+            width: 100%;
+            .listheader-row {
+                width: 100%;
+                .filenameCell {
+                    width: 20%;
+                }
+                .uploadtimeCell {
+                    width: 15%;
+                }
+                .modifiedtimeCell {
+                    width: 15%;
+                }
+                .statusCell {
+                    width: 20%;
+                }
+                .remarksCell {
+                    width: 30%;
+                }
+            }
+        }
+        .listPanel {
+            position: relative;
+            width: 100%;
+            height: calc(100% - 135px);
+            overflow-x: auto;
+            overflow-y: scroll;
+            .filenameCell {
+                width: 20%;
+            }
+            .uploadtimeCell {
+                width: 15%;
+            }
+            .modifiedtimeCell {
+                width: 15%;
+            }
+            .statusCell {
+                width: 20%;
+            }
+            .remarksCell {
+                width: 30%;
+            }
+        }
+        .progress-panel {
+            margin-top: 20px;
+        }
+    }
+}
+
+.ant-upload-list {
+    .ant-upload-list-item {
+        color: #dcdcdc;
+        .ant-upload-list-item-info {
+            .anticon-paper-clip {
+                color: #dcdcdc;
+            }
+        }
+    }
+}
+
+.searchSelect {
+    width: 100% !important;
+}

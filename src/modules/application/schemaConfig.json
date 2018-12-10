@@ -1,0 +1,24 @@
+{
+    "applicationConfig": [
+        {
+            "displayKey": "application",
+            "jsonpath": "$..application.values"
+        },
+        {
+            "displayKey": "address",
+            "jsonpath": "$..address.values"
+        }
+    ],
+    "deviceConfig": [
+        {
+            "displayKey": "device",
+            "jsonpath": "$..deviceSchema.values"
+        }
+    ],
+    "device-typesConfig":[
+        {
+            "displayKey": "deviceproperty",
+            "jsonpath": "$..devicetype.deviceproperty.values"
+        }
+    ]
+}

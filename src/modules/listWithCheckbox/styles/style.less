@@ -1,0 +1,80 @@
+.checkbox_item() {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    font-size: 14px;
+    height: 100%;
+}
+
+.list_checkbox_wrap {
+    background-color: #fff;
+    display: none;
+    .list_checkbox_title {
+        height: 40px;
+        line-height: 40px;
+        background-color: rgba(42, 51, 75, 0.85);
+        .ant-checkbox-wrapper {
+            width: 100%;
+            .ant-checkbox {
+                float: left;
+                margin: 13px 20px 0 20px;
+            }
+        }
+        span {
+            color: #cfcfcf;
+            font-size: 16px;
+        }
+    }
+    .list_checkbox_body {
+        width: 100%;
+        .ant-checkbox-wrapper {
+            width: 100%;
+            .ant-checkbox {
+                float: left;
+                margin: 8px 20px 0 20px;
+            }
+        }
+        .ant-list-item {
+            padding: 0;
+            height: 30px;
+            line-height: 30px;
+        }
+        .ant-checkbox-group {
+            width: 100%;
+        }
+    }
+    .alarm_sentdatetime {
+        .checkbox_item();
+        width: 160px;
+    }
+    .alarm_alarm_type {
+        .checkbox_item();
+        width: 100px;
+    }
+    .alarm_source {
+        .checkbox_item();
+        width: 240px;
+        margin-right: 20px;
+    }
+    .alarm_note {
+        .checkbox_item();
+        width: 140px;
+        margin-right: 20px;
+    }
+    .alarm_owner {
+        .checkbox_item();
+        width: 140px;
+    }
+    .alarm_state {
+        .checkbox_item();
+        width: 140px;
+    }
+    .ant-pagination {
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        text-align: right;
+        padding: 4px 0;
+    }
+}

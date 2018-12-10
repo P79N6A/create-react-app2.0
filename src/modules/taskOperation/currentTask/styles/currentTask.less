@@ -1,0 +1,316 @@
+.showScrollbar{
+    // flex: 1;
+    height: calc(100% - 32px);
+    overflow: auto;
+    position: relative;
+    .current-content{
+        min-height: 320px;
+        // margin-top: 70px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    // .currentTask-content {
+    //     color: rgba(255, 255, 255, 0.8);
+    //     // margin-top: 64px;
+    //     height:auto;
+    //     padding: 10px 15px;
+    //     box-sizing: border-box;
+    //     font-weight: 400;
+    //     text-align: left;
+    //     position: relative;
+    //     margin-bottom: 30px;
+    //     box-shadow: none;
+    //     .title {
+    //         text-align: left;
+    //         font-weight: 400;
+    //         padding: 15px 0;
+    //         .status {
+    //             float: right;
+    //             font-weight: 400;
+    //         }
+    //     }
+    //     .action-section{
+    //         textarea{
+    //             background-color: #ddd;
+    //             width: 100%;
+    //             height: 30px;
+    //         }
+    //         .checkBox{
+    //             color: #03acb4;
+    //         }
+    //         // input[type="checkbox"]{
+    //         //     color: #03acb4;
+    //         // }
+    //         // span{
+    //         //     input{
+    //         //         color: #03acb4;
+    //         //     }
+    //         // }
+    //     }
+    //     .task-submit{
+    //         position: absolute;
+    //         right:15px;
+    //         bottom: 10px;
+    //         button{
+    //             background-color: transparent;
+    //         }
+    //     }
+        
+    // }
+    .currentTask_closed{
+        box-shadow: none;
+        padding: 0 16px;
+    }
+}
+.current-content{
+    width: 100%;
+    height: 100%;
+    // padding: 5px;
+    .WorkflowTool{
+        // margin: 0 10px;
+        .material-icons{
+            font-size: 18px;
+            vertical-align: middle
+        }
+    }
+}
+.currentTask {
+    width: 100%;
+    height: 100%;
+    // background: #121e36;
+    // box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: auto;
+    // .WorkflowTabs{
+    //     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    //     margin-bottom: 3px
+    // }
+    // .currentTask-content {
+    //     color: rgba(255, 255, 255, 0.8);
+    //     // margin-top: 64px;
+    //     height:auto;
+    //     padding: 10px 15px;
+    //     box-sizing: border-box;
+    //     font-weight: 400;
+    //     text-align: left;
+    //     position: relative;
+    //     margin-bottom: 30px;
+    //     box-shadow: none;
+    //     .title {
+    //         text-align: left;
+    //         font-weight: 400;
+    //         padding: 15px 0;
+    //         .status {
+    //             float: right;
+    //             font-weight: 400;
+    //         }
+    //     }
+    //     .action-section{
+    //         textarea{
+    //             background-color: #ddd;
+    //             width: 100%;
+    //             height: 30px;
+    //         }
+    //         .checkBox{
+    //             color: #03acb4;
+    //         }
+    //         // input[type="checkbox"]{
+    //         //     color: #03acb4;
+    //         // }
+    //         // span{
+    //         //     input{
+    //         //         color: #03acb4;
+    //         //     }
+    //         // }
+    //     }
+    //     .task-submit{
+    //         position: absolute;
+    //         right:15px;
+    //         bottom: 10px;
+    //         button{
+    //             background-color: transparent;
+    //         }
+    //     }
+        
+    // }
+    .currentTaskOperation{
+        .currentTaskOperationCon{
+            height: 100%;
+            .currentTask-content {
+                color: rgba(255, 255, 255, 0.8);
+                // margin-top: 64px;
+                height:calc(100% - 0px);
+                // padding: 10px 15px;
+                box-sizing: border-box;
+                font-weight: 400;
+                text-align: left;
+                font-size: 12px;
+                position: relative;
+                // margin:24px;
+                box-shadow: none;
+                .currentTask-operation{
+                    height: calc(100% - 64px);
+                    padding: 24px;
+                    overflow: auto;
+                    .title {
+                        text-align: left;
+                        font-weight: 400;
+                        margin-left: 8px;
+                        // padding: 15px 0;
+                        p{ 
+                            font-size: 12px;
+                            height: 20px;
+                            line-height: 20px;
+                        }
+                        .status {
+                            float: right;
+                            font-weight: 400;
+                        }
+                        .task{
+                            width: 100%;
+                            margin: 10px 0;
+                            border-bottom: 1px solid  initial;
+                            box-shadow: none;
+                            .tasksummary{
+                            padding: 5px 0;  
+                            }
+                            .taskList-p{
+                                padding: 0;
+                                .itemBox{
+                                    width: 100%;
+                                    border-bottom: 1px solid  initial;
+                                    p{
+                                        margin: 0 20px 5px 0
+                                    }
+                                    .fileDown{
+                                        i{
+                                            &:hover{
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .fileDown{
+                            display: flex;
+                            justify-content: space-between
+                        }
+                    }
+                    .action-section{
+                        fieldset{
+                            border-color: rgba(255, 255, 255, 0.8);
+                            // &:focus{
+                            //     border-color: #03acb4;
+                            // }
+                        }
+                        textarea{
+                            background-color: #ddd;
+                            width: 100%;
+                            height: 30px;
+                        }
+                        .checkBox{
+                            color: #03acb4;
+                        }
+                        // input[type="checkbox"]{
+                        //     color: #03acb4;
+                        // }
+                        // span{
+                        //     input{
+                        //         color: #03acb4;
+                        //     }
+                        // }
+                    }
+                }
+                // .task-submit{
+                //     position: absolute;
+                //     right:15px;
+                //     bottom: 10px;
+                //     button{
+                //         background-color: transparent;
+                //     }
+                // }
+                .current-submit{
+                    // margin-right: 10px; 
+                    // position: absolute;
+                    text-align: right;
+                    padding:12px 24px 12px 0;
+                    bottom: 0px
+                }
+            } 
+        }
+    }
+    .currentTaskOperation,.currentTaskAttachments{
+        width: 100%;
+        height: 250px;
+        // border: 1px solid;
+        // margin: 5px 1px;
+        border-radius: 5px;
+        h2{
+            font-size: 12px;
+        }
+    }
+    .currentTaskRecordList{
+        width: 100%;
+        height: calc(100% - 300px);
+        padding: 0 24px;
+        // overflow: auto
+    }
+    // .currentTaskAttachments{
+    //     // height: 100%;
+    // }
+    .currentTaskOperation{
+        height: calc(100% - 232px);
+    }
+    .currentFlowChart{
+        width: 100%;
+        height: 180px;
+        // border: 1px solid;
+        box-shadow: none;
+        // border-bottom: 1px solid #373737;
+        padding: 5px 24px;
+        border-radius: 5px;
+        h2{
+            font-size: 12px;
+        }
+    };
+    .messagePage{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    // .current-submit{
+    //     position: absolute;
+    //     right: 10px; 
+    // }
+    .cardWitchTitleAction-paper{
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        div:first-child{
+            div:first-child{
+                border:none;
+            }
+        }
+        .basicCardComps-foot{
+            button{
+                background-color: transparent;
+                box-shadow: none;
+                padding: 0;
+                min-width: 55px;
+            }
+        }
+    }
+    .ant-upload-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item{
+            width: 30%;
+            .anticon-cross:before{
+                color: #1890ff;
+            }
+        }
+    }
+}

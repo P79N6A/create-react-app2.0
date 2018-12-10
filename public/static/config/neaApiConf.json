@@ -1,0 +1,142 @@
+
+{
+    "url": "http://api.nea.gov.sg/api/WebAPI/?",
+    "key": "781CF461BB6606ADD6253FC89A8B41F2D46DC1BA55155C2A",
+    "twoHourNowCast": "2hr_nowcast",
+    "twentyFourHourForeCast": "24hrs_forecast",
+    "fourDayOutlook": "4days_outlook",
+    "icons": {
+        "BR": {
+            "icon": "fog",
+            "description": "MIST"
+        },
+        "CL": {
+            "icon": "cloud",
+            "description": "CLOUDY"
+        },
+        "DR": {
+            "icon": "raindrops",
+            "description": "DRIZZLE"
+        },
+        "FA": {
+            "icon": "day-cloudy",
+            "description": "FAIR"
+        },
+        "FG": {
+            "icon": "fog",
+            "description": "FOG"
+        },
+        "FN": {
+            "icon": "night-alt-cloudy",
+            "description": "FAIR"
+        },
+        "FW": {
+            "icon": "day-cloudy",
+            "description": "FAIR, WARM"
+        },
+        "HG": {
+            "icon": "storm-showers",
+            "description": "HEAVY THUNDERY SHOWERS, GUSTY WINDS"
+        },
+        "HR": {
+            "icon": "thunderstorm",
+            "description": "HEAVY RAIN"
+        },
+        "HS": {
+            "icon": "showers",
+            "description": "HEAVY SHOWERS"
+        },
+        "HT": {
+            "icon": "storm-showers",
+            "description": "HEAVY THUNDERY SHOWERS"
+        },
+        "HZ": {
+            "icon": "day-haze",
+            "description": "HAZY"
+        },
+        "LH": {
+            "icon": "day-haze",
+            "description": "SLIGHTLY HAZY"
+        },
+        "LR": {
+            "icon": "sprinkle",
+            "description": "LIGHT RAIN"
+        },
+        "LS": {
+            "icon": "showers",
+            "description": "LIGHT SHOWERS"
+        },
+        "OC": {
+            "icon": "cloudy",
+            "description": "OVERCAST"
+        },
+        "PC": {
+            "icon": "day-cloudy",
+            "description": "PARTLY CLOUDY"
+        },
+        "PN": {
+            "icon": "night-alt-cloudy",
+            "description": "PARTLY CLOUDY"
+        },
+        "PS": {
+            "icon": "day-showers",
+            "description": "PASSING SHOWERS"
+        },
+        "RA": {
+            "icon": "rain",
+            "description": "MODERATE RAIN"
+        },
+        "SH": {
+            "icon": "showers",
+            "description": "SHOWERS"
+        },
+        "SK": {
+            "icon": "showers",
+            "description": "SHOWERS, STRONG WIND"
+        },
+        "SN": {
+            "icon": "snow",
+            "description": "SNOW"
+        },
+        "SR": {
+            "icon": "rain-wind",
+            "description": "RAIN, STRONG WINDS"
+        },
+        "SS": {
+            "icon": "day-snow",
+            "description": "SNOW SHOWERS"
+        },
+        "SU": {
+            "icon": "day-sunny",
+            "description": "SUNNY"
+        },
+        "SW": {
+            "icon": "strong-wind",
+            "description": "STRONG WINDS"
+        },
+        "TL": {
+            "icon": "storm-showers",
+            "description": "THUNDERY SHOWERS"
+        },
+        "WC": {
+            "icon": "cloudy-windy",
+            "description": "WINDY, CLOUDY"
+        },
+        "WD": {
+            "icon": "windy",
+            "description": "WINDY"
+        },
+        "WF": {
+            "icon": "day-windy",
+            "description": "WINDY, FAIR"
+        },
+        "WR": {
+            "icon": "rain-wind",
+            "description": "WINDY, RAIN"
+        },
+        "WS": {
+            "icon": "showers",
+            "description": "WINDY, SHOWERS"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.searchWrap {
+    .searchCriteria {
+        .item {
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+    }
+    .fadeBox {
+        width: 580px;
+        position: absolute;
+        right: 15px;
+        z-index: 1;
+        top: 60px;
+        .filter-time {
+            flex: 1;
+            margin-right: 15px;
+            .ant-input {
+                height: 33px;
+                padding: 4px 0;
+            }
+        }
+    }
+}
+.iscSearchSelect {
+    .searchSelect {
+        padding-right: 15px;
+        .Select-clear-zone{
+            display: none;
+        }
+        .is-searchable {
+            padding: 4px 0;
+        }
+        .Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 32px;
+            padding-right: 20px;
+        }
+    }
+}

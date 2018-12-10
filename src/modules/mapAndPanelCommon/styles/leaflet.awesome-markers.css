@@ -1,0 +1,31 @@
+/*
+Author: L. Voogdt
+License: MIT
+Version: 1.0
+*/
+
+/* Marker setup */
+.awesome-marker {
+    /*background: url('images/markers-soft.png') no-repeat 0 0;*/
+    width: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.awesome-marker-shadow {
+    /*background: url('images/markers-shadow.png') no-repeat 0 0;*/
+    width: 35px;
+}
+
+.awesome-marker i {
+    color: #333;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+

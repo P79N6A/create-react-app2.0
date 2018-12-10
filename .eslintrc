@@ -1,0 +1,10 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "indent": ["warn", 4, { "SwitchCase": 1 }],
+    "linebreak-style": ["warn", "windows"],
+    "quotes": ["warn", "double"],
+    "semi": ["warn", "always"],
+    "react/jsx-no-duplicate-props": ["warn", { "ignoreCase": false }]
+  }
+}

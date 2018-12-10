@@ -1,0 +1,70 @@
+[
+    {
+        "metadata": {
+            "category": "MAP",
+            "element": {
+                "uri": "/mapWidget"
+            },
+            "desc": "Alarm Locations",
+            "compId": "alarm-location",
+            "name": "Alarm Locations"
+        },
+        "configValue": {
+            "title": "Alarm Locations",
+            "type": "alarm-location",
+            "material-key": "ISC_WEB_COMP_R_COMMON_ALARM_MAP",
+            "settings":{
+                "exportable": true,
+                "editable": true
+            },
+            "layout": {
+                "w": 30,
+                "h": 20,
+                "maxW": 32,
+                "maxH": 20,
+                "minW": 15,
+                "minH": 10
+            },
+            "properties": {
+                "title": "Alarm Locations in last 1 day",
+                "icon": "warning",
+                "iconColor": "red",
+                "type": "Alarm Locations",
+                "defaultZoom": 12
+            },
+            "snapshoot": ""
+        }
+    },
+    {
+        "metadata": {
+            "category": "MAP",
+            "element": {
+                "uri": "/mapWidget"
+            },
+            "desc": "Device Locations",
+            "compId": "device-location-map",
+            "name": "Device Locations"
+        },
+        "configValue": {
+            "title": "Device Locations",
+            "type": "device-location-map",
+            "material-key": "ISC_WEB_COMP_R_COMMON_DEVICE_LOCATION_MAP",
+            "layout": {
+                "w": 30,
+                "h": 20,
+                "maxW": 32,
+                "maxH": 20,
+                "minW": 15,
+                "minH": 10
+            },
+            "properties": {
+                "title": "Device Locations",
+                "icon": "place",
+                "iconColor": "red",
+                "type": "Device Locations",
+                "defaultZoom": 12
+            },
+            "snapshoot": ""
+        }
+    }
+]

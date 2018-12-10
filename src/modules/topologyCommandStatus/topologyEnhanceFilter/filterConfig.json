@@ -1,0 +1,47 @@
+{
+    "filterConfigs": {
+        "searchByPathandName": {
+            "filterDisplayName": "Search By Device Name",
+            "filterType": "input",
+            "searchField": ["request.deviceName"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "MessageType": {
+            "filterDisplayName": "MessageType",
+            "filterType": "input",
+            "searchField": ["request.msgType"],
+            "operator": ["EQ"],
+            "defaultValue": ""
+        },
+        "Device Type": {
+            "filterDisplayName": "Device Type",
+            "filterType": "select",
+            "values": [],
+            "searchField": ["devicemodel.name"],
+            "operator": ["IN"],
+            "defaultValue": ""
+        },
+        "Application ID": {
+            "filterDisplayName": "Application ID",
+            "filterType": "input",
+            "searchField": ["address.resourcePath"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "IotTopologyId": {
+            "filterDisplayName": "Real World Resource Name",
+            "filterType": "input",
+            "searchField": ["physical.iotTopologyId"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        },
+        "Location": {
+            "filterDisplayName": "Location",
+            "filterType": "input",
+            "searchField": ["location.name"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        }
+    }
+}

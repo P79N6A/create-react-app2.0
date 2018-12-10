@@ -1,0 +1,11 @@
+{
+    "filterConfigs": {
+        "searchByConfigname": {
+            "filterDisplayName": "Configname",
+            "filterType": "input",
+            "searchField": ["config.configname"],
+            "operator": ["LIKE"],
+            "defaultValue": ""
+        }
+    }
+}

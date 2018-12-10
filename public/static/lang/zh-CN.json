@@ -1,0 +1,24 @@
+{
+    "zh": {
+        "login": {
+            "buttonSignIn": "登录",
+            "textUserName": "用户名",
+            "textPassword": "密码",
+            "messageSuccessTitle": "成功",
+            "messageSuccess": "欢迎您 %{name}，页面将在3秒后自动跳转。",
+            "messageFailureTitle": "错误",
+            "messageFailure": "登录失败，请核对您的用户名和密码。",
+            "nomatchURL": "未配置URL, 请核对配置。"
+        },
+        "ccms": {
+            "addWidgetModalTitle": "添加部件",
+            "addWidgetModalSubTitle": "请完成所有的信息以生成完整的部件",
+            "addWidgetModalPositiveButtonText": "添加",
+            "editWidgetModalTitle": "编辑部件",
+            "editWidgetModalSubTitle": "编辑您的部件",
+            "editWidgetModalPositiveButtonText": "保存",
+            "visualTabLabel": "部件配置",
+            "propertiesTabLabel": "部件属性"
+        }
+    }
+}

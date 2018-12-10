@@ -1,0 +1,99 @@
+.attachemnts{
+    font-size: 12px;
+    height: 100%;
+    h2{
+        font-size: 12px;
+    }
+    .fileDescription{
+        height: 30px;
+        // padding: 20px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.54);
+        // border-top: 1px solid rgba(255, 255, 255, 0.54) !important;
+    }
+    // border: 1px solid #fff;
+}
+.attachmentsContainer{
+    height: calc(100% - 0px);
+    font-size: 12px;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+    .fileCard{
+        position: relative;
+        // display: flex;
+        // justify-content: flex-start;
+        // flex-wrap: nowrap;
+
+        .material-icons{
+            padding: 12px 0 0 10px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        &:hover{
+            cursor: default;
+        }
+    }
+    &.defalut{
+        &:hover{
+            cursor: default;
+        } 
+    }
+    p{
+        margin: 0 auto;
+        font-size: 12px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    img{
+        width: "120px";
+        text-align: center;
+        margin: 0 auto;
+    }
+    .cardActionsButton{
+        font-size: 12px;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    .fileCard{
+        // width: auto;
+        height: calc(100% - 48px);
+        overflow: auto;
+        // margin: 2%;
+        // padding: 1%;
+        font-size: 12px;
+        .bpmFileCard{
+            &:hover{
+                cursor: default;
+            }
+        }
+    }
+    .upload{
+        height: 30px;
+        line-height: 30px;
+        padding: 0 12px;
+        display: flex;
+        justify-content: space-between;
+        .material-icons{
+            // cursor: pointer;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: right
+        }
+    }
+    .upload-deafult{
+        height: 30px;
+        line-height: 30px;
+        padding: 0 12px;
+        .material-icons{
+            // cursor: pointer;
+            vertical-align: middle;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: right
+        }
+    }
+}

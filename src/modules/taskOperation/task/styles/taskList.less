@@ -1,0 +1,120 @@
+
+.taskList{
+    // margin-top: 2px;
+    .items{
+        padding: 10px 0;
+    }
+    .item{
+        box-shadow: none;
+        background: #3b4560;
+    }
+    .taskListContainer{
+        position: relative;
+        .taskMainContainer{
+            height: calc(100% - 56px);
+            overflow: auto;
+        }
+        .cardWithTitle-content{
+            padding: 0 16px;
+        }
+    } 
+}
+.taskListContainer {
+    height: calc(100% - 48px);
+    width: 100%;
+    .tasksummary{
+        height: 33%;
+        padding: 0 10px;
+        i{
+            width: 5px;
+            height: 20px;
+            // display: block;
+            margin-right: 10px;
+            background: #81cfe0;
+            &.critical {
+                background: #e41f1f;
+            }
+            &.major {
+                background: #f37901;
+            }
+            &.minor {
+                background: #f3b101;
+            }
+            &.info {
+                background: #00a7ad;
+            }
+            &.clear {
+                background: #adadad;
+            }
+            &.reading {
+                background: #a2ded0;
+            }
+            &.unknown {
+                background: #81cfe0;
+            }
+        }
+    }
+    .searchBar{
+        width: 100%;
+        margin-top: -14px;
+        margin-bottom: 0px;
+        padding: 0;
+        label{
+            // left: 10px;
+            color: #aaa;
+        }
+        input{
+            border-bottom: 1px solid #fff;
+            color: #ddd;
+            padding-left: 5px;
+            font-size: 0.875rem;
+            :after{
+                background-color: #fff; 
+            }
+        }
+
+    }
+    .usertask-content{
+        width: 100%;
+        box-shadow: none;
+        position: relative;
+        .progress-cont{
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: 45%;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .taskList-p{
+            display: block;
+            padding: 0;
+            .itemBox{
+                padding: 0 10px 20px 10px;
+                border-bottom: solid 1px #121e36;
+            }
+            button{
+                margin: 15px 0;
+                position: relative;
+                background-color: transparent;
+                left: calc(100% - 74px);
+            }
+            p{
+                color: #aaa;
+            }
+        }
+        .items{
+            position: relative;
+            
+            .tasks-list{
+                margin-top: 30px;
+                color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+            }
+        }
+        
+    }
+    .cardWithTitle-content{
+        padding: 10px;
+    }
+}

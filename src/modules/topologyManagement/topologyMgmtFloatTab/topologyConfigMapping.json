@@ -1,0 +1,22 @@
+[
+    {
+        "expandTitle": "Device Info",
+        "defaultExpanded": true,
+        "keyFormatToDisplay": {
+            "location.displayName": "Location",
+            "physical.displayName": "Name",
+            "physical.resourcePath": "ResourcePath",
+            "logical.sensorstatus": "Status",
+            "devicetype.displayName": "Device Type",
+            "devicemodel.displayName": "Device Model",
+            "physical.iotTopologyId": "IotTopologyId"
+        }
+    },
+    {
+        "expandTitle": "Property",
+        "defaultExpanded": false,
+        "jsonpath": "$['properties']",
+        "keyFormatToDisplay": {},
+        "displayAllKey": true
+    }
+]

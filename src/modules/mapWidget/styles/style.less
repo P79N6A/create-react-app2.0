@@ -1,0 +1,126 @@
+@import "../../mapAndPanelCommon/styles/mapCommon";
+
+@backgroundColor: rgba(42, 51, 75, 0.85);
+
+.map_arguments {
+    width: 100%;
+    .title {
+        color: #fff;
+    }
+    .select_wrap {
+        width: 100%;
+    }
+    .panel_title_set {
+        width: 100%;
+        margin-top: 16px;
+        .title_input {
+            width: 100%;
+        }
+    }
+    #date_picker {
+        .reset() {
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.54);
+        }
+        .ant-cascader-picker {
+            .reset;
+        }
+        .ant-input {
+            .reset;
+        }
+        .ant-cascader-picker-clear {
+            .reset;
+        }
+        .ant-calendar-picker-clear {
+            .reset;
+        }
+    }
+}
+
+.panel_icons_box {
+    width: 382px;
+    .icons_box_content {
+        max-height: 250px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        .panel_icon_item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            margin: 2px;
+            padding: 2px;
+            color: #fff;
+            &:hover {
+                span {
+                    color: aqua;
+                }
+            }
+        }
+        .icon_item_active {
+            color: aqua;
+        }
+        .icon_not_found {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.map_color_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .remind {
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .mark_icon {
+        width: 30px;
+        box-shadow: none;
+        min-width: 50px;
+        background-color: transparent;
+        min-height: 26px;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    .mark {
+        width: 30px;
+        box-shadow: none;
+        margin: 8px 0;
+        min-width: 50px;
+        background-color: transparent;
+        min-height: 26px;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+.wrapper_map();
+
+.leaflet-popup-content-wrapper {
+    border-radius: 6px !important;
+    background-color: @backgroundColor !important;
+    .leaflet-popup-content {
+        margin: 0;
+    }
+}
+
+.leaflet-popup-tip-container {
+    .leaflet-popup-tip {
+        background-color: @backgroundColor;
+    }
+}

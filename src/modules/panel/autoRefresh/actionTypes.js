@@ -1,0 +1,3 @@
+//for Refresh
+export const RECEIVE_WEBSOCKET_MESSAGE = "ISC/RECIEVED_MESSAGE";
+export const REFRESH_ACTION = "ISC/REFRESH_ACTION";

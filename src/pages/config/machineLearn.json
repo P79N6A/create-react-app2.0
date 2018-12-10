@@ -1,0 +1,91 @@
+{
+    "metadata": {
+        "author": "HL",
+        "version": "1.0.0"
+    },
+    "layout": {
+        "padding": true,
+        "container": true,
+        "header": [true,{
+            "title":"Machine Learning"
+        }],
+        "navbar": true
+    },
+    "modules": [
+        {
+            "identify": "machineLearn",
+            "uri": "/machineLearn",
+            "material-key": "",
+            "props": {
+                "identify": "machineLearn",
+                "title": "List of machineLearn",
+                "rowsPerpage": 20,
+                "page": 1,
+                "pageSize": [20, 30, 50],
+                "order": "desc",
+                "orderBy": "taskName",
+                "orderDisplayName": "Task Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "taskId",
+                        "title": "Task Id",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "taskName",
+                        "title": "Task Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "taskDescription",
+                        "title": "Description",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "startJobTime",
+                        "title": "Created On",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "endJobTime",
+                        "title": "End Time",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "triggerUser",
+                        "title": "Trigger User",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "jobStatus",
+                        "title": "Status",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "action",
+                        "title": "Action",
+                        "defaultSelect": true,
+                        "isSort": false
+                    }
+                ]
+            }
+        }
+    ]
+}

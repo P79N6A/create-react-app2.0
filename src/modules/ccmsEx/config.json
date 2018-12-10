@@ -1,0 +1,68 @@
+{
+    "identify": "ccmsEx",
+    "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARD",
+    "uri": "/ccmsEx",
+    "props": {
+        "draggableCancel": "#widget_container_content",
+        "actions": [
+            {
+                "material-key": "ISC_WEB_COMP_C_CCMS_ACTION_DOWNLOAD_CSV",
+                "icon": "cloud_download",
+                "name": "download",
+                "tooltip": "DOWNLOAD",
+                "state": 0,
+                "active": true
+            },
+            {
+                "material-key": "ISC_WEB_COMP_C_CCMS_ACTION_EDIT",
+                "icon": "edit",
+                "name": "edit",
+                "tooltip": "EDIT",
+                "state": 0,
+                "active": true
+            },
+            {
+                "material-key": "ISC_WEB_COMP_C_CCMS_ACTION_SAVE",
+                "icon": "save",
+                "name": "save",
+                "tooltip": "SAVE",
+                "state": 1,
+                "active": true
+            }
+        ],
+        "widgetAction": [
+            {
+                "icon": "edit",
+                "id": "edit",
+                "label": "EDIT",
+                "mk": "ISC_WEB_COMP_U_CCMS_WIDGET_CONTAINER_BUTTON_EDIT"
+            },
+            {
+                "icon": "delete",
+                "id": "delete",
+                "label": "DELETE",
+                "mk": "ISC_WEB_COMP_U_CCMS_WIDGET_CONTAINER_BUTTON_DELETE"
+            }
+        ],
+        "actionButtons": [
+            {
+                "label": "Delete Dashboard",
+                "id": "deleteBoard",
+                "icon": "delete",
+                "material-key": "ISC_WEB_FUNC_U_CCMS_RENAME_DASHBOARD"
+            },
+            {
+                "label": "Rename Dashboard",
+                "id": "rename",
+                "icon": "spellcheck",
+                "material-key": "ISC_WEB_FUNC_C_CCMS_RENAME_WIDGET"
+            },
+            {
+                "label": "Add Widget",
+                "id": "addWidget",
+                "icon": "important_devices",
+                "material-key": "ISC_WEB_FUNC_C_CCMS_ADD_WIDGET"
+            }
+        ]
+    }
+}

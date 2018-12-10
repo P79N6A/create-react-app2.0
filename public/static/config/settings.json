@@ -1,0 +1,26 @@
+{
+    "homepage": "/",
+    "defaultLanguage": "en-US",
+    "languages": {
+        "en-US": "en",
+        "zh-CN": "zh"
+    },
+    "defaultTheme": "ncs",
+    "developeMode": true
+    ,
+    "themes": {
+        "NCS": "ncs",
+        "singtel": "singtel",
+        "optus": "optus"
+    },
+    "logger": {
+        "keywordTextColor": "black",
+        "keywordBGColor": "yellow",
+        "WARN": "yellow",
+        "ERROR": "orange",
+        "DEBUG": "red"
+    },
+    "sopAction": {
+        "ableWorkflow": false
+    }
+}

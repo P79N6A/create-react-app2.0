@@ -1,0 +1,74 @@
+{
+    "DARK-THEME": {
+        "palette": {
+            "action": {
+                "active": "#dcdcdc",
+                "hover": "#3e3e3e",
+                "disabledBackground": "rgba(0, 0, 0, 0.5)"
+            },
+            "background": {
+                "paper": "#4e4e4e",
+                "default": "#363636"
+            },
+            "dialogColor": "#03acb4",
+            "primary": {
+                "light": "#464646",
+                "main": "#1f1f1f",
+                "dark": "#171717",
+                "contrastText": "rgba(255,255,255,0.8)"
+            },
+            "secondary": {
+                "light": "#5cdee6",
+                "main": "#03acb4",
+                "dark": "#007c84",
+                "contrastText": "#dcdcdc"
+            },
+            "text": {
+                "disabled": "rgba(0, 0, 0, 0.38)",
+                "hint": "rgba(0, 0, 0, 0.38)",
+                "primary": "rgba(255, 255, 255, 0.8)",
+                "secondary": "rgba(255, 255, 255, 0.54)"
+            },
+            "isc": {
+                "hoverBackground": "rgba(0, 0, 0, 0.1)",
+                "selectBackground": "rgba(0, 0, 0, 0.2)"
+            }
+        }
+    },
+    "LIGHT-THEME": {
+        "palette": {
+            "action": {
+                "active": "#dcdcdc",
+                "hover": "#3e3e3e",
+                "disabledBackground": "rgba(0, 0, 0, 0.5)"
+            },
+            "background": {
+                "paper": "#4e4e4e",
+                "default": "#363636"
+            },
+            "dialogColor": "#03acb4",
+            "primary": {
+                "light": "#ffffff",
+                "main": "#d7e1ea",
+                "dark": "#515b7d",
+                "contrastText": "rgba(255,255,255,0.8)"
+            },
+            "secondary": {
+                "light": "#5cdee6",
+                "main": "#515b7d",
+                "dark": "#007c84",
+                "contrastText": "#dcdcdc"
+            },
+            "text": {
+                "disabled": "rgba(0, 0, 0, 0.38)",
+                "hint": "rgba(0, 0, 0, 0.38)",
+                "primary": "rgba(255, 255, 255, 0.8)",
+                "secondary": "rgba(255, 255, 255, 0.54)"
+            },
+            "isc": {
+                "hoverBackground": "rgba(0, 0, 0, 0.1)",
+                "selectBackground": "rgba(0, 0, 0, 0.2)"
+            }
+        }
+    }
+}

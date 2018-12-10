@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "author": "LWP",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "material-key": "ISC_WEB_PAGE_R_CCMS_APPLICATION_LIBRARY",
+    "title": "Application Library",
+    "layout": {
+        "padding": true,
+        "container": true,
+        "header": [
+            true,
+            {
+                "title": "Applications"
+            }
+        ],
+        "navbar": true
+    },
+    "modules": [
+        {
+            "identify": "app_dashboard",
+            "material-key": "ISC_WEB_COMP_R_CCMS_APPLICATION_LIBRARY",
+            "uri": "/applicationLibrary",
+            "props": {
+                "cardActions": [
+                    {
+                        "id": "enter",
+                        "text": "Enter Application"
+                    }
+                ],
+                "actionButtons": []
+            }
+        }
+    ]
+}

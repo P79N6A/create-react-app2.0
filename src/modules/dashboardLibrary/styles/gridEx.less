@@ -1,0 +1,28 @@
+  .react-grid-item {
+    //   height: auto !important; // width: auto!important;
+  }
+
+  .dashboard-item {
+      * {
+          overflow-wrap: break-word;
+      }
+  }
+
+  .dashboard-widgets {
+      position: relative;
+  }
+
+  .dashboard-widgets .react-grid-item .widgets-tool {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+  }
+
+  .dashboard-widgets .react-grid-item {
+      &:hover {
+          &>.widgets-tool {
+              display: block !important;
+          }
+      }
+  }

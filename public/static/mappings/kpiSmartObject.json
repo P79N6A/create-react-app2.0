@@ -1,0 +1,56 @@
+{
+    "3305": {
+        "Type": "Alarm",
+        "Name": "Alarm Parameter Query",
+        "Description":
+            "This returns the details of top 20 alarms (sorted by return value) sent after start time, with parameter value greater than {{greaterValue}}, and only returns the parameter value, sentdatetime, sender id, and alarm type of the alarms.",
+        "format": "KpiQuery",
+        "kpiService": {
+            "serviceId": "xxxx"
+        },
+        "KpiQuery": {
+            "dbName": "isc_alarm",
+            "dbType": "mssql",
+            "dbURL": "192.168.204.150",
+            "dbPort": "2433",
+            "queryScript":
+                "select top 20 numeric_value, sent_datetime, sender_id, alarm_type from dbo.alm_capinfo_parameters inner join dbo.alm_capinfo on dbo.alm_capinfo.capinfo_id=dbo.alm_capinfo_parameters.capinfo_id inner join dbo.alm_alarm on dbo.alm_alarm.alarm_id=dbo.alm_capinfo.alarm_id where parameter_name like {{parameterName}} and numeric_value>{{greaterValue}} and sent_datetime>{{startTime}} order by numeric_value"
+        },
+        "ObjectID": "3305",
+        "Resources": [
+            {
+                "ResourceId": "33051",
+                "Name": "parameterName",
+                "Operations": "RW",
+                "MultipleInstances": "Single",
+                "Mandatory": "Mandatory",
+                "Type": "String",
+                "RangeEnumeration": [],
+                "Units": "W",
+                "Description": "Parameter name."
+            },
+            {
+                "ResourceId": "33052",
+                "Name": "greaterValue",
+                "Operations": "R",
+                "MultipleInstances": "Single",
+                "Mandatory": "Optional",
+                "Type": "String",
+                "RangeEnumeration": [],
+                "Units": "W",
+                "Description": "Values for parameter."
+            },
+            {
+                "ResourceId": "33053",
+                "Name": "startTime",
+                "Operations": "R",
+                "MultipleInstances": "Single",
+                "Mandatory": "Optional",
+                "Type": "Time",
+                "RangeEnumeration": [],
+                "Units": "W",
+                "Description": "The start time."
+            }
+        ]
+    }
+}

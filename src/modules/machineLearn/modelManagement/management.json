@@ -1,0 +1,264 @@
+{
+    "modules": [
+        {
+            "compute": {
+                "identify": "compute",
+                "title": "Compute",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100],
+                "order": "desc",
+                "orderBy": "name",
+                "orderDisplayName": "Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "name",
+                        "title": "Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "type",
+                        "title": "Type",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "location",
+                        "title": "Location",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "provisoningState",
+                        "title": "Provisoning State",
+                        "defaultSelect": true,
+                        "isSort": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": {
+                "identify": "model",
+                "title": "Models",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100],
+                "order": "desc",
+                "orderBy": "name",
+                "orderDisplayName": "Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "modelName",
+                        "title": "Model Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "description",
+                        "title": "Description",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "type",
+                        "title": "Model Type",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "createOn",
+                        "title": "Created On",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "version",
+                        "title": "Version",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "state",
+                        "title": "State",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "action",
+                        "title": "Action",
+                        "defaultSelect": true,
+                        "isSort": false
+                    }
+
+                ]
+            }
+        },
+        {
+            "image": {
+                "identify": "images",
+                "title": "Images",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100],
+                "order": "desc",
+                "orderBy": "name",
+                "orderDisplayName": "Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "name",
+                        "title": "Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "version",
+                        "title": "Version",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "description",
+                        "title": "Description",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "createdOn",
+                        "title": "Created On",
+                        "defaultSelect": true,
+                        "isSort": true
+                    }
+                ]
+            }
+        },
+        {
+            "deployment": {
+                "identify": "deployments",
+                "title": "Deployments",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100],
+                "order": "desc",
+                "orderBy": "name",
+                "orderDisplayName": "Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "name",
+                        "title": "Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "version",
+                        "title": "Version",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "description",
+                        "title": "Description",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "createdOn",
+                        "title": "Created On",
+                        "defaultSelect": true,
+                        "isSort": true
+                    }
+                ]
+            }
+        },
+        {
+            "activity": {
+                "identify": "activities",
+                "title": "Activities",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100],
+                "order": "desc",
+                "orderBy": "activityName",
+                "orderDisplayName": "Activity Name",
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "activityName",
+                        "title": "Activity Name",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "type",
+                        "title": "Type",
+                        "defaultSelect": true,
+                        "isSort": true
+                    },
+                    {
+                        "key": "status",
+                        "title": "Status",
+                        "defaultSelect": true,
+                        "isSort": false
+                    },
+                    {
+                        "key": "started",
+                        "title": "Started",
+                        "defaultSelect": true,
+                        "isSort": true
+                    }
+                ]
+            }
+        }
+
+    ]
+}

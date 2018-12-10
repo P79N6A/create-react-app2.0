@@ -1,0 +1,198 @@
+{
+    "userimage": {
+        "default": "Enter user ID here.",
+        "displayname": "User ID",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": "^[a-zA-Z0-9.@_]{3,49}$",
+        "valueerror": "Support a-z,A-Z,0-9,dot,underscore and @,The length is between 3 and 49",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "upload",
+        "property": {
+            "layout": {
+                "xs": "4"
+            }
+        }
+    },
+    "userid": {
+        "default": "Enter user ID here.",
+        "displayname": "User ID",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": "^[a-zA-Z0-9.@_]{3,49}$",
+        "valueerror": "Support a-z,A-Z,0-9,dot,underscore and @,The length is between 3 and 49",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "8"
+            }
+        }
+    },
+    "username": {
+        "default": "Enter user name here.",
+        "displayname": "User Name",
+        "size": 99,
+        "mandatory": true,
+        "valueregex": "^[^ ][\\w\\W]{2,98}$",
+        "valueerror": "Support a-z,A-Z,0-9,The length is between 3 and 99",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "8",
+                "className": "schema-height95"
+            }
+        }
+    },
+    "active": {
+        "default": "Status",
+        "displayname": "Status",
+        "size": 99,
+        "mandatory": null,
+        "valueregex": null,
+        "valueerror": "",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "switchs"
+    },
+    "userfirstname": {
+        "default": "Enter first name here.",
+        "displayname": "First Name",
+        "size": 99,
+        "mandatory": false,
+        "valueregex": "",
+        "valueerror": "",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "6"
+            }
+        }
+    },
+    "userlastname": {
+        "default": "Enter last name here.",
+        "displayname": "Last Name",
+        "size": 99,
+        "mandatory": false,
+        "valueregex": null,
+        "valueerror": "",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "6"
+            }
+        }
+    },
+    "useremail": {
+        "default": "Enter email here.",
+        "displayname": "Email",
+        "size": 25,
+        "mandatory": true,
+        "valueregex": "^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+        "valueerror": "Example: Dk@ncs.com",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "6"
+            }
+        }
+    },
+    "usermobile": {
+        "default": "Enter mobile number here.",
+        "displayname": "Mobile",
+        "size": 25,
+        "mandatory": false,
+        "valueregex": "^\\+\\d{0,30}$",
+        "valueerror": "e.g: +8602823265, the length limit 30 characters",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "6"
+            }
+        }
+    },
+    "dateofexpiry": {
+        "default": "No Expiry",
+        "displayname": "No Expiry",
+        "size": 15,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": "",
+        "datatype": "boolean",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "switch"
+    },
+    "timerange": {
+        "default": "",
+        "displayname": "Membership Duration",
+        "size": 15,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": "",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "rangepicker",
+        "property": {
+            "visible": {
+                "impactfield": "dateofexpiry",
+                "impactvalue": true
+            }
+        }
+    },
+    "group": {
+        "default": "Select your group here.",
+        "displayname": "Group",
+        "size": 25,
+        "mandatory": true,
+        "valueregex": "",
+        "valueerror": "",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": "multiple",
+        "enum": [],
+        "comp": "liveSearchSelect"
+    }
+}

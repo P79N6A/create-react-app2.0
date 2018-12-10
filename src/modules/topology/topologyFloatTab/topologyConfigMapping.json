@@ -1,0 +1,21 @@
+[
+    {
+        "expandTitle": "Device Info",
+        "defaultExpanded": true,
+        "keyFormatToDisplay": {
+            "physical.name": "Device Name",
+            "physical.displayName": "Real World Resource Name",
+            "address.displayName": "Application ID",
+            "devicemodel.displayName": "Device Type",
+            "logical.sensorStatus": "Status",
+            "location.displayName": "Location"
+        }
+    },
+    {
+        "expandTitle": "Property",
+        "defaultExpanded": false,
+        "jsonpath": "$['properties']",
+        "keyFormatToDisplay": {},
+        "displayAllKey": true
+    }
+]

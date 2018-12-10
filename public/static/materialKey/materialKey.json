@@ -1,0 +1,174 @@
+{
+    "DASHBOARD_LIBRARY_GROUP_COMP": {
+        "material-key": "ISC_WEB_COMP_C_CCMS_DASHBOARD_LIBRARY_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "CREATE_GROUP_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_CREATE_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "CREATE_GROUP_FUNC": {
+        "material-key": "ISC_WEB_FUNC_C_CCMS_CREATE_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "SEARCH_GROUP_FUNC": {
+        "material-key": "ISC_WEB_FUNC_R_CCMS_SEARCH_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "UPDATE_GROUP_FUNC": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_UPDATE_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "DELETE_GROUP_FUNC": {
+        "material-key": "ISC_WEB_FUNC_D_CCMS_DELETE_GROUP",
+        "module": "DASHBOARD_GROUP"
+    },
+    "CCMS_NAVBAR_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_NAVBAR",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "CCMS_HEADBAR_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_HEADBAR",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "DASHBOARD_LIBRARY_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARD_LIBRARY",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "RULE_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_RULE_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "ALARM_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_ALARM_MGMT_GUI3_5",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "EVENT_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_EVENT_MGMT_GUI3_5",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "DEVICE_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_DEVICE_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "DASHBOARD_LIBRARY_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_DASHBOARD_LIBRARY_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "USER_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_USER_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "AUDIT_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_AUDIT_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "SETTING_TOPOLOGY_CONFIG_PAGE": {
+        "material-key": "ISC_WEB_PAGE_TOPOLOGY_CONFIG_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "SECURITY_MGMT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_SECURITY_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "SETTING_APPLICATION_CONFIG_PAGE": {
+        "material-key": "ISC_WEB_PAGE_APPLICATION_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "ACCOUNTS_PAGE": {
+        "material-key": "ISC_WEB_PAGE_ACCOUNTS_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "LOGGER_PAGE": {
+        "material-key": "ISC_WEB_PAGE_LOGGER_MGMT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "DATA_DATASEARCH_PAGE": {
+        "material-key": "ISC_WEB_PAGE_DATA_EXPORT",
+        "module": "DASHBOARD_NAVBAR"
+    },
+    "DASHBOARDS_COUNT_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARDS_COUNT",
+        "module": "DASHBOARD_STATE_COUNT"
+    },
+    "ALARMS_COUNT_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_ALARMS_COUNT",
+        "module": "DASHBOARD_STATE_COUNT"
+    },
+    "DEVICES_COUNT_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_DEVICES_COUNT",
+        "module": "DASHBOARD_STATE_COUNT"
+    },
+    "USD_DASHBOARD_SEARCH_COMP": {
+        "material-key": "ISC_WEB_COMP_CCMS_USD_DASHBOARD_SEARCH",
+        "module": "DASHBOARD_STATE_COUNT"
+    },
+    "DASHBOARD_CREATE_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DASHBOARD_CARD_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_DASHBOARD_CARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DASHBOARD_POPMENU_COMP": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_POPMENU",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DASHBOARD_VIEW_FUNC": {
+        "material-key": "ISC_WEB_COMP_R_CCMS_VIEW_DASHBOARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "MOVE_DASHBOARD_TO_GROUP_FUNC": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_MOVE_DASHBOARD_TO_GROUP",
+        "module": "DASHBOARD_VIEW"
+    },
+    "RENAME_DASHBOARD_FUNC": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_RENAME_DASHBOARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DUPLICATE_DASHBOARD_FUNC": {
+        "material-key": "ISC_WEB_FUNC_R_CCMS_DUPLICATE_DASHBOARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DELETE_DASHBOARD_FUNC": {
+        "material-key": "ISC_WEB_FUNC_D_CCMS_DELETE_DASHBOARD",
+        "module": "DASHBOARD_VIEW"
+    },
+    "ADD_PERMISSIONS": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_ADD_PERMISSION",
+        "module": "DASHBOARD_VIEW"
+    },
+    "EXPORT_CSV_WIDGET_FUNC": {
+        "material-key": "ISC_WEB_FUNC_R_CCMS_EXPORT_CSV_WIDGET",
+        "module": "CCMS_WIDGET"
+    },
+    "EDIT_MODE_FUNC": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_EDIT_MODE",
+        "module": "CCMS_WIDGET"
+    },
+    "USER_SUBMIT_TEMPLATE_FUNC": {
+        "material-key": "ISC_WEB_FUNC_C_CCMS_USER_SUBMIT_TEMPLATE",
+        "module": "CCMS_WIDGET"
+    },
+    "ADD_WIDGE_FUNC": {
+        "material-key": "ISC_WEB_FUNC_C_CCMS_ADD_WIDGET",
+        "module": "CCMS_WIDGET"
+    },
+    "EDIT_WIDGET_FUNC": {
+        "material-key": "ISC_WEB_FUNC_U_CCMS_EDIT_WIDGET",
+        "module": "CCMS_WIDGET"
+    },
+    "DELETE_WIDGET_FUNC": {
+        "material-key": "ISC_WEB_FUNC_D_CCMS_DELETE_WIDGET",
+        "module": "CCMS_WIDGET"
+    },
+    "BULKDEVICE_IMPORT_PAGE": {
+        "material-key": "ISC_WEB_PAGE_R_TOPOLOGY_DEVICE_BULK_IMPORT",
+        "module": "DASHBOARD_VIEW"
+    },
+    "DEVICE_IMPORTEXPORT_MENU": {
+        "material-key": "ISC_WEB_FUNC_R_TOPOLOGY_DEVICE_BULK_IMPORTEXPORT",
+        "module": "DASHBOARD_VIEW"
+    }
+}

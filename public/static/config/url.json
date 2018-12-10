@@ -1,0 +1,300 @@
+{
+    "ISC-SECURITY-API": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "/isc-security-api/v1",
+        "URL": {
+            "login": "identity/auth/logon",
+            "signin": "/identity/auth/signin",
+            "logout": "identity/auth/logout",
+            "resetPasswordSelf": "identity/auth/resetpassword/self",
+            "resetPasswordAdmin": "identity/auth/resetpassword/admin",
+            "isTokenValid": "identity/auth/istokenvalid",
+            "tokenInfo": "identity/auth/tokeninfo",
+            "keepAlive": "identity/keepAlive",
+            "userInfo": "identity/auth/userinfo",
+            "getAuthenticationType": "identity/auth/getauthenticationtype",
+            "securityMgmtResource": "security/manage/resources",
+            "securityMgmtPermissionResource": "security/associations/permissionResource",
+            "securityMgmtPermission": "security/manage/permissions",
+            "securityMgmtUser": "/security/manage/users",
+            "securityMgmtGroup": "/security/manage/groups",
+            "securityMgmtUserGroup": "/security/manage/userGroup",
+            "securityMgmtUserGroupCurr": "/security/manage/userGroup/{0}",
+            "securityMgmtUserGroups": "/security/manage/userGroups",
+            "securityMgmtVisualization": "/security/manage/visualizations",
+            "securityMgmtRole": "security/manage/roles",
+            "securityRolePermission": "security/associations/rolePermission",
+            "securityGroupRole": "/security/associations/groupRole",
+            "securityUserGroup": "/security/associations/userGroup",
+            "securityMgmtResourcePath": "/security/manage/resourcePaths",
+            "userInformation": "/identity/auth/userinfomation",
+            "deleteResource": "/security/manage/resources",
+            "getResourceInfo": "/security/manage/resources?resourceid={0}",
+            "getApplicationsByGroupId": "/security/manage/userGroup/applications/{0}",
+            "activeUser": "/identity/auth/activate/{0}",
+            "isValidToken": "/identity/auth/activate/validate/{0}",
+            "forgotPassword": "/identity/auth/resetpassword/retrive/{0}",
+            "resetForgotPassword": "/identity/auth/reset/cridential/{0}",
+            "sendEmailToUser": "/identity/auth/email/activation",
+            "getVerificationCode": "/identity/auth/captcha/retrieve",
+            "checkVerificationCode": "/identity/auth/captcha/check/{0}",
+            "checkVerificationCodePost": "/identity/auth/resetpassword/retrive/{0}"
+        }
+    },
+    "ISC-TOPO-API": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "/isc-topology-api/v1",
+        "URL": {
+            "topologyLayers": "topology/layers",
+            "topologyLayersIOT": "topology/layers/iot",
+            "topologySearchGraph": "topology/search/graph",
+            "topologySearchResource": "topology/search/resource",
+            "topologyDevices": "topology/devices",
+            "topologyDevicesIot": "topology/devices/iot",
+            "topologyStatistic": "topology/statistic",
+            "topologyProperty": "topology/property/device",
+            "topologyPropertySearch": "topology/property/search",
+            "topologyDeviceTypes": "topology/devicetypes",
+            "topologyDeviceModels": "topology/devicemodels",
+            "topologyDeviceModelsIot": "topology/devicemodels/iot",
+            "topologyDeviceModelProperty": "/topology/devicemodels/properties",
+            "topologyAddress": "topology/address",
+            "topologyAddressDelete": "/topology/address/delete",
+            "topologyAddressUpdate": "/topology/address/update",
+            "topologyApplication": "topology/address/application",
+            "topologyLocations": "topology/locations",
+            "topologyResourcepath": "topology/resourcepath",
+            "topologyCommand": "/topology/commands/device",
+            "topologyCommandStatus": "/topology/commands/cmdmsgstatus",
+            "topologyBulkImport":"topology/data/import",
+            "topologyImportHistory":"topology/data/import/status"
+        }
+    },
+    "ISC-CCMS": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-ccms/",
+        "URL": {
+            "pageConfig": "fileOperate/readConfigFile/",
+            "getCustomizationPageInfo": "userConfig/getCustomizationPageInfoByUser/",
+            "getUserConfigHistory": "userConfig/getUserConfigHistoryById/",
+            "getUserConfigDetail": "userConfig/getUserConfigDetailById/",
+            "getSysConfigDetail": "sysConfig/getSysConfigDetailById/",
+            "getAllSysConfig": "sysConfig/getAllSysConfig/",
+            "updateSystemConfig": "sysConfig/updSystemConfig/",
+            "getPageConfigSummary": "pageConfig/page/search/",
+            "savePageConfig": "pageConfig/page/",
+            "duplicatePageConfig": "/pageConfig/clone/",
+            "saveWidgets": "/pageConfig/updPageConfigDetail/",
+            "deletePageConfig": "/pageConfig/page/{0}/",
+            "getPageConfigItem": "/pageConfig/page/{0}/",
+            "updatePageConfig": "/pageConfig/updPageConfigDetail/",
+            "saveCommmonResource": "/resources",
+            "getCommonResource": "/resources/{0}/{1}",
+            "getPageConfigByPageKey": "/normalUser/pageConfigByKey/{pageKey}/{tokenId}",
+            "getPageConfigByPageId": "/normalUser/page",
+            "normalUserGetPageConfig": "/normalUser/page/{pageKey}/",
+            "updateGroup": "/page/group",
+            "updateGroupNew": "/page/group/save",
+            "deleteGroup": "/page/group/delete/",
+            "getGroupList": "/page/group/search",
+            "getDefaultComponent": "/defCompConfig/allDefCompConfig/",
+            "getNoSecurityResource": "/resources/noSecurity/",
+            "saveTemplate": "/resources",
+            "getDashboardTemplate": "/resources/search",
+            "deleteTemplate": "/resources/{0}/{1}",
+            "newMaterialKey": "/pageConfig/newMaterialKeys/",
+            "ckeakModity": "/pageConfig/checkCurUserModify/{token}/",
+            "cleanTokenForPage": "/pageConfig/cleanTokenForPageConfig/{token}/",
+            "createUpdateResource": "/resources",
+            "getResource": "/resources/{group}/{resoueceId}/value",
+            "getDefaultComponentNew": "/defCompConfig/search",
+            "checkPageNameIsExist": "/pageConfig/checkPageNameIsExist/{accountId}/{pageName}"
+        }
+    },
+    "ISC-SOCKET": {
+        "Address": "ws://192.168.200.67:9090",
+        "Type": "ws",
+        "Path": "/isc-websocket/v1",
+        "URL": {
+            "messageBus": "ws/DataChannel"
+        }
+    },
+    "ISC-ALARM": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-alarm-api/v1/",
+        "URL": {
+            "alarmSearch": "alarms/search",
+            "getAlarms": "alarms",
+            "exportAlarms": "alarms/export",
+            "alarmParameters": "alarms/parameters",
+            "alarmComments": "alarms/comments/"
+        }
+    },
+    "ISC-FILE-ALARM": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-file-api/v1/",
+        "URL": {
+            "alarmDownload": "file/download/",
+            "uploadFile": "file",
+            "fileInfo": "file/info/"
+        }
+    },
+    "ISC-EVENT": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-event-api/v1/",
+        "URL": {
+            "eventSearch": "events/search",
+            "exportEvents": "events/export",
+            "eventParameters": "events/parameters"
+        }
+    },
+    "ISC-PLUGIN": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-plugin/plugin/isc-web-plugin/",
+        "URL": {
+            "eventsPlugin": "retrieve_event_details/"
+        }
+    },
+    "ISC-PLUGIN-ALARM": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-plugin/plugin/isc-web-plugin/",
+        "URL": {
+            "alarmsPlugin": "retrieve_alarm_details/"
+        }
+    },
+    "ISC-SYSCONFIG": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-sysconfig-api/v1/",
+        "URL": {
+            "syssites": "sites",
+            "sysconfigs": "configs",
+            "sysconfigDetail": "config",
+            "sysconfigSearch": "search",
+            "sysconfigAccount": "tenancy/accounts",
+            "sysconfigAccounts": "/tenancy/manage/accounts",
+            "sysconfigAccountSearch": "/tenancy/accounts/search"
+        }
+    },
+    "ISC-BPM": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-bpm-api/v1/",
+        "URL": {
+            "tasksearch": "bpm/tasks/search/",
+            "jobsSearch": "bpm/jobs/search/",
+            "submitTask": "bpm/tasks/",
+            "workflow": "bpm/sops/diagram",
+            "getModel": "bpm/sops/model/",
+            "taskInfoUrl": "bpm/tasks",
+            "sopSearch": "bpm/sops/search/",
+            "addSops": "bpm/sops/create",
+            "delSops": "bpm/sops/delete",
+            "updateSops": "bpm/sops/update",
+            "files": "bpm/files",
+            "bpmConfig": "bpm/config",
+            "deleteFiles": "bpm/files/delete"
+        }
+    },
+    "ISC-KPI": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-kpi/",
+        "URL": {
+            "kpiPreview": "preview/",
+            "getDbConfigList": "dbConfig/",
+            "service": "services/",
+            "kpiService": "kpi_service/"
+        }
+    },
+    "ISC-LOGGER": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-logger-api/",
+        "URL": {
+            "downLoadFile": "logger/downloadLogFile/{0}",
+            "getListPagination": "/logger/getLogFileDetail/{0}/{1}/{2}/{3}",
+            "getModules": "logger/module",
+            "getModuleChild": "logger/moduleChild/{0}"
+        }
+    },
+    "ISC-LOGGER-SOCKET": {
+        "Address": "ws://192.168.200.67:9090",
+        "Type": "ws",
+        "Path": "isc-logger-api/",
+        "URL": {
+            "loggerSocket": "websocket"
+        }
+    },
+    "ISC-DATA-SEARCH": {
+        "Address": "http://hdpmaster01.southeastasia.cloudapp.azure.com:9997",
+        "Type": "api",
+        "Path": "isc-ml/",
+        "URL": {
+            "dataSearchConfig": "config/config_iot_export_event_template_id",
+            "dataGetTableVal": "job/status",
+            "dataRequestDefaultData": "job/viewjoblist",
+            "dataDownloadTaskId": "job/viewjobresult",
+            "dataReflush": "job/status",
+            "dataRequestSearch": "job/triggerjob"
+        }
+    },
+    "ISC-MACHINE-LEARN": {
+        "Address": "http://hdpmaster01.southeastasia.cloudapp.azure.com:9997",
+        "Type": "api",
+        "Path": "isc-ml/",
+        "URL": {
+            "machineCreateJob": "bigdata/createJob",
+            "machineSearchJobs": "bigdata/searchJobs",
+            "machineGetTableHead": "bigdata/metadata/{0}",
+            "machineDelete": "bigdata/deleteJobs",
+            "machineUpdateJobStatus": "job/canceljob",
+            "machineGetDataProcessInfo": "job/viewjob",
+            "machineGetModelParameters": "machinelearning/getModelParameters",
+            "machineManagementModelSearch": "machinelearning/searchModels",
+            "machineManagementModelDelete": "machinelearning/deleteModels",
+            "machineManagementModelInfo": "machinelearning/getModel",
+            "machineManagementModelCreate": "machinelearning/importModel",
+            "machineManagementModelUpdate": "machinelearning/updateModel"
+        }
+    },
+    "ISC-NOTIFICATION": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-notification-api/v1/",
+        "URL": {
+            "notificationConfig": "notification/template/config"
+        }
+    },
+    "ISC-AUDIT": {
+        "Address": "/api",
+        "Type": "api",
+        "Path": "isc-audit-api/v1/",
+        "URL": {
+            "auditsSearch": "audits/search",
+            "auditsDetail": "audits/",
+            "auditsRC": "audits/details/"
+        }
+    },
+    "ISC-USAGE": {
+        "Address": "/api",
+        "Path": "isc-meter-api/",
+        "Type": "api",
+        "URL": {
+            "meter": "meter/",
+            "devices": "meter/devices",
+            "events": "meter/events",
+            "smsNotifications": "meter/smsNotifications",
+            "emailNotifications": "meter/emailNotifications",
+            "users": "meter/users"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import "weatherIcons/css/weather-icons.min.css";
+@import "weatherIcons/css/weather-icons-wind.min.css";
+.hideWeather{
+    width: 0 !important;
+    height: 0 !important;
+}
+.weatherCard {
+    position: absolute;
+    left: -100%;
+    .weatherCard-card{
+        height: 219px;
+        width: 300px;
+        padding: 0px;
+        .weatherCard-img{
+            width: 100%;
+            height: 60%;
+        }
+        .weatherCard-media{
+            color: #fff;
+            display: flex;
+            padding: 7%;
+            .weatherCard-media-left{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                width: 70%;
+                .weatherCard-location{
+                    height: 40%;
+                }
+                .weatherCard-details{
+                    margin-top: 8%;
+                }
+                .weatherCard-seperator{
+                    width: 15%;
+                    margin-top: 5%;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+                }
+            }
+            .weatherCard-media-right{
+                text-align: right;
+                width: 30%;
+                .weatherCard-temperature{
+                    margin-top: 40%;
+                }
+                .weatherCard-api-attrib{
+                    font-size: 0.5rem;
+                }
+            }
+        }
+        .weatherCard-btm{
+            display: flex !important;
+            padding: 3%;
+            .weatherCard-btm-element{
+                text-align: center;
+                width: 25%;
+                .weatherCard-p {
+                    padding: 2px 0;
+                }
+            }
+            
+        }
+    }
+
+}

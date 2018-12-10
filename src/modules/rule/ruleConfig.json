@@ -1,0 +1,40 @@
+{
+    "tableColumnsConfig": [
+        {
+            "columnName": "Rule Name",
+            "columnConfig": {
+                "id": "configname",
+                "label": "Rule Name"
+            }
+        },
+        {
+            "columnName": "Description",
+            "columnConfig": {
+                "id": "configvaldesc",
+                "label": "Description"
+            }
+        },
+        {
+            "columnName": "Modified By",
+            "columnConfig": {
+                "id": "modifiedby",
+                "label": "Modified By"
+            }
+        },
+        {
+            "columnName": "Last Modified",
+            "columnConfig": {
+                "id": "modifieddate",
+                "label": "Last Modified"
+            }
+        },
+        {
+            "columnName": "Action",
+            "columnConfig": {
+                "id": "Action",
+                "label": "Action",
+                "sort": false
+            }
+        }
+    ]
+}

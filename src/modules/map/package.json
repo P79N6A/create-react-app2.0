@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "category": "MAP",
+    "element": {
+      "uri": "/mapWidget"
+    },
+    "desc": "Alarm Locations",
+    "compId": "alarm-location-map",
+    "name": "Alarm Locations"
+  },
+  "configValue": {
+    "title": "Alarm Locations",
+    "type": "alarm-location-map",
+    "material-key": "ISC_WEB_COMP_R_COMMON_ALARM_LOCATION_MAP",
+    "layout": {
+      "w": 20,
+      "h": 16,
+      "maxW": 32,
+      "maxH": 20,
+      "minW": 15,
+      "minH": 10
+    },
+    "properties": {
+      "title": "Alarm Locations in last 1 day",
+      "icon": "alarm",
+      "iconColor": "red",
+      "type": "Alarm Locations"
+    },
+    "snapshoot": ""
+  }
+}

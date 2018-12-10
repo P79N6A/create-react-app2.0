@@ -1,0 +1,402 @@
+.floatTab-container {
+    width: 100%;
+    height: 100%;
+    .ruleGeneral {
+        // padding: 0 24px 24px 24px;
+        height: 100%;
+        position: relative;
+        .ruleGeneral-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .rule-group {
+                > li {
+                    padding-left: 0;
+                    padding-right: 0;
+                     label {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    .rule-general-name {
+                        width: 100%;
+                    }
+                    .rule-general-description {
+                        width: 100%;
+                    }
+                    .time-section-range{
+                        width: 100%;
+                        display: flex;
+                        .time-range{
+                            display: flex;
+                            margin-left: 23px;
+                            .time-section{
+                                margin-left: 30px;
+                                display: flex;
+                                .ant-time-picker {
+                                    line-height: 50px;
+                                }
+                                .ant-time-picker-panel-combobox{
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+                .progress-cont {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .action-group{
+                .email-action, .sms-action{
+                    margin-top: -80px;
+                }
+                .rule-action-item{
+                    position: static;
+                }
+            }
+            .rule-general-condition {
+                .criteriaList {
+                    margin-bottom: 8px;
+                }
+            }
+            .ruleGeneral-action {
+                align-self: flex-end;
+                margin-right: 24px;
+            }
+            input {
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .query-builder {
+                .group-or-rule-container {
+                    margin-right: 0;
+                    margin-top: 10px;
+                    .ant-select-enabled {
+                        max-width: 300px;
+                    }
+                    .group--actions {
+                        .ant-btn-group {
+                            > .ant-btn:first-child:not(:last-child) {
+                                border-bottom-right-radius: 4px;
+                                border-top-right-radius: 4px;
+                                border: none;
+                            }
+                            .action--ADD-GROUP {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .device-info {
+                margin: 10px 0;
+            }
+            .expand-add{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .expand-input{
+                width: 100%;
+                display: flex;
+                margin-top: 15px;
+            }
+            .empty-condition{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+    }
+    .ruleGeneral-update {
+        height: 100%;
+    }
+    .rule-step {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.rule {
+    padding: 5px;
+}
+
+.group {
+    padding-left: 0px;
+}
+
+.group--children {
+    padding-left: 10px !important;
+    & > .group-or-rule-container > .group-or-rule {
+        &::before,
+        &::after {
+            left: -7px;
+            width: 7px;
+        }
+    }
+}
+
+.group--conjunctions {
+    margin-left: 4px !important;
+    float: left;
+}
+
+.group-or-rule-container {
+    margin-bottom: 5px;
+    // padding-right: 5px;
+}
+.rule-container {
+    padding-right: 10px;
+}
+.query-builder {
+    overflow: hidden;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+
+/******************************************************************************/
+/** COMMON ********************************************************************/
+/******************************************************************************/
+
+.query-builder,
+.query-preview {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.query-builder.qb-dragging {
+    cursor: -webkit-grabbing !important;
+    cursor: grabbing !important;
+    button {
+        pointer-events: none;
+    }
+}
+
+.group-or-rule {
+    border-radius: 2px;
+    position: relative;
+}
+
+.qb-draggable {
+    pointer-events: none;
+    position: absolute;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.qb-placeholder {
+    border: 1px dashed gray;
+}
+
+.group-or-rule-container {
+    margin-bottom: 10px;
+    // padding-right: 10px;
+}
+
+/******************************************************************************/
+/** GROUP *********************************************************************/
+/******************************************************************************/
+
+.group--children {
+    padding-left: 20px;
+
+    & > .group-or-rule-container > .group-or-rule {
+        &:before {
+            top: -4px;
+            border-width: 0 0 2px 2px;
+        }
+
+        &::after {
+            top: 50%;
+            border-width: 0 0 0 2px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: -14px;
+            width: 14px;
+            height: calc(50% + 8px);
+            border-style: solid;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    }
+
+    & > .group-or-rule-container:first-child > .group-or-rule {
+        &::before {
+            top: -12px;
+            height: calc(50% + 14px);
+        }
+    }
+
+    & > .group-or-rule-container:last-child > .group-or-rule {
+        &::before {
+            border-radius: 0 0 0 4px;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.qb-draggable {
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.group--header,
+.group--footer {
+    top: 10px;
+    right: 5px;
+    bottom: 10px;
+    left: 10px;
+    margin-top: 5px;
+}
+
+.group--conjunctions.hide--conj {
+    opacity: 0.3;
+}
+
+.group--actions {
+    flex: 1;
+    display: flex;
+    margin-right: 4px !important;
+    &--tl,
+    &--bl {
+        justify-content: flex-start;
+    }
+
+    &--tl {
+        margin-left: 20px;
+    }
+
+    &--tc,
+    &--bc {
+        justify-content: center;
+    }
+
+    &--tr,
+    &--br {
+        justify-content: flex-end;
+    }
+}
+
+/******************************************************************************/
+/** RULE **********************************************************************/
+/******************************************************************************/
+
+.rule--header {
+    float: right;
+    .ant-btn:not(.ant-btn-circle):not(.ant-btn-circle-outline).ant-btn-icon-only{
+        border: none;
+    }
+}
+
+.rule--field,
+.rule--operator,
+.rule--value,
+.rule--operator-options,
+.rule--widget,
+.widget--widget,
+.widget--valuesrc,
+.widget--sep,
+.operator--options--sep {
+    display: inline-block;
+}
+.rule--operator,
+.widget--widget,
+.widget--valuesrc,
+.widget--sep {
+    margin-left: 10px;
+}
+.operator--options--sep {
+    margin-right: 10px;
+}
+
+div.tooltip-inner {
+    max-width: 500px;
+}
+
+.rule--field,
+.rule--operator,
+.widget--widget {
+    label {
+        display: block;
+        font-weight: bold;
+    }
+}
+
+.rule--widget.rule--widget--DATETIME {
+    padding: 10px 0 0 5px;
+}
+/******************************************************************************/
+/** CONJUNCTION ***************************************************************/
+/******************************************************************************/
+
+.conjunction {
+    display: inline-block;
+
+    label {
+        display: inline-block;
+        border: 1px solid;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 0.2rem 0.4rem;
+    }
+
+    input {
+        display: none;
+    }
+
+    &:first-child {
+        label {
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    &:last-child {
+        label {
+            border-radius: 0 3px 3px 0;
+        }
+    }
+
+    &:first-child:last-child {
+        border-radius: 3px;
+    }
+}
+.ant-select-dropdown, .ant-calendar-picker-container, .ant-time-picker-panel{
+    z-index: 2000 !important;
+}
+.expand-card{
+    margin: 5px 24px;
+    .expand-card-cont{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .inner{
+            .inner-content{
+                display: inline-block;
+                width: 85px;
+
+            }
+        }
+    }
+}

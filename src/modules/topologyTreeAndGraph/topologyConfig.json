@@ -1,0 +1,54 @@
+{
+    "alarmSeverityKey": {
+        "1": {
+            "label": "critical",
+            "color": "#e41f1f"
+        },
+        "2": {
+            "label": "major",
+            "color": "#f37901"
+        },
+        "3": {
+            "label": "minor",
+            "color": "#f3b101"
+        },
+        "4": {
+            "label": "info",
+            "color": "#00a7ad"
+        },
+        "5": {
+            "label": "unknown",
+            "color": "#81cfe0"
+        }
+    },
+    "eventSeverityKey": {
+        "Critical": {
+            "label": "critical",
+            "color": "#e41f1f"
+        },
+        "Major": {
+            "label": "major",
+            "color": "#f37901"
+        },
+        "Minor": {
+            "label": "minor",
+            "color": "#f3b101"
+        },
+        "Info": {
+            "label": "info",
+            "color": "#00a7ad"
+        },
+        "Clear": {
+            "label": "Clear",
+            "color": "#adadad"
+        },
+        "Reading": {
+            "label": "Reading",
+            "color": "#a2ded0"
+        },
+        "Unknown": {
+            "label": "unknown",
+            "color": "#81cfe0"
+        }
+    }
+}

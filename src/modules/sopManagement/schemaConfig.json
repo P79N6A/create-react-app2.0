@@ -1,0 +1,8 @@
+{
+    "sopManagementConfig": [
+        {
+            "displayKey": "sops",
+            "jsonpath": "$..application.values"
+        }
+    ]
+}

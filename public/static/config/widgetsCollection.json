@@ -1,0 +1,1570 @@
+[
+    {
+        "category": "CHART",
+        "label": "Chart",
+        "template": [
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Devices Reading Chart",
+                    "compId": "alarm-historical-devices-readings",
+                    "name": "Devices Reading Chart"
+                },
+                "configValue": {
+                    "title": "Devices Reading Chart",
+                    "type": "historical_device_reading_line",
+                    "material-key": "ISC_WEB_COMP_R_CHART_DEVICE_READING_LINE_CHART",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "properties": {
+                        "title": "Device Reading Line Chart",
+                        "source": "event",
+                        "chartType": "timeline",
+                        "predicates": {
+                            "interval": "1day",
+                            "aggregation": "",
+                            "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"],
+                            "iotIds": []
+                        },
+                        "markLines": [],
+                        "timeMode": "realTime",
+                        "type": "line",
+                        "timeFormat": ["MM/DD/YYYY", ""],
+                        "configList": [
+                            "Title",
+                            "Theme",
+                            "Device",
+                            "Aggregation",
+                            "Parameter",
+                            "Interval",
+                            "Time",
+                            "Format",
+                            "Customize",
+                            "Type",
+                            "CombineYaxis",
+                            "ReadingLabel",
+                            "AutoRefresh",
+                            "MarkLine",
+                            "SwitchXY",
+                            "DataZoom"
+                        ]
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 7,
+                        "minH": 5
+                    },
+                    "snapshoot": "./static/media/device_reading_line_chart.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Alarm Count Line",
+                    "compId": "alarm-count-line",
+                    "name": "Alarm Count Line"
+                },
+                "configValue": {
+                    "title": "Alarm Count Line",
+                    "type": "alarm-count-line",
+                    "material-key": "ISC_WEB_COMP_R_CHART_ALARM_COUNT_LINE",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 7,
+                        "minH": 5
+                    },
+                    "properties": {
+                        "source": "alarm",
+                        "chartType": "timeline",
+                        "predicates": {
+                            "interval": "1day",
+                            "aggregation": "COUNT",
+                            "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"],
+                            "keyList": [],
+                            "grouping": "",
+                            "iotIds": []
+                        },
+                        "timeMode": "realTime",
+                        "title": "Alarm count in last 7 days",
+                        "type": "line",
+                        "timeFormat": ["MM/DD/YYYY", ""],
+                        "configList": ["Title", "Type", "Theme", "Grouping", "Time", "Interval", "Format", "AutoRefresh", "DataZoom"]
+                    },
+                    "snapshoot": "./static/media/alarm_count_in_last_7_days.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Alarm Count Pie",
+                    "compId": "alarm-count-pie",
+                    "name": "Alarm Count Pie"
+                },
+                "configValue": {
+                    "title": "Alarm Count Pie",
+                    "type": "alarm-count-pie",
+                    "material-key": "ISC_WEB_COMP_R_CHART_ALARM_COUNT_PIE",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 7,
+                        "minH": 5
+                    },
+                    "properties": {
+                        "source": "alarm",
+                        "chartType": "circle",
+                        "predicates": {
+                            "interval": "",
+                            "aggregation": "COUNT",
+                            "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"],
+                            "keyList": [],
+                            "grouping": "",
+                            "iotIds": []
+                        },
+                        "timeMode": "realTime",
+                        "title": "Alarm count in last 7 days",
+                        "type": "pie",
+                        "timeFormat": [],
+                        "configList": ["Title", "Type", "Theme", "Grouping", "Time"]
+                    },
+                    "snapshoot": "./static/media/pie.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Device Count Pie",
+                    "compId": "device-count-pie",
+                    "name": "Device Count Pie"
+                },
+                "configValue": {
+                    "title": "Device Count Pie",
+                    "type": "device-count-pie",
+                    "material-key": "ISC_WEB_COMP_R_CHART_DEVICE_COUNT_PIE",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 7,
+                        "minH": 5
+                    },
+                    "properties": {
+                        "source": "topologyStatic",
+                        "chartType": "circle",
+                        "predicates": {
+                            "interval": "",
+                            "aggregation": "",
+                            "dateRange": [],
+                            "keyList": [],
+                            "grouping": "",
+                            "iotIds": [],
+                            "topologyResource": "Device"
+                        },
+                        "timeMode": "realTime",
+                        "title": "Device Count Pie",
+                        "type": "pie",
+                        "timeFormat": [],
+                        "configList": ["Title", "Type", "Theme", "ResourceList"]
+                    },
+                    "snapshoot": "./static/media/pie.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Device Reading Gauge",
+                    "compId": "device-reading-gauge",
+                    "name": "Device Reading Gauge"
+                },
+                "configValue": {
+                    "type": "device_reading_gauge",
+                    "material-key": "ISC_WEB_COMP_R_DEVICE_READING_GAUGE_CHART",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 6,
+                        "minH": 5
+                    },
+                    "properties": {
+                        "title": "Gauge Chart",
+                        "source": "topology",
+                        "predicates": {
+                            "interval": "",
+                            "aggregation": "",
+                            "dateRange": [],
+                            "iotIds": []
+                        },
+                        "gauge": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "timeMode": "realTime",
+                        "type": "gauge",
+                        "timeFormat": [],
+                        "configList": [
+                            "Title",
+                            "Device",
+                            "SinglePara",
+                            "LocalAggregation",
+                            "GaugeMinMax",
+                            "GaugeThreshold"
+                        ]
+                    },
+                    "snapshoot": "./static/media/gauge.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "CHART",
+                    "element": {
+                        "uri": "/charts"
+                    },
+                    "desc": "Aggregated Device Reading Gauge",
+                    "compId": "aggregated-device-reading-gauge",
+                    "name": "Aggregated Device Reading Gauge"
+                },
+                "configValue": {
+                    "type": "aggregated_device_reading_gauge",
+                    "material-key": "ISC_WEB_COMP_R_AGGREGATED_DEVICE_READING_GAUGE_CHART",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 14,
+                        "h": 12,
+                        "minW": 6,
+                        "minH": 5
+                    },
+                    "properties": {
+                        "title": "Aggregated Gauge Chart",
+                        "source": "event",
+                        "multiDevice": false,
+                        "predicates": {
+                            "interval": "",
+                            "aggregation": "Average",
+                            "dateRange": [],
+                            "iotIds": []
+                        },
+                        "gauge": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "timeMode": "realTime",
+                        "type": "gauge",
+                        "timeFormat": [],
+                        "configList": [
+                            "Title",
+                            "Device",
+                            "Aggregation",
+                            "SinglePara",
+                            "Time",
+                            "GaugeMinMax",
+                            "GaugeThreshold"
+                        ]
+                    },
+                    "snapshoot": "./static/media/gauge.PNG"
+                }
+            }
+        ]
+    },
+    {
+        "category": "TEXT TABLE",
+        "label": "Text Table",
+        "template": [
+            {
+                "metadata": {
+                    "category": "TEXT TABLE",
+                    "element": {
+                        "uri": "/panel"
+                    },
+                    "desc": "No. of alarms",
+                    "compId": "number-of-alarms",
+                    "name": "No. of alarms"
+                },
+                "configValue": {
+                    "title": "No. of alarms",
+                    "type": "no-of-alarm",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_ALARM",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 8,
+                        "h": 5,
+                        "minW": 6,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "Alarms in last 7 Days",
+                        "type": "Alarm Panel",
+                        "backgroundColor": "#f57f17",
+                        "icon": "warning",
+                        "iconColor": "white",
+                        "count": "0"
+                    },
+                    "snapshoot": "./static/media/no_of_alarms.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "TEXT TABLE",
+                    "element": {
+                        "uri": "/panel"
+                    },
+                    "desc": "No. of devices",
+                    "compId": "no-of-devices",
+                    "name": "No. of devices"
+                },
+                "configValue": {
+                    "title": "No. of devices",
+                    "type": "no-of-devices",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_DEVICE",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 8,
+                        "h": 5,
+                        "minW": 6,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "Devices",
+                        "backgroundColor": "lightblue",
+                        "icon": "donut_small",
+                        "iconColor": "white",
+                        "type": "Device Panel"
+                    },
+                    "snapshoot": "./static/media/no_of_devices.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "TEXT TABLE",
+                    "element": {
+                        "uri": "/panel"
+                    },
+                    "desc": "Device Reading Panel",
+                    "compId": "device-reading-panel",
+                    "name": "Device Reading Panel"
+                },
+                "configValue": {
+                    "title": "Device Reading Panel",
+                    "type": "device-reading-panel",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_DEVICE_READING",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 8,
+                        "h": 5,
+                        "minW": 6,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "device readings",
+                        "backgroundColor": "#00b8d4",
+                        "icon": "developer_board",
+                        "iconColor": "white",
+                        "type": "Device Reading Panel"
+                    },
+                    "snapshoot": "./static/media/latest_device_reading.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "TEXT TABLE",
+                    "element": {
+                        "uri": "/panel"
+                    },
+                    "desc": "events in last 7 days",
+                    "compId": "event-panel",
+                    "name": "Event Panel"
+                },
+                "configValue": {
+                    "title": "Event Panel",
+                    "type": "event-panel",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_PANEL_EVENT",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 8,
+                        "h": 5,
+                        "minW": 6,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "events in last 7 days",
+                        "backgroundColor": "#01579b",
+                        "icon": "event",
+                        "iconColor": "white",
+                        "type": "Event Panel"
+                    },
+                    "snapshoot": "./static/media/aggregated_device_reading.PNG"
+                }
+            }
+        ]
+    },
+    {
+        "category": "LIST",
+        "maturity": 5,
+        "label": "List",
+        "template": [
+            {
+                "metadata": {
+                    "category": "LIST",
+                    "element": {
+                        "uri": "/alarm"
+                    },
+                    "desc": "alarms",
+                    "compId": "list-alarm",
+                    "name": "alarms"
+                },
+                "configValue": {
+                    "title": "Alarms",
+                    "type": "list-alarm",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_ALARM_GRID",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 20,
+                        "h": 16,
+                        "maxW": 50,
+                        "maxH": 30,
+                        "minW": 15,
+                        "minH": 10
+                    },
+                    "properties": {
+                        "isActive": [],
+                        "viewMode": ["Search", "Stream"],
+                        "itemsData": [],
+                        "title": "Alarm List",
+                        "subTitle": "",
+                        "pageLimit": 10,
+                        "pageNo": 1,
+                        "pageSize": [10, 20, 50, 100, 200],
+                        "dateStyle": "HH:mm:ss DD-MMM-YYYY",
+                        "order": "desc",
+                        "orderBy": "sentdatetime",
+                        "orderDisplayName": "Send Time",
+                        "sortLists": [
+                            {
+                                "displayName": "Severity",
+                                "key": "severity",
+                                "sortName": "capevent.severity"
+                            },
+                            {
+                                "displayName": "Send Time",
+                                "key": "sentdatetime",
+                                "sortName": "capevent.sentdatetime"
+                            },
+                            {
+                                "displayName": "Alarm Type",
+                                "key": "alarmtype",
+                                "sortName": "capalarm.alarmtype"
+                            },
+                            {
+                                "displayName": "Source",
+                                "key": "source",
+                                "sortName": "capevent.source"
+                            },
+                            {
+                                "displayName": "Note",
+                                "key": "note",
+                                "sortName": "capevent.note"
+                            },
+                            {
+                                "displayName": "Owner",
+                                "key": "owner",
+                                "sortName": "capalarm.owner"
+                            },
+                            {
+                                "displayName": "State",
+                                "key": "state",
+                                "sortName": "capalarm.state"
+                            }
+                        ],
+                        "sortListsConfig": [
+                            {
+                                "displayName": "Severity",
+                                "key": "severity",
+                                "sortName": "capevent.severity"
+                            },
+                            {
+                                "displayName": "Send Time",
+                                "key": "sentdatetime",
+                                "sortName": "capevent.sentdatetime"
+                            },
+                            {
+                                "displayName": "Alarm Type",
+                                "key": "alarmtype",
+                                "sortName": "capalarm.alarmtype"
+                            },
+                            {
+                                "displayName": "Source",
+                                "key": "source",
+                                "sortName": "capevent.source"
+                            },
+                            {
+                                "displayName": "Note",
+                                "key": "note",
+                                "sortName": "capevent.note"
+                            },
+                            {
+                                "displayName": "Owner",
+                                "key": "owner",
+                                "sortName": "capalarm.owner"
+                            },
+                            {
+                                "displayName": "State",
+                                "key": "state",
+                                "sortName": "capalarm.state"
+                            }
+                        ],
+                        "ascDesc": [
+                            {
+                                "displayName": "A-Z",
+                                "sortName": "asc"
+                            },
+                            {
+                                "displayName": "Z-A",
+                                "sortName": "desc"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "alarmtype",
+                                "title": "Alarm Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "class",
+                                "title": "Class",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "owner",
+                                "title": "Owner",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "state",
+                                "title": "State",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "availableColumnsConfig": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "alarmtype",
+                                "title": "Alarm Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "class",
+                                "title": "Class",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "owner",
+                                "title": "Owner",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "state",
+                                "title": "State",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "sorterData": [
+                            {
+                                "ascending": false,
+                                "sortfield": "capevent.sentdatetime"
+                            }
+                        ],
+                        "source": "alarmList",
+                        "topoDisplayType": "Search",
+                        "predicates": {
+                            "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"]
+                        },
+                        "severityKey": {
+                            "1": "critical",
+                            "2": "major",
+                            "3": "minor",
+                            "4": "info",
+                            "5": "unknown"
+                        },
+                        "optionType": [
+                            {
+                                "value": "EQ",
+                                "name": "equals"
+                            },
+                            {
+                                "value": "IN",
+                                "name": "in"
+                            },
+                            {
+                                "value": "LIKE",
+                                "name": "like"
+                            },
+                            {
+                                "value": "START_WITH",
+                                "name": "start with"
+                            },
+                            {
+                                "value": "END_WITH",
+                                "name": "end with"
+                            }
+                        ],
+                        "fieldsType": [
+                            {
+                                "value": "id",
+                                "name": "Alarm Id"
+                            },
+                            {
+                                "value": "alarmtype",
+                                "name": "Alarm Type"
+                            },
+                            {
+                                "value": "associations",
+                                "name": "Associations"
+                            },
+                            {
+                                "value": "eventtype",
+                                "name": "Event Type"
+                            },
+                            {
+                                "value": "forcedby",
+                                "name": "Force Closed By"
+                            },
+                            {
+                                "value": "note",
+                                "name": "Note"
+                            },
+                            {
+                                "value": "owner",
+                                "name": "Owner"
+                            },
+                            {
+                                "value": "parameters",
+                                "name": "Parameters"
+                            },
+                            {
+                                "value": "references",
+                                "name": "References"
+                            },
+                            {
+                                "value": "resourcepath",
+                                "name": "Resource Path"
+                            },
+                            {
+                                "value": "senderid",
+                                "name": "Sender Id"
+                            },
+                            {
+                                "value": "sentdatetime",
+                                "name": "Sent Datetime"
+                            },
+                            {
+                                "value": "severity",
+                                "name": "Severity"
+                            },
+                            {
+                                "value": "source",
+                                "name": "Source"
+                            },
+                            {
+                                "value": "state",
+                                "name": "State"
+                            }
+                        ],
+                        "columnConfig": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "alarmtype",
+                                "title": "Alarm Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "class",
+                                "title": "Class",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "owner",
+                                "title": "Owner",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "state",
+                                "title": "State",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "eventDetailWhiteList": {
+                            "Basics": [
+                                "Severity",
+                                "Note",
+                                "References",
+                                "Source",
+                                "Resourcepath",
+                                "Sentdatetime",
+                                "Senderid",
+                                "Eventtype",
+                                "id"
+                            ],
+                            "Parameters": ["accountid", "deviceid", "devicetypeid"],
+                            "Infos": [
+                                "Sendername",
+                                "Expires",
+                                "Description",
+                                "Onset",
+                                "Informationurl",
+                                "Eventcodes",
+                                "Effective",
+                                "Eventtype"
+                            ]
+                        }
+                    },
+                    "snapshoot": "./static/media/alarm_list.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "LIST",
+                    "element": {
+                        "uri": "/topology"
+                    },
+                    "desc": "devices",
+                    "compId": "list-devices",
+                    "name": "devices"
+                },
+                "configValue": {
+                    "title": "Devices",
+                    "type": "list-devices",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_DEVICES_GRID",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 24,
+                        "h": 15,
+                        "maxW": 50,
+                        "maxH": 30,
+                        "minW": 4,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "Device List",
+                        "subTitle": "",
+                        "pageLimit": 20,
+                        "pageSize": [10, 20, 50, 100, 200],
+                        "availableColumnsConfig": [
+                            {
+                                "columnName": "Icon",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Device Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Real World Resource Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Device Type Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Status",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Application ID",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "System Resource ID",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "columnConfig": [
+                            {
+                                "columnName": "Icon",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Device Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Real World Resource Name",
+                                "defaultSelect": false
+                            },
+                            {
+                                "columnName": "Device Type Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Status",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Application ID",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "System Resource ID",
+                                "defaultSelect": false
+                            }
+                        ],
+                        "tabTypes": ["detail", "alarm", "event", "chart"],
+                        "filterConfig": [
+                            {
+                                "filterName": "Status",
+                                "filterType": "select",
+                                "values": ["Online", "Offline", "Error", "Warning", "Unknown"],
+                                "defaultValue": []
+                            },
+                            {
+                                "filterName": "Device Type",
+                                "filterType": "select",
+                                "values": [],
+                                "defaultValue": []
+                            },
+                            {
+                                "filterName": "Application ID",
+                                "filterType": "input",
+                                "defaultValue": ""
+                            }
+                        ],
+                        "sortLists": [
+                            {
+                                "displayName": "Device Name",
+                                "sortName": "physical.name"
+                            },
+                            {
+                                "displayName": "Real World Resource Name",
+                                "sortName": "physical.displayName"
+                            },
+                            {
+                                "displayName": "Device Type Name",
+                                "sortName": "devicemodel.name"
+                            },
+                            {
+                                "displayName": "Status",
+                                "sortName": "property.sensorstatus"
+                            },
+                            {
+                                "displayName": "Application ID",
+                                "sortName": "address.name"
+                            },
+                            {
+                                "displayName": "System Resource ID",
+                                "sortName": "physical.iotTopologyId"
+                            }
+                        ],
+                        "ascDesc": [
+                            {
+                                "displayName": "A-Z",
+                                "sortName": "asc"
+                            },
+                            {
+                                "displayName": "Z-A",
+                                "sortName": "desc"
+                            }
+                        ],
+                        "topoDisplayType": "List",
+                        "multipleSelect": false,
+                        "orderDisplayName": "Device Name",
+                        "orderDirection": "asc"
+                    },
+                    "snapshoot": "./static/media/devices_list.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "LIST",
+                    "element": {
+                        "uri": "/event"
+                    },
+                    "desc": "events-list",
+                    "compId": "event-list",
+                    "name": "events"
+                },
+                "configValue": {
+                    "title": "Events",
+                    "type": "event-list",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_EVENT_GRID",
+                    "settings": {
+                        "exportable": true
+                    },
+                    "layout": {
+                        "w": 20,
+                        "h": 16,
+                        "maxW": 32,
+                        "maxH": 20,
+                        "minW": 15,
+                        "minH": 10
+                    },
+                    "properties": {
+                        "viewMode": ["Search", "Stream"],
+                        "isActive": [],
+                        "itemsData": [],
+                        "title": "Event List",
+                        "subTitle": "",
+                        "pageLimit": 10,
+                        "pageNo": 0,
+                        "pageSize": [10, 20, 50, 100, 200],
+                        "dateStyle": "HH:mm:ss DD-MMM-YYYY",
+                        "order": "desc",
+                        "orderBy": "sentdatetime",
+                        "orderDisplayName": "Send Time",
+                        "sorterData": [
+                            {
+                                "ascending": false,
+                                "sortfield": "capevent.sentdatetime"
+                            }
+                        ],
+                        "source": "eventList",
+                        "topoDisplayType": "Search",
+                        "predicates": {
+                            "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"]
+                        },
+                        "severityKey": {
+                            "1": "Critical",
+                            "2": "Major",
+                            "3": "Minor",
+                            "4": "Info",
+                            "5": "Clear",
+                            "6": "Reading",
+                            "7": "Unknown"
+                        },
+                        "sortLists": [
+                            {
+                                "displayName": "Severity",
+                                "key": "severity",
+                                "sortName": "capevent.severity"
+                            },
+                            {
+                                "displayName": "Send Time",
+                                "key": "sentdatetime",
+                                "sortName": "capevent.sentdatetime"
+                            },
+                            {
+                                "displayName": "Event Type",
+                                "key": "eventtype",
+                                "sortName": "capevent.eventtype"
+                            },
+                            {
+                                "displayName": "Source",
+                                "key": "source",
+                                "sortName": "capevent.source"
+                            },
+                            {
+                                "displayName": "Note",
+                                "key": "note",
+                                "sortName": "capevent.note"
+                            }
+                        ],
+                        "sortListsConfig": [
+                            {
+                                "displayName": "Severity",
+                                "key": "severity",
+                                "sortName": "capevent.severity"
+                            },
+                            {
+                                "displayName": "Send Time",
+                                "key": "sentdatetime",
+                                "sortName": "capevent.sentdatetime"
+                            },
+                            {
+                                "displayName": "Event Type",
+                                "key": "eventtype",
+                                "sortName": "capevent.eventtype"
+                            },
+                            {
+                                "displayName": "Source",
+                                "key": "source",
+                                "sortName": "capevent.source"
+                            },
+                            {
+                                "displayName": "Note",
+                                "key": "note",
+                                "sortName": "capevent.note"
+                            }
+                        ],
+                        "ascDesc": [
+                            {
+                                "displayName": "A-Z",
+                                "sortName": "asc"
+                            },
+                            {
+                                "displayName": "Z-A",
+                                "sortName": "desc"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "eventtype",
+                                "title": "Event Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "availableColumnsConfig": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "eventtype",
+                                "title": "Event Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "optionType": [
+                            {
+                                "value": "EQ",
+                                "name": "equals"
+                            },
+                            {
+                                "value": "IN",
+                                "name": "in"
+                            },
+                            {
+                                "value": "LIKE",
+                                "name": "like"
+                            },
+                            {
+                                "value": "START_WITH",
+                                "name": "start with"
+                            },
+                            {
+                                "value": "END_WITH",
+                                "name": "end with"
+                            }
+                        ],
+                        "fieldsType": [
+                            {
+                                "value": "id",
+                                "name": "Event Id"
+                            },
+                            {
+                                "value": "eventtype",
+                                "name": "Event Type"
+                            },
+                            {
+                                "value": "note",
+                                "name": "Note"
+                            },
+                            {
+                                "value": "parameters",
+                                "name": "Parameters"
+                            },
+                            {
+                                "value": "resourcepath",
+                                "name": "Resource Path"
+                            },
+                            {
+                                "value": "senderid",
+                                "name": "Sender Id"
+                            },
+                            {
+                                "value": "sentdatetime",
+                                "name": "Sent Datetime"
+                            },
+                            {
+                                "value": "severity",
+                                "name": "Severity"
+                            },
+                            {
+                                "value": "source",
+                                "name": "Source"
+                            }
+                        ],
+                        "columnConfig": [
+                            {
+                                "key": "severity",
+                                "title": "Severity",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "sentdatetime",
+                                "title": "Send Time",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "eventtype",
+                                "title": "Event Type",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "source",
+                                "title": "Source",
+                                "defaultSelect": true
+                            },
+                            {
+                                "key": "note",
+                                "title": "Note",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "eventDetailWhiteList": {
+                            "Basics": [
+                                "Severity",
+                                "Note",
+                                "References",
+                                "Source",
+                                "Resourcepath",
+                                "Sentdatetime",
+                                "Senderid",
+                                "Eventtype",
+                                "id"
+                            ],
+                            "Parameters": ["accountid", "deviceid", "devicetypeid"],
+                            "Resources": [],
+                            "Infos": [
+                                "Sendername",
+                                "Expires",
+                                "Description",
+                                "Onset",
+                                "Informationurl",
+                                "Eventcodes",
+                                "Effective",
+                                "Eventtype"
+                            ]
+                        }
+                    },
+                    "snapshoot": "./static/media/event_list.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "LIST",
+                    "element": {
+                        "uri": "/rule"
+                    },
+                    "desc": "list-rule",
+                    "compId": "list-rule",
+                    "name": "rule"
+                },
+                "configValue": {
+                    "title": "Rules",
+                    "type": "list-rule",
+                    "material-key": "ISC_WEB_COMP_R_RULE_RULE_GRID",
+                    "settings": {
+                        "exportable": false
+                    },
+                    "layout": {
+                        "w": 15,
+                        "h": 15,
+                        "maxW": 32,
+                        "maxH": 30,
+                        "minW": 4,
+                        "minH": 4
+                    },
+                    "properties": {
+                        "title": "List of Rules",
+                        "subTitle": "",
+                        "pageLimit": 10,
+                        "pageSize": [10, 20, 50, 100, 200],
+                        "availableColumnsConfig": [
+                            {
+                                "columnName": "Rule Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Description",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Modified By",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Last Modified",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "columnConfig": [
+                            {
+                                "columnName": "Rule Name",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Description",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Modified By",
+                                "defaultSelect": true
+                            },
+                            {
+                                "columnName": "Last Modified",
+                                "defaultSelect": true
+                            }
+                        ],
+                        "tabTypes": ["Info", "Conditions", "Actions"],
+                        "filterConfig": [
+                            {
+                                "filterName": "Rule Name",
+                                "filterType": "input",
+                                "defaultValue": ""
+                            }
+                        ],
+                        "sortLists": [
+                            {
+                                "displayName": "Rule Name",
+                                "sortName": "configname"
+                            }
+                        ],
+                        "ascDesc": [
+                            {
+                                "displayName": "A-Z",
+                                "sortName": "asc"
+                            },
+                            {
+                                "displayName": "Z-A",
+                                "sortName": "desc"
+                            }
+                        ],
+                        "ruleDisplayType": "List",
+                        "multipleSelect": true,
+                        "orderBy": "configname",
+                        "orderDirection": "asc",
+                        "orderDisplayName": "Rule Name",
+                        "fullScreen": true
+                    },
+                    "snapshoot": "./static/media/rule_list.PNG"
+                }
+            }
+        ]
+    },
+    {
+        "category": "MAP",
+        "label": "Map",
+        "template": [
+            {
+                "metadata": {
+                    "category": "MAP",
+                    "element": {
+                        "uri": "/mapWidget"
+                    },
+                    "desc": "Alarm Locations",
+                    "compId": "alarm-location-map",
+                    "name": "Alarm Locations"
+                },
+                "configValue": {
+                    "title": "Alarm Locations",
+                    "type": "alarm-location-map",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_ALARM_LOCATION_MAP",
+                    "settings": {
+                        "exportable": true,
+                        "editable": true
+                    },
+                    "layout": {
+                        "w": 30,
+                        "h": 20
+                    },
+                    "properties": {
+                        "title": "Alarm Locations in last 1 day",
+                        "icon": "warning",
+                        "iconColor": "red",
+                        "type": "Alarm Locations",
+                        "defaultZoom": 12
+                    },
+                    "snapshoot": "./static/media/alarm_map.jpg"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "MAP",
+                    "element": {
+                        "uri": "/mapWidget"
+                    },
+                    "desc": "Device Locations",
+                    "compId": "device-location-map",
+                    "name": "Device Locations"
+                },
+                "configValue": {
+                    "title": "Device Locations",
+                    "type": "device-location-map",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_DEVICE_LOCATION_MAP",
+                    "settings": {
+                        "exportable": false,
+                        "editable": true
+                    },
+                    "layout": {
+                        "w": 30,
+                        "h": 20
+                    },
+                    "properties": {
+                        "title": "Device Locations",
+                        "icon": "alarm",
+                        "iconColor": "red",
+                        "type": "Device Locations",
+                        "defaultZoom": 12
+                    },
+                    "snapshoot": "./static/media/device_map.jpg"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "MAP",
+                    "element": {
+                        "uri": "/mapWidget"
+                    },
+                    "desc": "Basic Map",
+                    "compId": "basic-map",
+                    "name": "Basic Map"
+                },
+                "configValue": {
+                    "title": "Basic Map",
+                    "type": "basic-map",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_BASIC_MAP",
+                    "settings": {
+                        "exportable": false,
+                        "editable": true
+                    },
+                    "layout": {
+                        "w": 16,
+                        "h": 16
+                    },
+                    "properties": {
+                        "title": "Basic Map",
+                        "icon": "alarm",
+                        "iconColor": "red",
+                        "type": "Basic Map",
+                        "defaultZoom": 2
+                    },
+                    "snapshoot": "./static/media/topology_map.jpg"
+                }
+            }
+        ]
+    },
+    {
+        "category": "TREE AND GRAPH",
+        "label": "Tree and Graph",
+        "template": [
+            {
+                "metadata": {
+                    "category": "TREE AND GRAPH",
+                    "element": {
+                        "uri": "/topologyTreeAndGraph"
+                    },
+                    "desc": "Topology Tree",
+                    "compId": "topology-tree",
+                    "name": "Topology Tree"
+                },
+                "configValue": {
+                    "title": "Topology Tree",
+                    "type": "topology-tree",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_TOPOLOGY_TREE",
+                    "settings": {
+                        "exportable": false,
+                        "editable": false
+                    },
+                    "layout": {
+                        "w": 5,
+                        "h": 15,
+                        "minW": 5,
+                        "minH": 15
+                    },
+                    "properties": {
+                        "title": "Topology Tree",
+                        "containerType": "onlyShowTree"
+                    },
+                    "snapshoot": "./static/media/topology_tree.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "TREE AND GRAPH",
+                    "element": {
+                        "uri": "/topologyTreeAndGraph"
+                    },
+                    "desc": "Topology Graph",
+                    "compId": "topology-graph",
+                    "name": "Topology Graph"
+                },
+                "configValue": {
+                    "title": "Topology Graph",
+                    "type": "topology-graph",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_TOPOLOGY_GRAPH",
+                    "settings": {
+                        "exportable": false,
+                        "editable": false
+                    },
+                    "layout": {
+                        "w": 10,
+                        "h": 15,
+                        "minW": 10,
+                        "minH": 15
+                    },
+                    "properties": {
+                        "title": "Topology Graph",
+                        "containerType": "onlyShowGraph"
+                    },
+                    "snapshoot": "./static/media/topology_graph.PNG"
+                }
+            },
+            {
+                "metadata": {
+                    "category": "TREE AND GRAPH",
+                    "element": {
+                        "uri": "/topologyTreeAndGraph"
+                    },
+                    "desc": "Topology Tree Graph",
+                    "compId": "topology-tree-graph",
+                    "name": "Topology Tree Graph"
+                },
+                "configValue": {
+                    "title": "Topology Tree Graph",
+                    "type": "topology-tree-graph",
+                    "material-key": "ISC_WEB_COMP_R_COMMON_TOPOLOGY_TREE_GRAPH",
+                    "settings": {
+                        "exportable": false,
+                        "editable": false
+                    },
+                    "layout": {
+                        "w": 20,
+                        "h": 15,
+                        "minW": 10,
+                        "minH": 15
+                    },
+                    "properties": {
+                        "title": "Topology Tree Graph",
+                        "containerType": "showTreeGraph"
+                    },
+                    "snapshoot": "./static/media/topology_tree_graph.PNG"
+                }
+            }
+        ]
+    }
+]

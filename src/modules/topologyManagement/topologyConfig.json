@@ -1,0 +1,150 @@
+{
+    "tableColumnsConfig": [
+        {
+            "columnName": "Icon",
+            "columnConfig": {
+                "id": "Icon",
+                "label": "Icon",
+                "jsonpath": "$['icon']",
+                "sort": false
+            }
+        },
+        {
+            "columnName": "Device Name",
+            "columnConfig": {
+                "id": "physical.name",
+                "label": "Device Name",
+                "jsonpath": "$['physical.name']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Real World Resource Name",
+            "columnConfig": {
+                "id": "physical.displayName",
+                "label": "Real World Resource Name",
+                "jsonpath": "$['physical.displayName']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Status",
+            "columnConfig": {
+                "id": "property.sensorstatus",
+                "label": "Status",
+                "jsonpath": "$['properties'].sensorstatus",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Action",
+            "columnConfig": {
+                "id": "Action",
+                "label": "Action",
+                "jsonpath": "$['action']",
+                "sort": false
+            }
+        },
+        {
+            "columnName": "Device Type Name",
+            "columnConfig": {
+                "id": "devicemodel.name",
+                "label": "Device Type Name",
+                "jsonpath": "$['devicemodel.name']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Location",
+            "columnConfig": {
+                "id": "location.displayName",
+                "label": "Location",
+                "jsonpath": "$['location.displayName']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Application ID / Address ID",
+            "columnConfig": {
+                "id": "address.name",
+                "label": "Application ID / Address ID",
+                "jsonpath": "$['address.name']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "System Resource ID",
+            "columnConfig": {
+                "id": "physical.iotTopologyId",
+                "label": "System Resource ID",
+                "jsonpath": "$['physical.iotTopologyId']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Parent Device",
+            "columnConfig": {
+                "id": "parentdevice.name",
+                "label": "Parent Device",
+                "jsonpath": "$['parentdevice.name']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "ResourcePath",
+            "columnConfig": {
+                "id": "physical.resourcePath",
+                "label": "ResourcePath",
+                "jsonpath": "$['physical.resourcePath']",
+                "sort": true
+            }
+        }
+    ],
+    "tableTypeColumnsConfig": [
+        {
+            "columnName": "Icon",
+            "columnConfig": {
+                "id": "Icon",
+                "label": "Icon",
+                "jsonpath": "$['icon']",
+                "sort": false
+            }
+        },
+        {
+            "columnName": "Device Type",
+            "columnConfig": {
+                "id": "devicemodel.displayName",
+                "label": "Device Type",
+                "jsonpath": "$['devicemodel.displayName']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Device Type Name",
+            "columnConfig": {
+                "id": "devicemodel.name",
+                "label": "Device Type Name",
+                "jsonpath": "$['devicemodel.name']",
+                "sort": true
+            }
+        },
+        {
+            "columnName": "Description",
+            "columnConfig": {
+                "id": "description",
+                "label": "Description",
+                "jsonpath": "$['description']",
+                "sort": false
+            }
+        },
+        {
+            "columnName": "Action",
+            "columnConfig": {
+                "id": "Action",
+                "label": "Action",
+                "jsonpath": "$['action']",
+                "sort": false
+            }
+        }
+    ]
+}

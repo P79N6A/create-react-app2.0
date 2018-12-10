@@ -1,0 +1,305 @@
+{
+    "metadata": {
+        "author": "SC",
+        "version": "1.0.0",
+        "desc": "show me the money"
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Audit"
+            }
+        ]
+    },
+    "identify": "alarm page",
+    "material-key": "ISC_WEB_PAGE_R_TEST",
+    "modules": [
+        {
+            "identify": "alarm",
+            "uri": "/alarm",
+            "material-key": "ISC_WEB_COMP_R_ALARM_LIST",
+            "props": {
+                "isActive": [],
+                "itemsData": [],
+                "title": "List of Alarms",
+                "subTitle": "",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100, 200],
+                "dateStyle": "HH:mm:ss DD-MMM-YYYY",
+                "order": "desc",
+                "orderBy": "sentdatetime",
+                "orderDisplayName": "Send Time",
+                "sortLists": [
+                    {
+                        "displayName": "Severity",
+                        "key": "severity",
+                        "sortName": "capevent.severity"
+                    },
+                    {
+                        "displayName": "Send Time",
+                        "key": "sentdatetime",
+                        "sortName": "capevent.sentdatetime"
+                    },
+                    {
+                        "displayName": "Alarm Type",
+                        "key": "alarmtype",
+                        "sortName": "capalarm.alarmtype"
+                    },
+                    {
+                        "displayName": "Source",
+                        "key": "source",
+                        "sortName": "capevent.source"
+                    },
+                    {
+                        "displayName": "Note",
+                        "key": "note",
+                        "sortName": "capevent.note"
+                    }
+                ],
+                "sortListsConfig": [
+                    {
+                        "displayName": "Severity",
+                        "key": "severity",
+                        "sortName": "capevent.severity"
+                    },
+                    {
+                        "displayName": "Send Time",
+                        "key": "sentdatetime",
+                        "sortName": "capevent.sentdatetime"
+                    },
+                    {
+                        "displayName": "Alarm Type",
+                        "key": "alarmtype",
+                        "sortName": "capalarm.alarmtype"
+                    },
+                    {
+                        "displayName": "Source",
+                        "key": "source",
+                        "sortName": "capevent.source"
+                    },
+                    {
+                        "displayName": "Note",
+                        "key": "note",
+                        "sortName": "capevent.note"
+                    }
+                ],
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columns": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "alarmtype",
+                        "title": "Alarm Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "availableColumnsConfig": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "alarmtype",
+                        "title": "Alarm Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "sorterData": [
+                    {
+                        "ascending": false,
+                        "sortfield": "capevent.sentdatetime"
+                    }
+                ],
+                "source": "alarmList",
+                "topoDisplayType": "Search",
+                "predicates": {
+                    "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"]
+                },
+                "severityKey": {
+                    "1": "critical",
+                    "2": "major",
+                    "3": "minor",
+                    "4": "info",
+                    "5": "clear",
+                    "6": "reading",
+                    "7": "unknown"
+                },
+                "optionType": [
+                    {
+                        "value": "EQ",
+                        "name": "equals"
+                    },
+                    {
+                        "value": "IN",
+                        "name": "in"
+                    },
+                    {
+                        "value": "LIKE",
+                        "name": "like"
+                    },
+                    {
+                        "value": "START_WITH",
+                        "name": "start with"
+                    },
+                    {
+                        "value": "END_WITH",
+                        "name": "end with"
+                    }
+                ],
+                "fieldsType": [
+                    {
+                        "value": "id",
+                        "name": "Alarm Id"
+                    },
+                    {
+                        "value": "alarmtype",
+                        "name": "Alarm Type"
+                    },
+                    {
+                        "value": "associations",
+                        "name": "Associations"
+                    },
+                    {
+                        "value": "eventtype",
+                        "name": "Event Type"
+                    },
+                    {
+                        "value": "forcedby",
+                        "name": "Force Closed By"
+                    },
+                    {
+                        "value": "note",
+                        "name": "Note"
+                    },
+                    {
+                        "value": "parameters",
+                        "name": "Parameters"
+                    },
+                    {
+                        "value": "references",
+                        "name": "References"
+                    },
+                    {
+                        "value": "resourcepath",
+                        "name": "Resource Path"
+                    },
+                    {
+                        "value": "senderid",
+                        "name": "Sender Id"
+                    },
+                    {
+                        "value": "sentdatetime",
+                        "name": "Sent Datetime"
+                    },
+                    {
+                        "value": "severity",
+                        "name": "Severity"
+                    },
+                    {
+                        "value": "source",
+                        "name": "Source"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "alarmtype",
+                        "title": "Alarm Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "eventDetailWhiteList": {
+                    "Basics": [
+                        "Severity",
+                        "Note",
+                        "References",
+                        "Format",
+                        "Source",
+                        "Resourcepath",
+                        "Sentdatetime",
+                        "Senderid",
+                        "Eventtype",
+                        "id"
+                    ],
+                    "Parameters": [],
+                    "Resources": [],
+                    "Infos": [
+                        "Sendername",
+                        "Expires",
+                        "Format",
+                        "Description",
+                        "Onset",
+                        "Informationurl",
+                        "Eventcodes",
+                        "Effective",
+                        "Eventtype"
+                    ]
+                }
+            }
+        }
+    ]
+}

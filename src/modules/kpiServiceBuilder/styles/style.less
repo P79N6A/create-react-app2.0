@@ -1,0 +1,28 @@
+.kpiQuery-all{
+    width:100%;
+    height:100%;
+}
+.kpiQuery-scroll{
+    overflow: auto;
+}
+.kpiQuery-drawer{
+    .kpiQuery-all;
+    overflow: hidden;
+    position: relative;
+}
+.kpiQuery-title{
+    width: 100%;
+    height: calc(100% - 72px);
+}
+.kpiQuery-contaniner{
+    .kpiQuery-all;
+    overflow: hidden;
+    .kpiQuery-content{
+        display:flex;
+        flex-direction: column;
+        .kpiQuery-row{
+            // display: flex;
+            // justify-content: space-around
+        }
+    }
+}

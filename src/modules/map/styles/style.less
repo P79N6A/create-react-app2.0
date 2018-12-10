@@ -1,0 +1,23 @@
+@import "../../mapAndPanelCommon/styles/mapCommon";
+
+.wrapper_map();
+.bottom_tool_bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    .geo-button {
+        margin: 5px 10px
+    }
+    .input_wrapper {
+        flex: 1;
+        margin: 0 10px;
+        .geo_input {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

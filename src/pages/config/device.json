@@ -1,0 +1,151 @@
+{
+    "metadata": {
+        "author": "XL",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Devices"
+            }
+        ]
+    },
+    "material-key": "ISC_WEB_COMP_R_TOPOLOGY_TOPOLOGY_LIST",
+    "modules": [
+        {
+            "identify": "",
+            "material-key": "ISC_WEB_COMP_R_TOPOLOGY_TOPOLOGY_LIST",
+            "props": {
+                "title": "Device List",
+                "subTitle": "",
+                "pageLimit": 20,
+                "pageSize": [10, 20, 50, 100, 200],
+                "availableColumnsConfig": [
+                    {
+                        "columnName": "Icon",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Device Name",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Real World Resource Name",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Device Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Status",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Application ID",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "System Resource ID",
+                        "defaultSelect": true
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "columnName": "Icon",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Device Name",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Real World Resource Name",
+                        "defaultSelect": false
+                    },
+                    {
+                        "columnName": "Device Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Status",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "Application ID",
+                        "defaultSelect": true
+                    },
+                    {
+                        "columnName": "System Resource ID",
+                        "defaultSelect": false
+                    }
+                ],
+                "tabTypes": ["detail", "alarm", "event", "chart"],
+                "filterConfig": [
+                    {
+                        "filterName": "Status",
+                        "defaultValue": []
+                    },
+                    {
+                        "filterName": "Device Type",
+                        "defaultValue": []
+                    },
+                    {
+                        "filterName": "Application ID",
+                        "defaultValue": ""
+                    }
+                ],
+                "sortLists": [
+                    {
+                        "displayName": "Device Name",
+                        "sortName": "physical.name"
+                    },
+                    {
+                        "displayName": "Real World Resource Name",
+                        "sortName": "physical.displayName"
+                    },
+                    {
+                        "displayName": "Device Type",
+                        "sortName": "devicetype.displayName"
+                    },
+                    {
+                        "displayName": "Status",
+                        "sortName": "logical.sensorstatus"
+                    },
+                    {
+                        "displayName": "Location",
+                        "sortName": "location.displayName"
+                    },
+                    {
+                        "displayName": "Application ID",
+                        "sortName": "address.displayName"
+                    },
+                    {
+                        "displayName": "ResourcePath",
+                        "sortName": "physical.resourcePath"
+                    },
+                    {
+                        "displayName": "System Resource ID",
+                        "sortName": "physical.iotTopologyId"
+                    }
+                ],
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "topoDisplayType": "List",
+                "multipleSelect": false,
+                "orderDisplayName": "Device Name",
+                "orderDirection": "asc"
+            }
+        }
+    ]
+}

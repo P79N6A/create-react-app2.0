@@ -1,0 +1,26 @@
+.animationBox {
+    display: inline-block;
+    width: ~"calc(20% - 12px)";
+    margin-right: 12px;
+    margin-bottom: 12px;
+    // min-width: 325px;
+    min-width: 200px;
+}
+
+@media (max-width: 1400px) {
+    .animationBox {
+        width: ~"calc(25% - 12px)";
+    }
+}
+
+@media (max-width: 1200px) {
+    .animationBox {
+        width: ~"calc(50% - 12px)";
+    }
+}
+
+@media (max-width: 768px) {
+    .animationBox {
+        width: ~"calc(100% - 12px)";
+    }
+}

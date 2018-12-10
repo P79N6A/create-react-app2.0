@@ -1,0 +1,335 @@
+{
+    "identify": "modals",
+    "material-key": "ISC_WEB_COMP_U_CCMS_MODALS",
+    "uri": "/ccmsModal",
+    "props": {
+        "open": false,
+        "reminder": {
+            "mode": "reminder",
+            "title": "Are you sure ?",
+            "headerActions": [
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true
+                },
+                {
+                    "id": "positive",
+                    "text": "exit dashboard without saving",
+                    "active": true
+                }
+            ]
+        },
+        "add": {
+            "mode": "add",
+            "title": "Add New Dashboard",
+            "headerActions": [
+                {
+                    "id": "switch",
+                    "icon": "keyboard_backspace",
+                    "active": true,
+                    "target": 0,
+                    "state": 1
+                },
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true,
+                    "state": 0
+                },
+                {
+                    "id": "positive",
+                    "text": "next",
+                    "active": true,
+                    "state": 0,
+                    "variant": "contained"
+                },
+                {
+                    "id": "switch",
+                    "text": "back",
+                    "active": true,
+                    "target": 0,
+                    "state": 1
+                },
+                {
+                    "id": "positive",
+                    "text": "finish",
+                    "active": true,
+                    "state": 1,
+                    "variant": "contained"
+                }
+            ],
+            "props": {
+                "steps": [
+                    {
+                        "label": "Select a dashboard template",
+                        "step": 0,
+                        "id": "step1"
+                    },
+                    {
+                        "label": "Enter youir dashboard detail",
+                        "step": 1,
+                        "id": "step2"
+                    }
+                ],
+                "templateCategories": [
+                    {
+                        "id": "default",
+                        "label": "Basic Templates"
+                    },
+                    {
+                        "id": "user",
+                        "label": "User Submitted Templates"
+                    }
+                ]
+            }
+        },
+        "move": {
+            "mode": "move",
+            "title": "Move To Group",
+            "headerActions": [
+                {
+                    "id": "switch",
+                    "icon": "add",
+                    "active": true,
+                    "target": 1,
+                    "state": 0
+                },
+                {
+                    "id": "switch",
+                    "icon": "keyboard_backspace",
+                    "active": true,
+                    "target": 0,
+                    "state": 1
+                },
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true,
+                    "state": 0
+                },
+                {
+                    "id": "switch",
+                    "text": "back",
+                    "active": true,
+                    "target": 0,
+                    "state": 1
+                },
+                {
+                    "id": "positive",
+                    "text": "submit",
+                    "active": true,
+                    "state": 0,
+                    "variant": "contained"
+                },
+                {
+                    "id": "positive",
+                    "text": "create",
+                    "active": true,
+                    "state": 1
+                }
+            ]
+        },
+        "duplicate": {
+            "mode": "duplicate",
+            "title": "Duplicate Dashboard",
+            "headerActions": [
+                {
+                    "id": "switch",
+                    "icon": "add",
+                    "active": true,
+                    "target": 1,
+                    "state": 0
+                },
+                {
+                    "id": "switch",
+                    "icon": "keyboard_backspace",
+                    "active": true,
+                    "target": 0,
+                    "state": 1
+                },
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true
+                },
+                {
+                    "id": "positive",
+                    "text": "create",
+                    "active": true,
+                    "variant": "contained"
+                }
+            ]
+        },
+        "delete": {
+            "mode": "delete",
+            "title": "Are You Sure ?",
+            "headerActions": [
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "positive",
+                    "text": "ok",
+                    "active": true
+                }
+            ]
+        },
+        "rename": {
+            "mode": "rename",
+            "title": "Rename Dashboard",
+            "headerActions": [
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "close",
+                    "active": true
+                },
+                {
+                    "id": "positive",
+                    "text": "submit",
+                    "active": true
+                }
+            ]
+        },
+        "export": {
+            "mode": "export",
+            "title": "Export CSV Reports For",
+            "headerActions": [
+                {
+                    "id": "checkAll",
+                    "icon": "done",
+                    "active": true
+                },
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true
+                },
+                {
+                    "id": "positive",
+                    "text": "export",
+                    "active": true
+                }
+            ]
+        },
+        "template": {
+            "mode": "template",
+            "title": "Save as New Dashboard Template",
+            "headerActions": [
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "nagetive",
+                    "text": "cancel",
+                    "active": true
+                },
+                {
+                    "id": "positive",
+                    "text": "save",
+                    "active": true,
+                    "variant": "contained"
+                }
+            ]
+        },
+        "group": {
+            "mode": "group",
+            "padding": false,
+            "title": "Group Management",
+            "headerActions": [
+                {
+                    "id": "switch",
+                    "icon": "add",
+                    "active": true,
+                    "target": 1,
+                    "state": 0
+                },
+                {
+                    "id": "nagetive",
+                    "icon": "close",
+                    "active": true
+                }
+            ],
+            "actions": [
+                {
+                    "id": "switch",
+                    "text": "back",
+                    "active": true,
+                    "target": 0,
+                    "state": [1, 2, 3]
+                },
+                {
+                    "id": "positive",
+                    "text": "save",
+                    "active": true,
+                    "state": 1,
+                    "variant": "contained"
+                },
+                {
+                    "id": "positive",
+                    "text": "delete",
+                    "active": true,
+                    "state": 2,
+                    "variant": "contained"
+                },
+                {
+                    "id": "positive",
+                    "text": "edit",
+                    "active": true,
+                    "state": 3,
+                    "variant": "contained"
+                }
+            ]
+        }
+    }
+}

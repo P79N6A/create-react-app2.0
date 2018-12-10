@@ -1,0 +1,47 @@
+.detail {
+    height: calc(100% - 72px);
+    overflow-y: auto;
+    position: relative;
+    .progressBox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .headTitle {
+        padding: 16px 24px;
+    }
+    .detailCont {
+        height: calc(100% - 57px);
+        overflow-y: auto;
+    }
+    .tree {
+        ul {
+            padding-left: 0;
+        }
+        .listItemText {
+            padding-right: 0;
+            position: relative;
+            p {
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            span {
+                margin-top: 1.46em;
+                word-break: break-all;
+            }
+        }
+    }
+}
+.drawerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}

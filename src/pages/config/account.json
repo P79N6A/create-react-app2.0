@@ -1,0 +1,23 @@
+{
+    "metadata": {
+        "author": "LJ",
+        "version": "1.0.0",
+        "desc": ""
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Accounts"
+            }
+        ]
+    },
+    "material-key": "ISC_WEB_PAGE_C_ACCOUNT_ACCOUNT_MANAGEMENT",
+    "modules": [
+        {
+            "identify": "account",
+            "uri": "/accountmanagement",
+            "props": {}
+        }
+    ]
+}

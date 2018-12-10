@@ -1,0 +1,2 @@
+export const SNACKBAR_LOAD = "ISC/SNACKBAR_LOAD";
+export const SNACKBAR_CLEAR = "ISC/SNACKBAR_CLEAR";

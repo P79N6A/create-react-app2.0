@@ -1,0 +1,155 @@
+{
+    "metadata": {
+        "category": "LIST",
+        "element": {
+            "uri": "/sopManagement"
+        },
+        "desc": "list-sops",
+        "compId": "list-sops",
+        "name": "sops"
+    },
+    "configValue": {
+        "title": "Sops",
+        "type": "list-sops",
+        "material-key": "ISC_WEB_COMP_R_SOP_SOP_GRID",
+        "layout": {
+            "w": 15,
+            "h": 15,
+            "maxW": 32,
+            "maxH": 30,
+            "minW": 4,
+            "minH": 4
+        },
+        "properties": {
+            "title": "Sop(s)",
+            "subTitle": "",
+            "pageLimit": 10,
+            "rowsPerPageOptions": [
+                10,
+                20,
+                50,
+                100,
+                200
+            ],
+            "pagination": {
+                "limit": 10,
+                "currentpage": 1,
+                "totalpages": 0,
+                "totalrecords": 0
+            },
+            
+            "columnDatas": [
+                {
+                    "label": "MultipleSelect",
+                    "indexKey": "multipleSelect",
+                    "show": true
+                },
+                {
+                    "label": "AlarmType",
+                    "indexKey": "alarmtype",
+                    "show": true
+                },
+                {
+                    "label": "ProcessDefinitionId",
+                    "indexKey": "processdefinitionid",
+                    "show": true
+                },
+                {
+                    "label": "StartTime",
+                    "indexKey": "starttime",
+                    "show": true
+                },
+                {
+                    "label": "EndTime",
+                    "indexKey": "endtime",
+                    "show": true
+                },
+                {
+                    "label": "Action",
+                    "indexKey": "action",
+                    "show": true
+                }
+            ],
+            "columnConfig": [
+                {
+                    "label": "",
+                    "indexKey": "multipleSelect",
+                    "show": true
+                },
+                {
+                    "label": "AlarmType",
+                    "indexKey": "alarmtype",
+                    "show": true
+                },
+                {
+                    "label": "ProcessDefinitionId",
+                    "indexKey": "processdefinitionid",
+                    "show": true
+                },
+                {
+                    "label": "StartTime",
+                    "indexKey": "starttime",
+                    "show": true
+                },
+                {
+                    "label": "EndTime",
+                    "indexKey": "endtime",
+                    "show": true
+                },
+                {
+                    "label": "Action",
+                    "indexKey": "action",
+                    "show": true
+                }
+            ],
+            "tabTypes": [
+                "Info",
+                "Conditions",
+                "Actions"
+            ],
+            "filterConfig": [
+                {
+                    "filterName": "Name",
+                    "defaultValue": []
+                }
+            ],
+            "sortLists": [
+                {
+                    "displayName": "AlarmType",
+                    "sortfield": "eventtype",
+                    "ascending": true
+                },
+                {
+                    "displayName": "ProcessDefinitionId",
+                    "sortfield": "sopkey",
+                    "ascending": false
+                },
+                {
+                    "displayName": "StartTime",
+                    "sortfield": "starttime",
+                    "ascending": false
+                },
+                {
+                    "displayName": "EndTime",
+                    "sortfield": "endtime",
+                    "ascending": false
+                }
+            ],
+            "ascDesc": [
+                {
+                    "displayName": "A-Z",
+                    "sortName": "asc"
+                },
+                {
+                    "displayName": "Z-A",
+                    "sortName": "desc"
+                }
+            ],
+            "sopsDisplayType": "List",
+            "multipleSelect": true,
+            "orderBy": "eventtype",
+            "orderDirection": "asc",
+            "orderDisplayName": "AlarmType"
+        }
+    }
+}

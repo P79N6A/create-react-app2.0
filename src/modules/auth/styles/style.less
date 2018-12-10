@@ -1,0 +1,172 @@
+.login-component {
+    margin-top: 80px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .login-logo {
+        text-align: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 360px;
+            height: 144px;
+        }
+    }
+
+    .login-body {
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5)
+    }
+    
+    .btn {
+        padding: 9px 12px;
+        padding-top: 7px;
+        cursor: pointer;
+        border-radius: 3px;
+        background-image: none !important;
+        border: none;
+    }
+    
+    input:focus, .btn:focus {
+        outline: none;
+    }
+    
+    .btn:hover,
+    .btn:focus,
+    .btn:active,
+    .btn.active,
+    .btn.disabled,
+    .btn[disabled] {
+        background-color: #c1cace;
+    }
+    
+    .btn-primary {
+        margin-top: 10px;
+        // margin-left: -20px;
+        // width: 360px;
+        color: #fff;
+        background-color: #0aa699;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary.disabled,
+    .btn-primary[disabled] {
+        background-color: #0b9c8f;
+    }
+    
+    .login-powered {
+        padding: 100px 0 15px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .login-form {
+        padding: 10px;
+        margin-top: 1px;
+        // height: 90px;
+    }
+    
+    // .login-form .invalid {
+    //     box-shadow: 0px 0px 10px 0px indianred inset;
+    // }
+    
+    .input-group {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .input-group select{
+        height:42px!important;
+    }
+    
+    .input-group-addon {
+        border: 1px solid #E5E9EC;
+        color: #9EA9B2;
+        font-size: 14px;
+        padding: 6px 10px;
+        border-radius: 3px;
+        background-color: #fff;
+        padding: 8px 1px 10px 1px;
+        border-right: 0 !important;
+        width: 45px;
+    }
+    
+    .form-control {
+        border: 1px solid #E5E9EC;
+        font-size: 13px;
+        width: 100%;
+        margin-bottom: 0;
+        box-shadow: none;
+        // border-left: 0px !important;
+        margin-left: -1px;
+    }
+    
+    .login-date-time {
+        background: #1fb5ad;
+        border-radius: 5px 5px 0 0;
+        padding: 10px 20px 60px;
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .login-date-time h2 {
+        color: #fff;
+        margin-top: 0;
+    }
+    
+    .login-date-time p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    ul#clock li {
+        border: none;
+    }
+    
+    #clock {
+        position: relative;
+        width: 185px;
+        height: 185px;
+        margin: -95px auto 0;
+        background: url(../images/clockface.png) no-repeat;
+        list-style: none;
+    }
+    
+    #sec,
+    #min,
+    #hour {
+        position: absolute;
+        width: 15px;
+        height: 185px;
+        top: 0px;
+        left: 83px;
+    }
+    
+    #sec {
+        background: url(../images/sechand.png);
+        z-index: 3;
+        overflow: hidden;
+    }
+    
+    #min {
+        background: url(../images/minhand.png);
+        z-index: 2;
+    }
+    
+    #hour {
+        background: url(../images/hourhand.png);
+        z-index: 1;
+    }
+
+    .input-group-addon{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,54 @@
+.searchWrap {
+    overflow: hidden;
+    .searchCriteria {
+        .item {
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+    }
+    .fadeBox {
+        width: 580px;
+        position: absolute;
+        right: 15px;
+        z-index: 2;
+        top: 60px;
+        .alarmSearchSelect {
+            width: 70px;
+            height:50px;
+            overflow: hidden;
+            padding-right: 15px;
+            .css-d8oujb {
+                display: none;
+            }
+            .css-1ep9fjw {
+                padding: 6px;
+            }
+            .css-1uq0kb5 {
+                padding: 6px;
+            }
+        }
+    }
+    // .blink {
+    //     -webkit-animation: twinkling 2s infinite ease-in-out;
+    //     animation: twinkling 2s infinite ease-in-out;
+    //     -webkit-animation-fill-mode: both;
+    //     animation-fill-mode: both;
+    //     background-color: #02bad1;
+    //     cursor: move;
+    // }
+    @keyframes twinkling {
+        0% {
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+        }
+        50% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        100% {
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+        }
+    }
+}

@@ -1,0 +1,266 @@
+.floatTab-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .float-tab-cont {
+        padding: 16px 24px;
+        height: calc(100% - 84px);
+        .edit-device-type-info {
+            height: calc(100% - 36px);
+            overflow-y: auto;
+            .edit-basic-type {
+                .basic-type-list {
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 90%;
+                    display: inline-block;
+                    .list {
+                        width: 45%;
+                        margin-right: 1%;
+                        .basictype-select {
+                            & > div {
+                                & > div {
+                                    height: 1.1875em;
+                                }
+                            }
+                        }
+                        & > div {
+                            & > span {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+            .panel_icons_wrap {
+                width: 100%;
+                .ant-popover-inner-content {
+                    padding: 0;
+                }
+                .title_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    .anticon {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+                .panel_color_wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .remind {
+                        flex: 1;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                    }
+                    .mark_icon {
+                        width: 60px;
+                        box-shadow: none;
+                        margin: 6px 0;
+                        min-width: 50px;
+                        background-color: transparent;
+                        min-height: 26px;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .add-device-type-footer {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 16px;
+            padding-right: 24px;
+        }
+        .edit-device-detail {
+            // height: 100%;
+            height: calc(100% - 70px);
+            overflow-y: auto;
+            padding: 0 24px;
+        }
+    }
+    .topo-add-device {
+        height: calc(100% - 72px);
+        .topo-stepper {
+            height: 100%;
+            .stepper-cont {
+                height: calc(100% - 140px);
+                padding: 16px 24px;
+                overflow: hidden;
+            }
+            .stepper-footer {
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 0 24px;
+            }
+        }
+    }
+    .add-device-type {
+        padding: 16px 24px;
+        height: calc(100% - 84px);
+        .edit-device-type-info {
+            height: calc(100% - 52px);
+            overflow-y: auto;
+            .edit-basic-type {
+                .basic-type-list {
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 90%;
+                    display: inline-block;
+                    .list {
+                        width: 45%;
+                        margin-right: 2%;
+                    }
+                }
+            }
+            .panel_icons_wrap {
+                width: 100%;
+                .ant-popover-inner-content {
+                    padding: 0;
+                }
+                .title_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    .anticon {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+                .panel_color_wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .remind {
+                        flex: 1;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                    }
+                    .mark_icon {
+                        width: 30px;
+                        box-shadow: none;
+                        margin: 6px 0;
+                        min-width: 50px;
+                        background-color: transparent;
+                        min-height: 26px;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .add-device-type-footer {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 0 24px;
+            margin-top: 16px;
+        }
+    }
+}
+.panel_icons_box_picker {
+    width: 345px;
+    .icons_box_content {
+        max-height: 250px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        .panel_icon_item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            margin: 2px;
+            padding: 2px;
+            color: #fff;
+            &:hover {
+                span {
+                    color: aqua;
+                }
+            }
+        }
+        .icon_item_active {
+            color: aqua;
+        }
+        .icon_not_found {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+#tree-dialog {
+    .topo-tree-dialog {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        .right-item {
+            float: left;
+        }
+        .tree-cont {
+            height: calc(100% - 64px);
+            .top-cont {
+                &:after {
+                    display: block;
+                    clear: both;
+                    content: "";
+                    visibility: hidden;
+                    height: 0;
+                }
+                .left-tree {
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+                }
+                .right-cont {
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+                }
+                .topo-tab {
+                    .avatar-uploader > .ant-upload {
+                        width: 550px;
+                        height: 180px;
+                    }
+                    .upload-content {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .upload-content-action {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .upload-content:hover .upload-content-action {
+                        z-index: 2;
+                        background-color: rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }
+
+            .stepper-footer {
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 16px 24px;
+            }
+        }
+    }
+}

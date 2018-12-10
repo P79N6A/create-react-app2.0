@@ -1,0 +1,283 @@
+{
+    "tableColumnsConfig": [
+        {
+            "columnName": "Icon",
+            "columnConfig": {
+                "id": "Icon",
+                "label": "Icon",
+                "jsonpath": "$['icon']"
+            }
+        },
+        {
+            "columnName": "Device Name",
+            "columnConfig": {
+                "id": "physical.name",
+                "label": "Device Name",
+                "jsonpath": "$['physical.name']"
+            }
+        },
+        {
+            "columnName": "Real World Resource Name",
+            "columnConfig": {
+                "id": "physical.displayName",
+                "label": "Real World Resource Name",
+                "jsonpath": "$['physical.displayName']"
+            }
+        },
+        {
+            "columnName": "Status",
+            "columnConfig": {
+                "id": "property.sensorstatus",
+                "label": "Status",
+                "jsonpath": "$['properties'].sensorstatus"
+            }
+        },
+        {
+            "columnName": "Action",
+            "columnConfig": {
+                "id": "Action",
+                "label": "Action",
+                "jsonpath": "$['action']"
+            }
+        },
+        {
+            "columnName": "Device Type Name",
+            "columnConfig": {
+                "id": "devicemodel.name",
+                "label": "Device Type Name",
+                "jsonpath": "$['devicemodel.name']"
+            }
+        },
+        {
+            "columnName": "Location",
+            "columnConfig": {
+                "id": "location.name",
+                "label": "Location",
+                "jsonpath": "$['location.name']"
+            }
+        },
+        {
+            "columnName": "Application ID",
+            "columnConfig": {
+                "id": "address.name",
+                "label": "Application ID",
+                "jsonpath": "$['address.name']"
+            }
+        },
+        {
+            "columnName": "System Resource ID",
+            "columnConfig": {
+                "id": "physical.iotTopologyId",
+                "label": "System Resource ID",
+                "jsonpath": "$['physical.iotTopologyId']"
+            }
+        },
+        {
+            "columnName": "ResourcePath",
+            "columnConfig": {
+                "id": "physical.resourcePath",
+                "label": "ResourcePath",
+                "jsonpath": "$['physical.resourcePath']"
+            }
+        }
+    ],
+    "alarmSeverityKey": {
+        "1": {
+            "label": "critical",
+            "color": "#e41f1f"
+        },
+        "2": {
+            "label": "major",
+            "color": "#f37901"
+        },
+        "3": {
+            "label": "minor",
+            "color": "#f3b101"
+        },
+        "4": {
+            "label": "info",
+            "color": "#00a7ad"
+        },
+        "5": {
+            "label": "unknown",
+            "color": "#81cfe0"
+        }
+    },
+    "eventSeverityKey": {
+        "Critical": {
+            "label": "critical",
+            "color": "#e41f1f"
+        },
+        "Major": {
+            "label": "major",
+            "color": "#f37901"
+        },
+        "Minor": {
+            "label": "minor",
+            "color": "#f3b101"
+        },
+        "Info": {
+            "label": "info",
+            "color": "#00a7ad"
+        },
+        "Clear": {
+            "label": "Clear",
+            "color": "#adadad"
+        },
+        "Reading": {
+            "label": "Reading",
+            "color": "#a2ded0"
+        },
+        "Unknown": {
+            "label": "unknown",
+            "color": "#81cfe0"
+        }
+    },
+    "sensorStatus": [
+        {
+            "statusDisplayName": "Online",
+            "statusColor": "#55cb5a"
+        },
+        {
+            "statusDisplayName": "Offline",
+            "statusColor": "#c0c2c4"
+        },
+        {
+            "statusDisplayName": "Unknown Error",
+            "statusColor": "#ee506a"
+        }
+    ],
+    "topologyView": [
+        {
+            "viewDisplayName": "Device List",
+            "topoDisplayType": "List"
+        },
+        {
+            "viewDisplayName": "Device Table",
+            "topoDisplayType": "Table"
+        }
+    ],
+    "cardViewDataMapping": {
+        "deviceDisplayName": {
+            "jsonpath": "$['physical.name']"
+        },
+        "deviceTypeName": {
+            "jsonpath": "$['devicemodel.displayName']"
+        },
+        "sensorStatus": {
+            "jsonpath": "$['logical.sensorstatus']"
+        }
+    },
+    "DeviceTypeConfig": {
+        "nb-iot-sensor": {
+            "icon": "fa fa-tint",
+            "key": [
+                {
+                    "keyName": "temperatureValue",
+                    "keyJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5700_Temperature Sensor Value']",
+                    "unit": "temperatureUnits",
+                    "unitJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5701_Temperature Sensor Units']",
+                    "defaultDisplay": "",
+                    "dataSeq": "0"
+                },
+                {
+                    "keyName": "humidityValue",
+                    "keyJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5700_Pressure Sensor Value']",
+                    "unit": "humidityUnits",
+                    "unitJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5701_Pressure Sensor Units']",
+                    "defaultDisplay": "",
+                    "dataSeq": "1"
+                }
+            ]
+        },
+        "smart-edge-camera": {
+            "icon": "fa fa-camera",
+            "key": [
+                {
+                    "keyName": "temperatureValue",
+                    "unit": "temperatureUnits",
+                    "keyJSONPath": "$['properties']['sensorstatus']",
+                    "defaultDisplay": "",
+                    "dataSeq": "0"
+                }
+            ]
+        },
+        "evb-nb-iot-sensor": {
+            "icon": "fa fa-thermometer-quarter",
+            "key": [
+                {
+                    "keyName": "temperatureValue",
+                    "unit": "temperatureUnits",
+                    "keyJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5700_CO2Setpoint Sensor Value']",
+                    "unitJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5701_CO2Setpoint Sensor Units']",
+                    "defaultDisplay": "",
+                    "dataSeq": "0"
+                },
+                {
+                    "keyName": "atmosphericPressureValue",
+                    "unit": "atmosphericPressureUnits",
+                    "keyJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5700_CO2Setpoint Sensor Value']",
+                    "unitJSONPath": "$['properties']['SO_DAT_3300_Generic Sensor_5701_CO2Setpoint Sensor Units']",
+                    "defaultDisplay": "",
+                    "dataSeq": "1"
+                }
+            ]
+        },
+        "defaultType": {
+            "icon": "fa fa-bookmark",
+            "key": [
+                {
+                    "keyName": "temperatureValue",
+                    "unit": "temperatureUnits",
+                    "defaultDisplay": "",
+                    "dataSeq": "0"
+                },
+                {
+                    "keyName": "humidityValue",
+                    "unit": "humidityUnits",
+                    "defaultDisplay": "",
+                    "dataSeq": "1"
+                }
+            ]
+        },
+        "addDevice": {
+            "icon": "fa fa-plus"
+        }
+    },
+    "alarmDetailDisplayKeys": [
+        {
+            "displayName": "Alarmtype",
+            "JSONPath": "$['alarmtype']"
+        },
+        {
+            "displayName": "State",
+            "JSONPath": "$['state']"
+        },
+        {
+            "displayName": "Owner",
+            "JSONPath": "$['owner']"
+        },
+        {
+            "displayName": "AlarmId",
+            "JSONPath": "$['id']"
+        },
+        {
+            "displayName": "Source",
+            "JSONPath": "$['source']"
+        }
+    ],
+    "eventDetailDisplayKeys": [
+        {
+            "displayName": "Eventtype",
+            "JSONPath": "$['eventtype']"
+        },
+        {
+            "displayName": "EventId",
+            "JSONPath": "$['id']"
+        },
+        {
+            "displayName": "Source",
+            "JSONPath": "$['source']"
+        }
+    ]
+}

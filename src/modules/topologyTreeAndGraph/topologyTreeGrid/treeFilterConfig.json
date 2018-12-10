@@ -1,0 +1,26 @@
+{
+    "device": [
+        {
+            "field": "physical.name",
+            "operator": "LIKE",
+            "value": ""
+        },
+        {
+            "field": "physical.resourcePath",
+            "operator": "LIKE",
+            "value": ""
+        }
+    ],
+    "address": [
+        {
+            "field": "address.resourcePath",
+            "operator": "LIKE",
+            "value": ""
+        }
+    ],
+    "underApplication": {
+        "field": "address.resourcePath",
+        "operator": "LIKE",
+        "value": ""
+    }
+}

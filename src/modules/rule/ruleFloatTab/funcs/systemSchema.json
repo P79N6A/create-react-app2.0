@@ -1,0 +1,48 @@
+{
+    "ruleSchema":{ 
+        "name": {
+            "default": "Enter rule name here.",
+            "displayname": "Name",
+            "size": 25,
+            "mandatory": true,
+            "valueregex": "",
+            "valueerror": "",
+            "datatype": "string",
+            "operations": "rw",
+            "units": "",
+            "multiselect": null,
+            "enum": null,
+            "comp": "input"
+        },
+        "description": {
+            "default": "Enter rule description here.",
+            "displayname": "Description",
+            "size": 200,
+            "mandatory": false,
+            "valueregex": "",
+            "valueerror": "",
+            "datatype": "string",
+            "operations": "rw",
+            "units": "",
+            "multiselect": null,
+            "enum": null,
+            "comp": "textarea"
+        }
+    },
+    "conditionSchema":{
+        "condition": {
+            "default": "Enter rule condition here.",
+            "displayname": "Condition",
+            "size": 1000,
+            "mandatory": false,
+            "valueregex": "",
+            "valueerror": "",
+            "datatype": "string",
+            "operations": "rw",
+            "units": "",
+            "multiselect": null,
+            "enum": null,
+            "comp": "textarea"
+        }
+    }
+}

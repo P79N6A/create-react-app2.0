@@ -1,0 +1,29 @@
+{
+    "identify": "deviceImport",
+    "uri": "/deviceImport",
+    "props": {
+        "title": "Device Import",
+        "subTitle": "Import History",
+        "pageLimit": 20,
+        "pageSize": [
+            10,
+            20,
+            50,
+            100,
+            200
+        ],
+        "postData": {
+            "type": "importerStatusRequest",
+            "format": "filter",
+            "predicate": {
+                "field": "request.fileName",
+                "operator": "LIKE",
+                "value": ""
+            },
+            "paginator": {
+                "pageno": "",
+                "limit": 20
+            }
+        }
+    }
+}

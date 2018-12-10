@@ -1,0 +1,30 @@
+{
+    "devicetypeConfig": [
+        {
+            "displayKey": "defaultvalues",
+            "jsonpath": "$..devicetype.values"
+        },
+        {
+            "displayKey": "basictypes",
+            "jsonpath": "$..devicetype.basictypes.values"
+        },
+        {
+            "displayKey": "additionalproperty",
+            "jsonpath": "$..devicetype.additionalproperty.values"
+        },
+        {
+            "displayKey": "deviceproperty",
+            "jsonpath": "$..devicetype.deviceproperty.values"
+        }
+    ],
+    "applicationConfig": [
+        {
+            "displayKey": "application",
+            "jsonpath": "$..application.values"
+        },
+        {
+            "displayKey": "address",
+            "jsonpath": "$..address.values"
+        }
+    ]
+}

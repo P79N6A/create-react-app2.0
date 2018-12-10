@@ -1,0 +1,13 @@
+[
+    {
+        "comp": "timeline/timelineContent/views/container",
+        "config": {
+            "identify": "Timeline",
+            "properties": {
+                "identify": "timeline",
+                "title": "Timeline",
+                "subTitle": ""
+            }
+        }
+    }
+]

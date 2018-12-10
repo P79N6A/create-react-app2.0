@@ -1,0 +1,44 @@
+{
+    "oldPassword": {
+        "default": "Old Password",
+        "displayname": "Old Password",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": "[\\s\\S]{8,}",
+        "valueerror": "Must be required, At least 8 characters",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "password"
+    },
+    "newPassword": {
+        "default": "New Password",
+        "displayname": "New Password",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": "^.*(?=.{6,})(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*?.]).{8,20}$",
+        "valueerror": "Must be include A-Z a-z 0-9 !@#$%^&*?. 8-20",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "password"
+    },
+    "confirmPassword": {
+        "default": "Confirm Password",
+        "displayname": "Confirm Password",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": "The passwords entered are inconsistent",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "password"
+    }
+}

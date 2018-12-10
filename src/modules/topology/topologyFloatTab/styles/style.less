@@ -1,0 +1,152 @@
+.floatTab-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .topo-tab {
+        height: calc(100% - 72px);
+        .detail-cont {
+            height: calc(100% - 48px);
+            overflow: hidden;
+            padding: 0 !important;
+        }
+        .detail-expand-card {
+            height: 100%;
+            .detail-cont-list {
+                height: calc(100% - 57px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 0;
+                .info-ul {
+                    .info-list {
+                        span {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+            .expand-card-cont {
+                overflow-x: auto;
+                overflow-y: hidden;
+                height: calc(100% - 16px);
+                table {
+                    tr {
+                        th {
+                            white-space: nowrap;
+                        }
+                        td {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .topo-alarm {
+        position: relative;
+        height: 100%;
+        .tab-list-wrap {
+            height: 100%;
+            overflow: auto;
+            padding: 12px 16px;
+            .no-data {
+                height: calc(100% - 57px);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            tr {
+                td {
+                    white-space: nowrap;
+                }
+            }
+            .severity-div {
+                width: 14px;
+                height: 25px;
+                position: absolute;
+                top: 0;
+                left: 7px;
+            }
+            .severity-span {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                top: 25px;
+                position: absolute;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+    }
+    .topo-event {
+        position: relative;
+        height: 100%;
+        .tab-list-wrap {
+            height: 100%;
+            overflow: auto;
+            padding: 12px 16px;
+            .no-data {
+                height: calc(100% - 57px);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            tr {
+                td {
+                    white-space: nowrap;
+                }
+            }
+            .severity-div {
+                width: 14px;
+                height: 25px;
+                position: absolute;
+                top: 0;
+                left: 7px;
+            }
+            .severity-span {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                top: 25px;
+                position: absolute;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+    }
+    .topo-chart {
+        height: 100%;
+        overflow: hidden;
+        .topo-chart-cont {
+            height: 100%;
+            .chart-config {
+                padding: 16px 24px;
+                height: 40%;
+                overflow-y: auto;
+            }
+            .chart {
+                height: 60%;
+                padding: 16px 24px;
+            }
+        }
+        .openEditor {
+            height: calc(100% - 372px);
+        }
+        .closeEditor {
+            height: calc(100% - 72px);
+        }
+    }
+    .common-pagination {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

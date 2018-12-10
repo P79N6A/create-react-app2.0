@@ -1,0 +1,73 @@
+{
+  "compId": "topology",
+  "compType": "WINDOW",
+  "configValue": {
+    "category": "topology",
+    "maturity": 5,
+    "element": {
+      "uri": "/topology"
+    },
+    "label": "topology",
+    "types": [
+      {
+        "title": "Basic Panel",
+        "category": "panel",
+        "type": "basic_panel",
+        "material-key": "ISC_WEB_COMP_R_DEMO_SAMPLE_GRID",
+        "properties": {
+          "columnConfig": [
+            {
+              "columnName": "DisplayName",
+              "defaultSelect": true
+            },
+            {
+              "columnName": "Name",
+              "defaultSelect": true
+            },
+            {
+              "columnName": "Status",
+              "defaultSelect": true
+            },
+            {
+              "columnName": "DeviceType",
+              "defaultSelect": false
+            },
+            {
+              "columnName": "Location",
+              "defaultSelect": false
+            },
+            {
+              "columnName": "Address",
+              "defaultSelect": false
+            },
+            {
+              "columnName": "IotTopologyId",
+              "defaultSelect": false
+            },
+            {
+              "columnName": "ResourcePath",
+              "defaultSelect": false
+            }
+          ],
+          "title": "Topologylllllllllllll",
+          "tabTypes": [
+            "detail",
+            "alarm",
+            "event"
+          ],
+          "defaultFilterLists": [
+            {
+              "filterType": "Status",
+              "defaultValue": "All"
+            },
+            {
+              "filterType": "DeviceType",
+              "defaultValue": "All"
+            }
+          ]
+        },
+        "snapshoot": "basic_topology"
+      }
+    ]
+  }
+}

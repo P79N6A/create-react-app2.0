@@ -1,0 +1,287 @@
+{
+    "metadata": {
+        "author": "SC",
+        "version": "1.0.0"
+    },
+    "layout": {
+        "header": [
+            true,
+            {
+                "title": "Events"
+            }
+        ]
+    },
+    "identify": "event",
+    "material-key": "ISC_WEB_COMP_EVENT_R_EVENT_LIST",
+    "modules": [
+        {
+            "identify": "",
+            "uri": "/event",
+            "material-key": "ISC_WEB_COMP_EVENT_R_EVENT_LIST",
+            "props": {
+                "identify": "event",
+                "isActive": [],
+                "itemsData": [],
+                "title": "List of Events",
+                "subTitle": "",
+                "pageLimit": 10,
+                "pageNo": 0,
+                "pageSize": [10, 20, 50, 100, 200],
+                "dateStyle": "HH:mm:ss DD-MMM-YYYY",
+                "order": "desc",
+                "orderBy": "sentdatetime",
+                "orderDisplayName": "Send Time",
+                "sorterData": [
+                    {
+                        "ascending": false,
+                        "sortfield": "capevent.sentdatetime"
+                    }
+                ],
+                "source": "eventList",
+                "topoDisplayType": "Stream",
+                "predicates": {
+                    "dateRange": ["isc::{Today(00:00:00)-iso8601::(P7D)}"]
+                },
+                "severityKey": {
+                    "1": "critical",
+                    "2": "major",
+                    "3": "minor",
+                    "4": "info",
+                    "5": "clear",
+                    "6": "reading",
+                    "7": "unknown"
+                },
+                "sortLists": [
+                    {
+                        "displayName": "Severity",
+                        "key": "severity",
+                        "sortName": "capevent.severity"
+                    },
+                    {
+                        "displayName": "Send Time",
+                        "key": "sentdatetime",
+                        "sortName": "capevent.sentdatetime"
+                    },
+                    {
+                        "displayName": "Event Type",
+                        "key": "eventtype",
+                        "sortName": "capevent.eventtype"
+                    },
+                    {
+                        "displayName": "Source",
+                        "key": "source",
+                        "sortName": "capevent.source"
+                    },
+                    {
+                        "displayName": "Note",
+                        "key": "note",
+                        "sortName": "capevent.note"
+                    }
+                ],
+                "sortListsConfig": [
+                    {
+                        "displayName": "Severity",
+                        "key": "severity",
+                        "sortName": "capevent.severity"
+                    },
+                    {
+                        "displayName": "Send Time",
+                        "key": "sentdatetime",
+                        "sortName": "capevent.sentdatetime"
+                    },
+                    {
+                        "displayName": "Event Type",
+                        "key": "eventtype",
+                        "sortName": "capevent.eventtype"
+                    },
+                    {
+                        "displayName": "Source",
+                        "key": "source",
+                        "sortName": "capevent.source"
+                    },
+                    {
+                        "displayName": "Note",
+                        "key": "note",
+                        "sortName": "capevent.note"
+                    }
+                ],
+                "ascDesc": [
+                    {
+                        "displayName": "A-Z",
+                        "sortName": "asc"
+                    },
+                    {
+                        "displayName": "Z-A",
+                        "sortName": "desc"
+                    }
+                ],
+                "columns": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "eventtype",
+                        "title": "Event Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "availableColumnsConfig": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "eventtype",
+                        "title": "Event Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "optionType": [
+                    {
+                        "value": "EQ",
+                        "name": "equals"
+                    },
+                    {
+                        "value": "IN",
+                        "name": "in"
+                    },
+                    {
+                        "value": "LIKE",
+                        "name": "like"
+                    },
+                    {
+                        "value": "START_WITH",
+                        "name": "start with"
+                    },
+                    {
+                        "value": "END_WITH",
+                        "name": "end with"
+                    }
+                ],
+                "fieldsType": [
+                    {
+                        "value": "id",
+                        "name": "Event Id"
+                    },
+                    {
+                        "value": "eventtype",
+                        "name": "Event Type"
+                    },
+                    {
+                        "value": "note",
+                        "name": "Note"
+                    },
+                    {
+                        "value": "parameters",
+                        "name": "Parameters"
+                    },
+                    {
+                        "value": "resourcepath",
+                        "name": "Resource Path"
+                    },
+                    {
+                        "value": "senderid",
+                        "name": "Sender Id"
+                    },
+                    {
+                        "value": "sentdatetime",
+                        "name": "Sent Datetime"
+                    },
+                    {
+                        "value": "severity",
+                        "name": "Severity"
+                    },
+                    {
+                        "value": "source",
+                        "name": "Source"
+                    }
+                ],
+                "columnConfig": [
+                    {
+                        "key": "severity",
+                        "title": "Severity",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "sentdatetime",
+                        "title": "Send Time",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "eventtype",
+                        "title": "Event Type",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "source",
+                        "title": "Source",
+                        "defaultSelect": true
+                    },
+                    {
+                        "key": "note",
+                        "title": "Note",
+                        "defaultSelect": true
+                    }
+                ],
+                "eventDetailWhiteList": {
+                    "Basics": [
+                        "Severity",
+                        "Note",
+                        "References",
+                        "Source",
+                        "Resourcepath",
+                        "Sentdatetime",
+                        "Senderid",
+                        "Eventtype",
+                        "id"
+                    ],
+                    "Parameters": ["accountid", "deviceid", "devicetypeid"],
+                    "Resources": [],
+                    "Infos": [
+                        "Sendername",
+                        "Expires",
+                        "Description",
+                        "Onset",
+                        "Informationurl",
+                        "Eventcodes",
+                        "Effective",
+                        "Eventtype"
+                    ]
+                }
+            }
+        }
+    ]
+}

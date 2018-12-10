@@ -1,0 +1,347 @@
+{
+    "logo": {
+        "default": "Enter account name here.",
+        "displayname": "Account Name",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "logo",
+        "property": {
+            "layout": {
+                "xs": "4"
+            }
+        }
+    },
+    "displayname": {
+        "default": "Enter account name here.",
+        "displayname": "Account Name",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": "^[^ ]",
+        "valueerror": "Must be required and cannot start with a space",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "7"
+            }
+        }
+    },
+    "description": {
+        "default": "Enter account description here.",
+        "displayname": "Description",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "layout": {
+                "xs": "7",
+                "className": "schema-height95"
+            }
+        }
+    },
+    "status": {
+        "default": "Status",
+        "displayname": "Status",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "number",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "switch"
+    },
+    "iotgateway": {
+        "default": "IoThub",
+        "displayname": "IoTGateway",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "number",
+        "operations": "r",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input"
+    },
+    "group": {
+        "default": "Enter group here.",
+        "displayname": "Select Your Group",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "number",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "liveSearchSelect"
+    },
+    "othergroup": {
+        "default": "Enter group here.",
+        "displayname": "Enter Your Group",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": "^[^ ]",
+        "valueerror": "Must be required and cannot start with a space",
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "input",
+        "property": {
+            "ignore": true,
+            "mandatory": true,
+            "visible": {
+                "impactfield": "group",
+                "impactvalue": "Add a new group",
+                "impactlogic": false
+            }
+        }
+    },
+    "uitheme": {
+        "default": "Theme Config",
+        "displayname": "Theme Config",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "theme"
+    },
+    "trialaccount": {
+        "default": "No Expiry",
+        "displayname": "No Expiry",
+        "size": 49,
+        "mandatory": null,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "switch",
+        "property": {
+            "ignore": true
+        }
+    },
+    "dateofexpiry": {
+        "default": "Date of Expiry",
+        "displayname": "Date of Expiry",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "datepicker",
+        "property": {
+            "visible": {
+                "impactfield": "trialaccount",
+                "impactvalue": "true"
+            }
+        }
+    },
+    "location": {
+        "default": "Date of Expiry",
+        "displayname": "location",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "accountmap"
+    },
+    "contact": {
+        "default": "Contact Information",
+        "displayname": "Contact Information",
+        "size": 49,
+        "mandatory": true,
+        "valueregex": null,
+        "valueerror": null,
+        "datatype": "string",
+        "operations": "rw",
+        "units": "",
+        "multiselect": null,
+        "enum": null,
+        "comp": "contact",
+        "children": {
+            "salutation": {
+                "default": "Saiutation",
+                "displayname": "Saiutation",
+                "size": 49,
+                "mandatory": true,
+                "valueregex": "^[^ ]",
+                "valueerror": "Must be required and cannot start with a space",
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": ["Mr.", "Mrs."],
+                "comp": "select",
+                "property": {
+                    "layout": {
+                        "xs": "4"
+                    }
+                }
+            },
+            "name": {
+                "default": "Name",
+                "displayname": "Name",
+                "size": 49,
+                "mandatory": true,
+                "valueregex": "^[^ ]",
+                "valueerror": "Must be required and cannot start with a space",
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input",
+                "property": {
+                    "layout": {
+                        "xs": "8"
+                    }
+                }
+            },
+            "jobtitle": {
+                "default": "Job Title",
+                "displayname": "Job Title",
+                "size": 49,
+                "mandatory": null,
+                "valueregex": null,
+                "valueerror": null,
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input"
+            },
+            "address": {
+                "default": "Address",
+                "displayname": "Address",
+                "size": 49,
+                "mandatory": null,
+                "valueregex": null,
+                "valueerror": null,
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input",
+                "property": {
+                    "disabled": {
+                        "impactfield": "sameasaddress",
+                        "impactvalue": true
+                    }
+                }
+            },
+            "sameasaddress": {
+                "default": "Tick if same as primary contact",
+                "displayname": "Tick if same as primary contact",
+                "size": 49,
+                "mandatory": null,
+                "valueregex": null,
+                "valueerror": null,
+                "datatype": "boolean",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "switch",
+                "property": {
+                    "ignore": true
+                }
+            },
+            "countrycode": {
+                "default": "Country Code",
+                "displayname": "Country Code",
+                "size": 49,
+                "mandatory": true,
+                "valueregex": "^\\+\\d+$",
+                "valueerror": "eg: +86",
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input",
+                "property": {
+                    "layout": {
+                        "xs": "4"
+                    }
+                }
+            },
+            "phone": {
+                "default": "Phone",
+                "displayname": "Phone",
+                "size": 49,
+                "mandatory": true,
+                "valueregex": "^[\\d+]{1,30}$",
+                "valueerror": "Must be enter number, The length limit 30 characters",
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input",
+                "property": {
+                    "layout": {
+                        "xs": "8"
+                    }
+                }
+            },
+            "email": {
+                "default": "Email",
+                "displayname": "Email",
+                "size": 49,
+                "mandatory": true,
+                "valueregex": "^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+                "valueerror": "Example: Dk@ncs.com",
+                "datatype": "string",
+                "operations": "rw",
+                "units": "",
+                "multiselect": null,
+                "enum": null,
+                "comp": "input"
+            }
+        }
+    }
+}
