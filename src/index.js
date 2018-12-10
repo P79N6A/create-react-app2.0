@@ -55,33 +55,53 @@ async function init() {
     return Promise.resolve({ settings, lang, localSetting, getWeatherApiConfSetting, materialKeys });
 }
 
-const TaskOperation = asyncComponent(() => import("./pages/taskOperation"));
-const SopManagement = asyncComponent(() => import("./pages/sopManagement"));
+// const TaskOperation = asyncComponent(() => import("./pages/taskOperation"));
+// const SopManagement = asyncComponent(() => import("./pages/sopManagement"));
 const Activition = asyncComponent(() => import("./pages/activition"));
 const ForgotPassword = asyncComponent(() => import("./pages/forgotPassword"));
 const ResetPassword = asyncComponent(() => import("./pages/resetPassword"));
-const AuditDashboard = asyncComponent(() => import("./pages/audit"));
-const Timeline = asyncComponent(() => import("./pages/timeline"));
+// const AuditDashboard = asyncComponent(() => import("./pages/audit"));
+// const Timeline = asyncComponent(() => import("./pages/timeline"));
+
+// const BaseContainer = asyncComponent(() => import("./pages/containerWithHeaderNav"));
+// const Login = asyncComponent(() => import("./pages/login"));
+// const Map = asyncComponent(() => import("./pages/map"));
+// const Resource = asyncComponent(() => import("./pages/resource"));
+// const application = asyncComponent(() => import("./pages/application"));
+// const Logger = asyncComponent(() => import("./pages/logger"));
+// const Accountmanagement = asyncComponent(() => import("./pages/accountmanagement"));
+// const Association = asyncComponent(() => import("./pages/association"));
+// const boardsLib = asyncComponent(() => import("./pages/boardsLib"));
+// const Security = asyncComponent(() => import("./pages/security"));
+// const pageViewer = asyncComponent(() => import("./pages/pageView"));
+// const deviceProvision = asyncComponent(() => import("./pages/deviceProvision"));
+// const ChartDashboard = asyncComponent(() => import("./pages/chartDashboard"));
+// const AlarmPage = asyncComponent(() => import("./pages/alarm"));
+// const TopologyPage = asyncComponent(() => import("./pages/topology"));
+// const EventDashboard = asyncComponent(() => import("./pages/event"));
+// const Rule = asyncComponent(() => import("./pages/rule"));
+// const queryBuilder = asyncComponent(() => import("./pages/queryBuilder"));
 
 //  ! TO-DO render config
 //  ! @TEST
 //  ! ready to use it
-const AlarmTest = configComponent(() => import("./pages/config/alarm.json"));
-const EventTest = configComponent(() => import("./pages/config/event.json"));
-const RuleTest = configComponent(() => import("./pages/config/rule.json"));
-const DeviceTest = configComponent(() => import("./pages/config/device.json"));
+// const AlarmTest = configComponent(() => import("./pages/config/alarm.json"));
+// const EventTest = configComponent(() => import("./pages/config/event.json"));
+// const RuleTest = configComponent(() => import("./pages/config/rule.json"));
+// const DeviceTest = configComponent(() => import("./pages/config/device.json"));
 const DashboardTest = configComponent(() => import("./pages/config/dashboard.json"));
-const LoggerTest = configComponent(() => import("./pages/config/logger.json"));
-const ApplicationTest = configComponent(() => import("./pages/config/application.json"));
-const SecurityTest = configComponent(() => import("./pages/config/security.json"));
-const AccountTest = configComponent(() => import("./pages/config/account.json"));
-const DeviceProvision = configComponent(() => import("./pages/config/deviceProvision.json"));
+// const LoggerTest = configComponent(() => import("./pages/config/logger.json"));
+// const ApplicationTest = configComponent(() => import("./pages/config/application.json"));
+// const SecurityTest = configComponent(() => import("./pages/config/security.json"));
+// const AccountTest = configComponent(() => import("./pages/config/account.json"));
+// const DeviceProvision = configComponent(() => import("./pages/config/deviceProvision.json"));
 const AppLibrary = configComponent(() => import("./pages/config/appDashboard.json"));
 const LoginTest = configComponent(() => import("./pages/config/login.json"));
-const DataSearchTest = configComponent(() => import("./pages/config/dataSearch.json"));
-const MachineLearn = configComponent(() => import("./pages/config/machineLearn.json"));
+// const DataSearchTest = configComponent(() => import("./pages/config/dataSearch.json"));
+// const Template = configComponent(() => import("./pages/config/library.json"));
+// const MachineLearn = configComponent(() => import("./pages/config/machineLearn.json"));
 const Usage = configComponent(() => import("./pages/config/usage"));
-const DeviceCommand = configComponent(() => import("./pages/config/deviceCommandStatus.json"));
+// const DeviceCommand = configComponent(() => import("./pages/config/deviceCommandStatus.json"));
 const DeviceImport = configComponent(() => import("./pages/config/deviceImport.json"));
 const MainRouter = ({ basename, materialKey }) => {
     return (
@@ -101,6 +121,7 @@ const MainRouter = ({ basename, materialKey }) => {
                     component={AppLibrary} //boardsLib
                     materialKey={materialKey["DASHBOARD_LIBRARY_MGMT_PAGE"]["material-key"]}
                 />
+                {/*
                 <PrivateRoute
                     exact
                     path="/security"
@@ -171,6 +192,7 @@ const MainRouter = ({ basename, materialKey }) => {
                     path="/deviceControlStatus"
                     component={DeviceCommand} // DeviceCommand
                 />
+                */}
                 {/* <PrivateRoute path="/map" component={Map} />
                 {/* <PrivateRoute exact path="/template" component={Template} />
                 {/* <PrivateRoute path="/view" component={pageViewer} /> */}
